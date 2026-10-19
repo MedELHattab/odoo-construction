@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="view_construction_site_form_progress" model="ir.ui.view">
+        <field name="name">construction.site.form.progress</field>
+        <field name="model">construction.site</field>
+        <field name="inherit_id" ref="construction_site.view_construction_site_form"/>
+        <field name="arch" type="xml">
+            <field name="boq_total" position="after">
+                <field name="progress_percent" widget="progressbar"/>
+                <field name="earned_value"/>
+                <field name="cost_variance"
+                       decoration-danger="cost_variance &lt; 0"
+                       decoration-success="cost_variance &gt;= 0"/>
+            </field>
+            <xpath expr="//field[@name='boq_line_ids']/list/field[@name='subtotal']" position="after">
+                <field name="progress" widget="progressbar" options="{'editable': true}"/>
+            </xpath>
+        </field>
+    </record>
+
+    <record id="view_construction_site_cost_list_progress" model="ir.ui.view">
+        <field name="name">construction.site.cost.list.progress</field>
+        <field name="model">construction.site</field>
+        <field name="inherit_id" ref="construction_cost.view_construction_site_cost_list"/>
+        <field name="arch" type="xml">
+            <field name="state" position="after">
+                <field name="progress_percent" widget="progressbar"/>
+            </field>
+            <field name="actual_cost" position="after">
+                <field name="earned_value" sum="Earned"/>
+            </field>
+        </field>
+    </record>
+</odoo>
