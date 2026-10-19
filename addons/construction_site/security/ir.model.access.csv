@@ -1,0 +1,3 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_construction_site_user,construction.site user,model_construction_site,project.group_project_user,1,0,0,0
+access_construction_site_manager,construction.site manager,model_construction_site,project.group_project_manager,1,1,1,1
