@@ -1,0 +1,10 @@
+[options]
+addons_path = /mnt/extra-addons
+; Master password for database management. Use a long random value.
+admin_passwd = change-this-master-password
+; Hide the database manager/selector from the web.
+list_db = False
+db_name = construction
+; Enable when running behind a reverse proxy (nginx/Caddy) with HTTPS.
+proxy_mode = False
+log_level = info
