@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="view_construction_site_form_purchase" model="ir.ui.view">
+        <field name="name">construction.site.form.purchase</field>
+        <field name="model">construction.site</field>
+        <field name="inherit_id" ref="construction_site.view_construction_site_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//div[@name='button_box']" position="inside">
+                <button name="action_view_purchase_orders" type="object" class="oe_stat_button"
+                        icon="fa-shopping-cart" groups="purchase.group_purchase_user">
+                    <field name="purchase_order_count" widget="statinfo" string="Purchases"/>
+                </button>
+            </xpath>
+            <field name="budget" position="after">
+                <field name="committed_cost"/>
+                <field name="budget_after_commitments"
+                       decoration-danger="budget_after_commitments &lt; 0"
+                       decoration-success="budget_after_commitments &gt;= 0"/>
+            </field>
+        </field>
+    </record>
+</odoo>
