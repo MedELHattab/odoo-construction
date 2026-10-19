@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="view_construction_site_form_cost" model="ir.ui.view">
+        <field name="name">construction.site.form.cost</field>
+        <field name="model">construction.site</field>
+        <field name="inherit_id" ref="construction_site.view_construction_site_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//div[@name='button_box']" position="inside">
+                <button name="action_view_bills" type="object" class="oe_stat_button"
+                        icon="fa-money" groups="account.group_account_invoice">
+                    <field name="bill_count" widget="statinfo" string="Bills"/>
+                </button>
+            </xpath>
+            <field name="budget" position="after">
+                <field name="actual_cost"/>
+                <field name="budget_after_actual"
+                       decoration-danger="budget_after_actual &lt; 0"
+                       decoration-success="budget_after_actual &gt;= 0"/>
+            </field>
+        </field>
+    </record>
+
+    <record id="view_construction_site_cost_list" model="ir.ui.view">
+        <field name="name">construction.site.cost.list</field>
+        <field name="model">construction.site</field>
+        <field name="arch" type="xml">
+            <list create="0" delete="0" default_order="state, name">
+                <field name="code"/>
+                <field name="name"/>
+                <field name="partner_id"/>
+                <field name="state" widget="badge"/>
+                <field name="budget" sum="Budget"/>
+                <field name="committed_cost" sum="Committed"/>
+                <field name="actual_cost" sum="Actual"/>
+                <field name="budget_after_commitments" sum="After commitments"
+                       decoration-danger="budget_after_commitments &lt; 0"/>
+                <field name="budget_after_actual" sum="After actual"
+                       decoration-danger="budget_after_actual &lt; 0"/>
+                <field name="currency_id" column_invisible="True"/>
+            </list>
+        </field>
+    </record>
+
+    <record id="action_construction_cost_overview" model="ir.actions.act_window">
+        <field name="name">Cost Overview</field>
+        <field name="res_model">construction.site</field>
+        <field name="view_mode">list</field>
+        <field name="view_ids" eval="[(5, 0, 0), (0, 0, {'view_mode': 'list', 'view_id': ref('view_construction_site_cost_list')})]"/>
+        <field name="context">{'search_default_in_progress': 1}</field>
+    </record>
+
+    <menuitem id="menu_construction_cost_overview" name="Cost Overview"
+              parent="construction_site.menu_construction_root"
+              action="action_construction_cost_overview" sequence="30"/>
+</odoo>
