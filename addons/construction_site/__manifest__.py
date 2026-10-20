@@ -7,6 +7,7 @@
     "license": "LGPL-3",
     "depends": ["base", "mail", "project"],
     "data": [
+        "security/security.xml",
         "security/ir.model.access.csv",
         "data/sequence.xml",
         "views/construction_site_views.xml",

@@ -1,3 +1,3 @@
 id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
-access_construction_boq_line_user,construction.boq.line user,model_construction_boq_line,project.group_project_user,1,0,0,0
-access_construction_boq_line_manager,construction.boq.line manager,model_construction_boq_line,project.group_project_manager,1,1,1,1
+access_construction_boq_line_viewer,construction.boq.line viewer,model_construction_boq_line,construction_site.group_construction_viewer,1,0,0,0
+access_construction_boq_line_manager,construction.boq.line manager,model_construction_boq_line,construction_site.group_construction_manager,1,1,1,1

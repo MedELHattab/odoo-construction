@@ -36,8 +36,13 @@ class ConstructionSite(models.Model):
         required=True,
         tracking=True,
     )
-    project_id = fields.Many2one("project.project", string="Project", copy=False)
-    task_count = fields.Integer(related="project_id.task_count")
+    project_id = fields.Many2one(
+        "project.project", string="Project", copy=False,
+        groups="project.group_project_user",
+    )
+    task_count = fields.Integer(
+        related="project_id.task_count", groups="project.group_project_user"
+    )
     notes = fields.Html()
 
     _code_company_uniq = models.Constraint(
@@ -66,8 +71,9 @@ class ConstructionSite(models.Model):
                     self.env["ir.sequence"].next_by_code("construction.site") or "New"
                 )
         sites = super().create(vals_list)
-        for site in sites.filtered(lambda s: not s.project_id):
-            site.project_id = self.env["project.project"].create(
+        # sudo: site managers do not need Project access rights to get a linked project
+        for site in sites.sudo().filtered(lambda s: not s.project_id):
+            site.project_id = self.env["project.project"].sudo().create(
                 {
                     "name": f"{site.code} - {site.name}",
                     "partner_id": site.partner_id.id,

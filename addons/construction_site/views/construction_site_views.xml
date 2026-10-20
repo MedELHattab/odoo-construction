@@ -44,7 +44,8 @@
                 <sheet>
                     <div class="oe_button_box" name="button_box">
                         <button name="action_open_project" type="object" class="oe_stat_button"
-                                icon="fa-tasks" invisible="not project_id">
+                                icon="fa-tasks" invisible="not project_id"
+                                groups="project.group_project_user">
                             <field name="task_count" widget="statinfo" string="Tasks"/>
                         </button>
                     </div>
@@ -57,7 +58,7 @@
                             <field name="partner_id"/>
                             <field name="manager_id"/>
                             <field name="company_id" groups="base.group_multi_company"/>
-                            <field name="project_id" readonly="True"/>
+                            <field name="project_id" readonly="True" groups="project.group_project_user"/>
                         </group>
                         <group>
                             <field name="date_start"/>
@@ -108,7 +109,8 @@
         </field>
     </record>
 
-    <menuitem id="menu_construction_root" name="Construction" sequence="20"/>
+    <menuitem id="menu_construction_root" name="Construction" sequence="20"
+              groups="group_construction_viewer"/>
     <menuitem id="menu_construction_sites" name="Sites" parent="menu_construction_root"
               action="action_construction_site" sequence="10"/>
 </odoo>
