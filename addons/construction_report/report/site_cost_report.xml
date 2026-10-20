@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="action_report_site_cost" model="ir.actions.report">
+        <field name="name">Site Cost Report</field>
+        <field name="model">construction.site</field>
+        <field name="report_type">qweb-pdf</field>
+        <field name="report_name">construction_report.report_site_cost</field>
+        <field name="report_file">construction_report.report_site_cost</field>
+        <field name="print_report_name">'Site report - %s' % (object.code or '')</field>
+        <field name="binding_model_id" ref="construction_site.model_construction_site"/>
+        <field name="binding_type">report</field>
+    </record>
+
+    <template id="report_site_cost">
+        <t t-call="web.html_container">
+            <t t-foreach="docs" t-as="site">
+                <t t-set="o" t-value="site"/>
+                <t t-call="web.external_layout">
+                    <t t-set="currency" t-value="site.currency_id"/>
+                    <t t-set="can_see_purchases" t-value="env.user.has_group('purchase.group_purchase_user')"/>
+                    <t t-set="can_see_bills" t-value="env.user.has_group('account.group_account_invoice')"/>
+                    <div class="page">
+                        <h2>Site Cost Report</h2>
+                        <h4><span t-field="site.code"/> - <span t-field="site.name"/></h4>
+
+                        <table class="table table-sm table-borderless w-100 mt-3">
+                            <tr>
+                                <td class="fw-bold" style="width:18%">Client</td>
+                                <td style="width:32%"><span t-field="site.partner_id"/></td>
+                                <td class="fw-bold" style="width:18%">Status</td>
+                                <td><span t-field="site.state"/></td>
+                            </tr>
+                            <tr>
+                                <td class="fw-bold">Site manager</td>
+                                <td><span t-field="site.manager_id"/></td>
+                                <td class="fw-bold">Period</td>
+                                <td>
+                                    <t t-if="site.date_start or site.date_end">
+                                        <span t-field="site.date_start"/> &#8594; <span t-field="site.date_end"/>
+                                    </t>
+                                    <t t-else="">-</t>
+                                </td>
+                            </tr>
+                            <tr t-if="site.address">
+                                <td class="fw-bold">Address</td>
+                                <td colspan="3"><span t-field="site.address"/></td>
+                            </tr>
+                        </table>
+
+                        <h5 class="mt-4">Cost summary</h5>
+                        <table class="table table-sm">
+                            <thead>
+                                <tr><th>Item</th><th class="text-end">Amount</th><th class="text-end">Budget remaining</th></tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Budget</td>
+                                    <td class="text-end"><span t-field="site.budget"/></td>
+                                    <td/>
+                                </tr>
+                                <tr>
+                                    <td>Bill of quantities (planned cost)</td>
+                                    <td class="text-end"><span t-field="site.boq_total"/></td>
+                                    <td class="text-end"><span t-field="site.budget_variance"/></td>
+                                </tr>
+                                <tr>
+                                    <td>Committed (confirmed purchase orders)</td>
+                                    <td class="text-end"><span t-field="site.committed_cost"/></td>
+                                    <td class="text-end"><span t-field="site.budget_after_commitments"/></td>
+                                </tr>
+                                <tr>
+                                    <td>Actual (posted vendor bills)</td>
+                                    <td class="text-end"><span t-field="site.actual_cost"/></td>
+                                    <td class="text-end"><span t-field="site.budget_after_actual"/></td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <h5 class="mt-4">Progress</h5>
+                        <table class="table table-sm">
+                            <tbody>
+                                <tr>
+                                    <td>Completed (weighted by cost)</td>
+                                    <td class="text-end"><span t-esc="'%.1f' % site.progress_percent"/> %</td>
+                                </tr>
+                                <tr>
+                                    <td>Earned value (planned cost of work done)</td>
+                                    <td class="text-end"><span t-field="site.earned_value"/></td>
+                                </tr>
+                                <tr>
+                                    <td>Cost variance (earned value minus actual cost)</td>
+                                    <td class="text-end"><span t-field="site.cost_variance"/></td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <h5 class="mt-4">Bill of quantities</h5>
+                        <table class="table table-sm" t-if="site.boq_line_ids">
+                            <thead>
+                                <tr>
+                                    <th>Description</th>
+                                    <th class="text-end">Qty</th>
+                                    <th>Unit</th>
+                                    <th class="text-end">Unit cost</th>
+                                    <th class="text-end">Total</th>
+                                    <th class="text-end">Done</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr t-foreach="site.boq_line_ids" t-as="line">
+                                    <td><span t-field="line.name"/></td>
+                                    <td class="text-end"><span t-field="line.quantity"/></td>
+                                    <td><span t-field="line.uom_id"/></td>
+                                    <td class="text-end"><span t-field="line.unit_cost"/></td>
+                                    <td class="text-end"><span t-field="line.subtotal"/></td>
+                                    <td class="text-end"><span t-esc="'%.0f' % line.progress"/> %</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <p t-else="" class="text-muted">No bill of quantities lines.</p>
+
+                        <t t-if="can_see_purchases">
+                            <t t-set="orders" t-value="site.purchase_order_ids.filtered(lambda p: p.state in ('purchase', 'done'))"/>
+                            <h5 class="mt-4">Confirmed purchase orders</h5>
+                            <table class="table table-sm" t-if="orders">
+                                <thead>
+                                    <tr><th>Order</th><th>Vendor</th><th class="text-end">Untaxed amount</th></tr>
+                                </thead>
+                                <tbody>
+                                    <tr t-foreach="orders" t-as="po">
+                                        <td><span t-field="po.name"/></td>
+                                        <td><span t-field="po.partner_id"/></td>
+                                        <td class="text-end"><span t-field="po.amount_untaxed"/></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <p t-else="" class="text-muted">No confirmed purchase orders.</p>
+                        </t>
+
+                        <t t-if="can_see_bills">
+                            <t t-set="bills" t-value="site.bill_ids.filtered(lambda b: b.state == 'posted')"/>
+                            <h5 class="mt-4">Posted vendor bills</h5>
+                            <table class="table table-sm" t-if="bills">
+                                <thead>
+                                    <tr><th>Bill</th><th>Vendor</th><th>Date</th><th class="text-end">Untaxed amount</th></tr>
+                                </thead>
+                                <tbody>
+                                    <tr t-foreach="bills" t-as="bill">
+                                        <td><span t-field="bill.name"/></td>
+                                        <td><span t-field="bill.partner_id"/></td>
+                                        <td><span t-field="bill.invoice_date"/></td>
+                                        <td class="text-end"><span t-field="bill.amount_untaxed"/></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <p t-else="" class="text-muted">No posted vendor bills.</p>
+                        </t>
+                    </div>
+                </t>
+            </t>
+        </t>
+    </template>
+</odoo>
