@@ -38,6 +38,32 @@ class TestConstructionProgress(TransactionCase):
             with self.assertRaises(ValidationError):
                 self._line(100, bad)
 
+    def test_cost_figures_can_be_aggregated_for_charts(self):
+        vendor = self.env["res.partner"].create({"name": "Chart Sub"})
+        bill = self.env["account.move"].create({
+            "move_type": "in_invoice", "partner_id": vendor.id, "site_id": self.site.id,
+            "invoice_date": "2026-10-01",
+            "invoice_line_ids": [Command.create({"name": "Work", "quantity": 1, "price_unit": 123})],
+        })
+        bill.action_post()
+        self._line(400, 50)
+        rows = self.env["construction.site"].read_group(
+            [("id", "=", self.site.id)],
+            ["budget:sum", "boq_total:sum", "committed_cost:sum", "actual_cost:sum", "earned_value:sum"],
+            [],
+        )
+        self.assertEqual(rows[0]["actual_cost"], 123.0)
+        self.assertEqual(rows[0]["boq_total"], 400.0)
+        self.assertEqual(rows[0]["earned_value"], 200.0)
+        # stored figures follow later changes
+        bill.button_draft()
+        self.assertEqual(self.site.actual_cost, 0.0)
+
+    def test_analysis_views_are_attached_to_cost_overview(self):
+        action = self.env.ref("construction_cost.action_construction_cost_overview")
+        self.assertEqual(set(action.view_ids.mapped("view_mode")), {"list", "graph", "pivot"})
+        self.env["construction.site"].get_views([(False, "graph"), (False, "pivot")])
+
     def test_cost_variance_compares_earned_to_actual(self):
         self._line(400, 50)  # earned 200
         vendor = self.env["res.partner"].create({"name": "Sub"})

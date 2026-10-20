@@ -8,6 +8,7 @@
     "depends": ["construction_boq", "construction_cost"],
     "data": [
         "views/construction_site_views.xml",
+        "views/construction_site_analysis_views.xml",
     ],
     "installable": True,
 }

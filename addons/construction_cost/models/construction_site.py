@@ -10,11 +10,11 @@ class ConstructionSite(models.Model):
     )
     bill_count = fields.Integer(compute="_compute_actual_cost")
     actual_cost = fields.Monetary(
-        compute="_compute_actual_cost", currency_field="currency_id",
+        compute="_compute_actual_cost", store=True, currency_field="currency_id",
         help="Untaxed total of posted vendor bills minus refunds for this site.",
     )
     budget_after_actual = fields.Monetary(
-        compute="_compute_actual_cost", currency_field="currency_id",
+        compute="_compute_actual_cost", store=True, currency_field="currency_id",
         help="Budget minus actual cost. Negative means over budget.",
     )
 

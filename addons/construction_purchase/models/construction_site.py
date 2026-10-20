@@ -9,11 +9,11 @@ class ConstructionSite(models.Model):
     purchase_order_ids = fields.One2many("purchase.order", "site_id", string="Purchase Orders")
     purchase_order_count = fields.Integer(compute="_compute_purchase_figures")
     committed_cost = fields.Monetary(
-        compute="_compute_purchase_figures", currency_field="currency_id",
+        compute="_compute_purchase_figures", store=True, currency_field="currency_id",
         help="Untaxed total of confirmed purchase orders for this site.",
     )
     budget_after_commitments = fields.Monetary(
-        compute="_compute_purchase_figures", currency_field="currency_id",
+        compute="_compute_purchase_figures", store=True, currency_field="currency_id",
         help="Budget minus committed purchase cost. Negative means over budget.",
     )
 
