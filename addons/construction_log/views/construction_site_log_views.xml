@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="view_construction_site_log_list" model="ir.ui.view">
+        <field name="name">construction.site.log.list</field>
+        <field name="model">construction.site.log</field>
+        <field name="arch" type="xml">
+            <list decoration-danger="safety_incident">
+                <field name="date"/>
+                <field name="site_id"/>
+                <field name="weather"/>
+                <field name="workers_count" sum="Worker-days"/>
+                <field name="work_done"/>
+                <field name="safety_incident" widget="boolean" string="Incident"/>
+                <field name="author_id" widget="many2one_avatar_user"/>
+            </list>
+        </field>
+    </record>
+
+    <record id="view_construction_site_log_form" model="ir.ui.view">
+        <field name="name">construction.site.log.form</field>
+        <field name="model">construction.site.log</field>
+        <field name="arch" type="xml">
+            <form>
+                <sheet>
+                    <group>
+                        <group>
+                            <field name="site_id"/>
+                            <field name="date"/>
+                            <field name="author_id"/>
+                        </group>
+                        <group>
+                            <field name="weather"/>
+                            <field name="workers_count"/>
+                            <field name="company_id" invisible="True"/>
+                        </group>
+                    </group>
+                    <group>
+                        <field name="work_done"/>
+                        <field name="issues"/>
+                        <field name="safety_incident"/>
+                        <field name="incident_details" invisible="not safety_incident"
+                               required="safety_incident"/>
+                    </group>
+                    <group string="Photos &amp; documents">
+                        <field name="attachment_ids" widget="many2many_binary" nolabel="1"/>
+                    </group>
+                </sheet>
+                <chatter/>
+            </form>
+        </field>
+    </record>
+
+    <record id="view_construction_site_log_search" model="ir.ui.view">
+        <field name="name">construction.site.log.search</field>
+        <field name="model">construction.site.log</field>
+        <field name="arch" type="xml">
+            <search>
+                <field name="site_id"/>
+                <field name="work_done"/>
+                <field name="author_id"/>
+                <filter name="incidents" string="Safety incidents" domain="[('safety_incident', '=', True)]"/>
+                <filter name="issues" string="With issues" domain="[('issues', '!=', False)]"/>
+                <filter name="my_logs" string="My logs" domain="[('author_id', '=', uid)]"/>
+                <group>
+                    <filter name="group_site" string="Site" context="{'group_by': 'site_id'}"/>
+                    <filter name="group_date" string="Month" context="{'group_by': 'date:month'}"/>
+                    <filter name="group_weather" string="Weather" context="{'group_by': 'weather'}"/>
+                </group>
+            </search>
+        </field>
+    </record>
+
+    <record id="action_construction_site_log" model="ir.actions.act_window">
+        <field name="name">Daily Logs</field>
+        <field name="res_model">construction.site.log</field>
+        <field name="view_mode">list,form</field>
+        <field name="help" type="html">
+            <p class="o_view_nocontent_smiling_face">Write your first daily site log</p>
+        </field>
+    </record>
+
+    <menuitem id="menu_construction_site_log" name="Daily Logs"
+              parent="construction_site.menu_construction_root"
+              action="action_construction_site_log" sequence="20"/>
+</odoo>

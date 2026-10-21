@@ -1,0 +1,4 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_construction_site_log_viewer,construction.site.log viewer,model_construction_site_log,construction_site.group_construction_viewer,1,0,0,0
+access_construction_site_log_manager,construction.site.log manager,model_construction_site_log,construction_site.group_construction_manager,1,1,1,0
+access_construction_site_log_admin,construction.site.log admin,model_construction_site_log,construction_site.group_construction_admin,1,1,1,1
