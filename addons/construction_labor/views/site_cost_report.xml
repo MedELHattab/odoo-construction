@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="report_site_cost_labor" inherit_id="construction_report.report_site_cost">
+        <xpath expr="//h5[normalize-space()='Progress']" position="before">
+            <h5 class="mt-4">Labor</h5>
+            <table class="table table-sm">
+                <tbody>
+                    <tr>
+                        <td>Hours worked</td>
+                        <td class="text-end"><span t-esc="'%.1f' % site.labor_hours"/> h</td>
+                    </tr>
+                    <tr>
+                        <td>Labor cost (timesheets)</td>
+                        <td class="text-end"><span t-field="site.labor_cost"/></td>
+                    </tr>
+                    <tr>
+                        <td>Total cost (vendor bills + labor)</td>
+                        <td class="text-end"><span t-field="site.total_cost"/></td>
+                    </tr>
+                    <tr>
+                        <td>Budget remaining after total cost</td>
+                        <td class="text-end"><span t-field="site.budget_after_total"/></td>
+                    </tr>
+                </tbody>
+            </table>
+        </xpath>
+    </template>
+</odoo>

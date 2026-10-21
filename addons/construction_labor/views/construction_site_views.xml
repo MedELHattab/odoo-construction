@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="view_construction_site_form_labor" model="ir.ui.view">
+        <field name="name">construction.site.form.labor</field>
+        <field name="model">construction.site</field>
+        <field name="inherit_id" ref="construction_site.view_construction_site_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//div[@name='button_box']" position="inside">
+                <button name="action_view_timesheets" type="object" class="oe_stat_button"
+                        icon="fa-clock-o" groups="hr_timesheet.group_hr_timesheet_user">
+                    <field name="labor_hours" widget="statinfo" string="Hours"/>
+                </button>
+            </xpath>
+            <field name="budget_after_actual" position="after">
+                <field name="labor_cost"/>
+                <field name="total_cost"/>
+                <field name="budget_after_total"
+                       decoration-danger="budget_after_total &lt; 0"
+                       decoration-success="budget_after_total &gt;= 0"/>
+            </field>
+        </field>
+    </record>
+
+    <record id="view_construction_site_cost_list_labor" model="ir.ui.view">
+        <field name="name">construction.site.cost.list.labor</field>
+        <field name="model">construction.site</field>
+        <field name="inherit_id" ref="construction_cost.view_construction_site_cost_list"/>
+        <field name="arch" type="xml">
+            <field name="actual_cost" position="after">
+                <field name="labor_cost" sum="Labor"/>
+                <field name="total_cost" sum="Total cost"/>
+            </field>
+            <field name="budget_after_actual" position="after">
+                <field name="budget_after_total" sum="After total"
+                       decoration-danger="budget_after_total &lt; 0"/>
+            </field>
+        </field>
+    </record>
+
+    <record id="view_construction_site_cost_graph_labor" model="ir.ui.view">
+        <field name="name">construction.site.cost.graph.labor</field>
+        <field name="model">construction.site</field>
+        <field name="inherit_id" ref="construction_progress.view_construction_site_cost_graph"/>
+        <field name="arch" type="xml">
+            <field name="actual_cost" position="after">
+                <field name="labor_cost" type="measure"/>
+            </field>
+        </field>
+    </record>
+
+    <record id="view_construction_site_cost_pivot_labor" model="ir.ui.view">
+        <field name="name">construction.site.cost.pivot.labor</field>
+        <field name="model">construction.site</field>
+        <field name="inherit_id" ref="construction_progress.view_construction_site_cost_pivot"/>
+        <field name="arch" type="xml">
+            <field name="actual_cost" position="after">
+                <field name="labor_cost" type="measure"/>
+                <field name="total_cost" type="measure"/>
+            </field>
+        </field>
+    </record>
+</odoo>
