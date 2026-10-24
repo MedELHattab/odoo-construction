@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="construction_site.menu_construction_root" model="ir.ui.menu">
+        <field name="web_icon">construction_theme,static/description/icon.png</field>
+    </record>
+</odoo>

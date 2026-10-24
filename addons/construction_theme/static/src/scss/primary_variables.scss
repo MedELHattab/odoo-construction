@@ -1,0 +1,5 @@
+// Construction brand colour. Everything else in the backend (navbar, primary
+// buttons, links, focus rings) derives from these Odoo variables.
+// To change the look, edit this one value and upgrade the module.
+$o-community-color: #c2410c;
+$o-brand-primary: $o-community-color;
