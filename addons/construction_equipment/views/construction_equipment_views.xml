@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="view_construction_equipment_list" model="ir.ui.view">
+        <field name="name">construction.equipment.list</field>
+        <field name="model">construction.equipment</field>
+        <field name="arch" type="xml">
+            <list>
+                <field name="code"/>
+                <field name="name"/>
+                <field name="category"/>
+                <field name="daily_rate"/>
+                <field name="state" widget="badge" decoration-success="state == 'available'"
+                       decoration-warning="state == 'maintenance'"/>
+                <field name="currency_id" column_invisible="True"/>
+            </list>
+        </field>
+    </record>
+
+    <record id="view_construction_equipment_form" model="ir.ui.view">
+        <field name="name">construction.equipment.form</field>
+        <field name="model">construction.equipment</field>
+        <field name="arch" type="xml">
+            <form>
+                <sheet>
+                    <div class="oe_title"><h1><field name="name" placeholder="Equipment name"/></h1></div>
+                    <group>
+                        <group>
+                            <field name="code"/>
+                            <field name="category"/>
+                            <field name="state"/>
+                        </group>
+                        <group>
+                            <field name="daily_rate"/>
+                            <field name="company_id" groups="base.group_multi_company"/>
+                            <field name="currency_id" invisible="True"/>
+                        </group>
+                    </group>
+                    <notebook>
+                        <page string="Assignments" name="assignments">
+                            <field name="usage_ids" readonly="True">
+                                <list>
+                                    <field name="site_id"/>
+                                    <field name="date_from"/>
+                                    <field name="date_to"/>
+                                    <field name="days"/>
+                                    <field name="cost" sum="Total"/>
+                                    <field name="currency_id" column_invisible="True"/>
+                                </list>
+                            </field>
+                        </page>
+                        <page string="Notes" name="notes"><field name="notes"/></page>
+                    </notebook>
+                </sheet>
+                <chatter/>
+            </form>
+        </field>
+    </record>
+
+    <record id="view_construction_equipment_search" model="ir.ui.view">
+        <field name="name">construction.equipment.search</field>
+        <field name="model">construction.equipment</field>
+        <field name="arch" type="xml">
+            <search>
+                <field name="name" filter_domain="['|', ('name', 'ilike', self), ('code', 'ilike', self)]"/>
+                <filter name="available" string="Available" domain="[('state', '=', 'available')]"/>
+                <filter name="archived" string="Archived" domain="[('active', '=', False)]"/>
+                <group>
+                    <filter name="group_category" string="Category" context="{'group_by': 'category'}"/>
+                    <filter name="group_state" string="Status" context="{'group_by': 'state'}"/>
+                </group>
+            </search>
+        </field>
+    </record>
+
+    <record id="action_construction_equipment" model="ir.actions.act_window">
+        <field name="name">Equipment</field>
+        <field name="res_model">construction.equipment</field>
+        <field name="view_mode">list,form</field>
+        <field name="help" type="html">
+            <p class="o_view_nocontent_smiling_face">Register your first piece of equipment</p>
+        </field>
+    </record>
+
+    <menuitem id="menu_construction_equipment" name="Equipment"
+              parent="construction_site.menu_construction_root"
+              action="action_construction_equipment" sequence="40"/>
+</odoo>

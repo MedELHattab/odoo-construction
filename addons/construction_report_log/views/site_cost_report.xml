@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="report_site_cost_logs" inherit_id="construction_report.report_site_cost">
+        <xpath expr="//div[@class='page']" position="inside">
+            <t t-set="recent_logs" t-value="site.log_ids.sorted(lambda l: (l.date, l.id), reverse=True)[:10]"/>
+            <h5 class="mt-4">Daily logs</h5>
+            <p t-if="site.log_count">
+                <span t-field="site.log_count"/> log(s), last on <span t-field="site.last_log_date"/>.
+                <strong t-if="site.incident_count" class="text-danger">
+                    <span t-field="site.incident_count"/> safety incident(s) recorded.
+                </strong>
+            </p>
+            <table class="table table-sm" t-if="recent_logs">
+                <thead>
+                    <tr>
+                        <th>Date</th>
+                        <th>Weather</th>
+                        <th class="text-end">Workers</th>
+                        <th>Work done</th>
+                        <th>Issues / incident</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr t-foreach="recent_logs" t-as="log">
+                        <td><span t-field="log.date"/></td>
+                        <td><span t-field="log.weather"/></td>
+                        <td class="text-end"><span t-field="log.workers_count"/></td>
+                        <td><span t-field="log.work_done"/></td>
+                        <td>
+                            <span t-if="log.safety_incident" class="text-danger fw-bold">
+                                Incident: <span t-field="log.incident_details"/>
+                            </span>
+                            <span t-if="log.issues"><span t-field="log.issues"/></span>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <p t-else="" class="text-muted">No daily logs recorded.</p>
+        </xpath>
+    </template>
+</odoo>

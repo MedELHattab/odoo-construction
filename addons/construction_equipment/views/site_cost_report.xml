@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="report_site_cost_equipment" inherit_id="construction_report.report_site_cost">
+        <xpath expr="//h5[normalize-space()='Progress']" position="before">
+            <h5 class="mt-4">Equipment</h5>
+            <table class="table table-sm" t-if="site.equipment_usage_ids">
+                <thead>
+                    <tr>
+                        <th>Equipment</th>
+                        <th>From</th>
+                        <th>To</th>
+                        <th class="text-end">Days</th>
+                        <th class="text-end">Daily rate</th>
+                        <th class="text-end">Cost</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr t-foreach="site.equipment_usage_ids" t-as="usage">
+                        <td><span t-field="usage.equipment_id"/></td>
+                        <td><span t-field="usage.date_from"/></td>
+                        <td><span t-field="usage.date_to"/></td>
+                        <td class="text-end"><span t-field="usage.days"/></td>
+                        <td class="text-end"><span t-field="usage.daily_rate"/></td>
+                        <td class="text-end"><span t-field="usage.cost"/></td>
+                    </tr>
+                    <tr class="fw-bold">
+                        <td colspan="5">Equipment total</td>
+                        <td class="text-end"><span t-field="site.equipment_cost"/></td>
+                    </tr>
+                </tbody>
+            </table>
+            <p t-else="" class="text-muted">No equipment assigned.</p>
+        </xpath>
+    </template>
+</odoo>

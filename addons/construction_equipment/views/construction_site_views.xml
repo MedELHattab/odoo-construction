@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="view_construction_site_form_equipment" model="ir.ui.view">
+        <field name="name">construction.site.form.equipment</field>
+        <field name="model">construction.site</field>
+        <field name="inherit_id" ref="construction_site.view_construction_site_form"/>
+        <field name="arch" type="xml">
+            <field name="labor_cost" position="after">
+                <field name="equipment_cost"/>
+            </field>
+            <xpath expr="//page[@name='address']" position="before">
+                <page string="Equipment" name="equipment">
+                    <field name="equipment_usage_ids">
+                        <list editable="bottom">
+                            <field name="equipment_id"/>
+                            <field name="date_from"/>
+                            <field name="date_to"/>
+                            <field name="days"/>
+                            <field name="daily_rate"/>
+                            <field name="cost" sum="Total"/>
+                            <field name="currency_id" column_invisible="True"/>
+                        </list>
+                    </field>
+                </page>
+            </xpath>
+        </field>
+    </record>
+
+    <record id="view_construction_site_cost_list_equipment" model="ir.ui.view">
+        <field name="name">construction.site.cost.list.equipment</field>
+        <field name="model">construction.site</field>
+        <field name="inherit_id" ref="construction_cost.view_construction_site_cost_list"/>
+        <field name="arch" type="xml">
+            <field name="labor_cost" position="after">
+                <field name="equipment_cost" sum="Equipment"/>
+            </field>
+        </field>
+    </record>
+
+    <record id="view_construction_site_cost_pivot_equipment" model="ir.ui.view">
+        <field name="name">construction.site.cost.pivot.equipment</field>
+        <field name="model">construction.site</field>
+        <field name="inherit_id" ref="construction_progress.view_construction_site_cost_pivot"/>
+        <field name="arch" type="xml">
+            <field name="labor_cost" position="after">
+                <field name="equipment_cost" type="measure"/>
+            </field>
+        </field>
+    </record>
+
+    <record id="view_construction_site_cost_graph_equipment" model="ir.ui.view">
+        <field name="name">construction.site.cost.graph.equipment</field>
+        <field name="model">construction.site</field>
+        <field name="inherit_id" ref="construction_progress.view_construction_site_cost_graph"/>
+        <field name="arch" type="xml">
+            <field name="labor_cost" position="after">
+                <field name="equipment_cost" type="measure"/>
+            </field>
+        </field>
+    </record>
+</odoo>
