@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
     <template id="report_site_cost_expense" inherit_id="construction_report.report_site_cost">
-        <xpath expr="//h5[normalize-space()='Progress']" position="before">
+        <xpath expr="//h5[@id='section_progress']" position="before">
             <t t-set="can_see_expenses" t-value="env.user.has_group('hr_expense.group_hr_expense_user')"/>
             <h5 class="mt-4">Expenses</h5>
             <t t-set="expense_total" t-value="site.expense_cost"/>

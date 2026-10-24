@@ -1,0 +1,100 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* construction_purchase
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 19.0-20261015\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-10-24 18:57+0000\n"
+"PO-Revision-Date: 2026-10-24 18:57+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: construction_purchase
+#: model:ir.model.fields,field_description:construction_purchase.field_construction_site__budget_after_commitments
+msgid "Budget After Commitments"
+msgstr "Budget après engagements"
+
+#. module: construction_purchase
+#: model:ir.model.fields,help:construction_purchase.field_construction_site__budget_after_commitments
+msgid "Budget minus committed purchase cost. Negative means over budget."
+msgstr "Budget moins le coût d'achat engagé. Une valeur négative signifie un dépassement de budget."
+
+#. module: construction_purchase
+#: model:ir.model.fields,field_description:construction_purchase.field_construction_site__committed_cost
+msgid "Committed Cost"
+msgstr "Coût engagé"
+
+#. module: construction_purchase
+#: model:ir.model,name:construction_purchase.model_construction_site
+#: model:ir.model.fields,field_description:construction_purchase.field_purchase_order__site_id
+msgid "Construction Site"
+msgstr "Chantier"
+
+#. module: construction_purchase
+#: model:ir.model,name:construction_purchase.model_res_partner
+msgid "Contact"
+msgstr "Contact"
+
+#. module: construction_purchase
+#: model:ir.model.fields,field_description:construction_purchase.field_construction_site__display_name
+#: model:ir.model.fields,field_description:construction_purchase.field_purchase_order__display_name
+#: model:ir.model.fields,field_description:construction_purchase.field_res_partner__display_name
+msgid "Display Name"
+msgstr "Nom affiché"
+
+#. module: construction_purchase
+#: model:ir.model.fields,field_description:construction_purchase.field_construction_site__id
+#: model:ir.model.fields,field_description:construction_purchase.field_purchase_order__id
+#: model:ir.model.fields,field_description:construction_purchase.field_res_partner__id
+msgid "ID"
+msgstr "ID"
+
+#. module: construction_purchase
+#: model:ir.model,name:construction_purchase.model_purchase_order
+msgid "Purchase Order"
+msgstr "Bon de commande"
+
+#. module: construction_purchase
+#: model:ir.model.fields,field_description:construction_purchase.field_construction_site__purchase_order_count
+msgid "Purchase Order Count"
+msgstr "Nombre de bons de commande"
+
+#. module: construction_purchase
+#. odoo-python
+#: code:addons/construction_purchase/models/construction_site.py:0
+#: model:ir.model.fields,field_description:construction_purchase.field_construction_site__purchase_order_ids
+msgid "Purchase Orders"
+msgstr "Bons de commande"
+
+#. module: construction_purchase
+#: model_terms:ir.ui.view,arch_db:construction_purchase.view_construction_site_form_purchase
+msgid "Purchases"
+msgstr "Achats"
+
+#. module: construction_purchase
+#: model:ir.model.fields,field_description:construction_purchase.field_res_partner__is_subcontractor
+#: model:ir.model.fields,field_description:construction_purchase.field_res_users__is_subcontractor
+msgid "Subcontractor"
+msgstr "Sous-traitant"
+
+#. module: construction_purchase
+#: model_terms:ir.ui.view,arch_db:construction_purchase.res_partner_search_subcontractor
+msgid "Subcontractors"
+msgstr "Sous-traitants"
+
+#. module: construction_purchase
+#: model:ir.model.fields,help:construction_purchase.field_construction_site__committed_cost
+msgid "Untaxed total of confirmed purchase orders for this site."
+msgstr "Total hors taxes des bons de commande confirmés pour ce chantier."
+
+#. module: construction_purchase
+#. odoo-python
+#: code:addons/construction_purchase/models/construction_site.py:0
+msgid "site_id"
+msgstr "Chantier"

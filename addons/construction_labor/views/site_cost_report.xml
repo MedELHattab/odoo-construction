@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
     <template id="report_site_cost_labor" inherit_id="construction_report.report_site_cost">
-        <xpath expr="//h5[normalize-space()='Progress']" position="before">
+        <xpath expr="//h5[@id='section_progress']" position="before">
             <h5 class="mt-4">Labor</h5>
             <table class="table table-sm">
                 <tbody>

@@ -1,0 +1,429 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* construction_site
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 19.0-20261015\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-10-24 18:56+0000\n"
+"PO-Revision-Date: 2026-10-24 18:56+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: construction_site
+#: model:ir.model.fields,field_description:construction_site.field_construction_site__message_needaction
+msgid "Action Needed"
+msgstr "Action requise"
+
+#. module: construction_site
+#: model:ir.model.fields,field_description:construction_site.field_construction_site__active
+msgid "Active"
+msgstr "Actif"
+
+#. module: construction_site
+#: model:ir.model.fields,field_description:construction_site.field_construction_site__activity_ids
+msgid "Activities"
+msgstr "Activités"
+
+#. module: construction_site
+#: model:ir.model.fields,field_description:construction_site.field_construction_site__activity_exception_decoration
+msgid "Activity Exception Decoration"
+msgstr "Décoration d'exception d'activité"
+
+#. module: construction_site
+#: model:ir.model.fields,field_description:construction_site.field_construction_site__activity_state
+msgid "Activity State"
+msgstr "État de l'activité"
+
+#. module: construction_site
+#: model:ir.model.fields,field_description:construction_site.field_construction_site__activity_type_icon
+msgid "Activity Type Icon"
+msgstr "Icône du type d'activité"
+
+#. module: construction_site
+#: model:ir.model.fields,field_description:construction_site.field_construction_site__address
+#: model_terms:ir.ui.view,arch_db:construction_site.view_construction_site_form
+msgid "Address"
+msgstr "Adresse"
+
+#. module: construction_site
+#: model:res.groups,name:construction_site.group_construction_admin
+msgid "Administrator"
+msgstr "Administrateur"
+
+#. module: construction_site
+#: model_terms:ir.ui.view,arch_db:construction_site.view_construction_site_search
+msgid "Archived"
+msgstr "Archivé"
+
+#. module: construction_site
+#: model:ir.model.fields,field_description:construction_site.field_construction_site__message_attachment_count
+msgid "Attachment Count"
+msgstr "Nombre de pièces jointes"
+
+#. module: construction_site
+#: model:ir.model.fields,field_description:construction_site.field_construction_site__budget
+msgid "Budget"
+msgstr "Budget"
+
+#. module: construction_site
+#: model_terms:ir.ui.view,arch_db:construction_site.view_construction_site_form
+msgid "Cancel"
+msgstr "Annuler"
+
+#. module: construction_site
+#: model:ir.model.fields.selection,name:construction_site.selection__construction_site__state__cancelled
+msgid "Cancelled"
+msgstr "Annulé"
+
+#. module: construction_site
+#: model:ir.model.fields,field_description:construction_site.field_construction_site__partner_id
+#: model_terms:ir.ui.view,arch_db:construction_site.view_construction_site_search
+msgid "Client"
+msgstr "Client"
+
+#. module: construction_site
+#: model:ir.model.fields,field_description:construction_site.field_construction_site__code
+msgid "Code"
+msgstr "Code"
+
+#. module: construction_site
+#: model:ir.model.fields,field_description:construction_site.field_construction_site__company_id
+msgid "Company"
+msgstr "Société"
+
+#. module: construction_site
+#: model_terms:ir.ui.view,arch_db:construction_site.view_construction_site_form
+msgid "Complete"
+msgstr "Terminer"
+
+#. module: construction_site
+#: model:ir.model.fields.selection,name:construction_site.selection__construction_site__state__done
+msgid "Completed"
+msgstr "Terminé"
+
+#. module: construction_site
+#: model:ir.ui.menu,name:construction_site.menu_construction_root
+#: model:res.groups.privilege,name:construction_site.privilege_construction
+msgid "Construction"
+msgstr "Chantiers"
+
+#. module: construction_site
+#: model:ir.model,name:construction_site.model_construction_site
+msgid "Construction Site"
+msgstr "Chantier"
+
+#. module: construction_site
+#: model:ir.actions.act_window,name:construction_site.action_construction_site
+msgid "Construction Sites"
+msgstr "Chantiers"
+
+#. module: construction_site
+#: model_terms:ir.actions.act_window,help:construction_site.action_construction_site
+msgid "Create your first construction site"
+msgstr "Créez votre premier chantier"
+
+#. module: construction_site
+#: model:ir.model.fields,field_description:construction_site.field_construction_site__create_uid
+msgid "Created by"
+msgstr "Créé par"
+
+#. module: construction_site
+#: model:ir.model.fields,field_description:construction_site.field_construction_site__create_date
+msgid "Created on"
+msgstr "Créé le"
+
+#. module: construction_site
+#: model:ir.model.fields,field_description:construction_site.field_construction_site__currency_id
+msgid "Currency"
+msgstr "Devise"
+
+#. module: construction_site
+#: model:ir.model.fields,field_description:construction_site.field_construction_site__display_name
+msgid "Display Name"
+msgstr "Nom affiché"
+
+#. module: construction_site
+#: model:ir.model.fields,field_description:construction_site.field_construction_site__message_follower_ids
+msgid "Followers"
+msgstr "Abonnés"
+
+#. module: construction_site
+#: model:ir.model.fields,field_description:construction_site.field_construction_site__message_partner_ids
+msgid "Followers (Partners)"
+msgstr "Abonnés (partenaires)"
+
+#. module: construction_site
+#: model:ir.model.fields,help:construction_site.field_construction_site__activity_type_icon
+msgid "Font awesome icon e.g. fa-tasks"
+msgstr "Icône Font Awesome, par ex. fa-tasks"
+
+#. module: construction_site
+#: model:ir.model.fields,field_description:construction_site.field_construction_site__has_message
+msgid "Has Message"
+msgstr "A un message"
+
+#. module: construction_site
+#: model:ir.model.fields,field_description:construction_site.field_construction_site__id
+msgid "ID"
+msgstr "ID"
+
+#. module: construction_site
+#: model:ir.model.fields,field_description:construction_site.field_construction_site__activity_exception_icon
+msgid "Icon"
+msgstr "Icône"
+
+#. module: construction_site
+#: model:ir.model.fields,help:construction_site.field_construction_site__activity_exception_icon
+msgid "Icon to indicate an exception activity."
+msgstr "Icône indiquant une activité d'exception."
+
+#. module: construction_site
+#: model:ir.model.fields,help:construction_site.field_construction_site__message_needaction
+msgid "If checked, new messages require your attention."
+msgstr "Si coché, de nouveaux messages requièrent votre attention."
+
+#. module: construction_site
+#: model:ir.model.fields,help:construction_site.field_construction_site__message_has_error
+#: model:ir.model.fields,help:construction_site.field_construction_site__message_has_sms_error
+msgid "If checked, some messages have a delivery error."
+msgstr "Si coché, certains messages ont une erreur d'envoi."
+
+#. module: construction_site
+#: model:ir.model.fields.selection,name:construction_site.selection__construction_site__state__in_progress
+#: model_terms:ir.ui.view,arch_db:construction_site.view_construction_site_search
+msgid "In Progress"
+msgstr "En cours"
+
+#. module: construction_site
+#: model:ir.model.fields,field_description:construction_site.field_construction_site__message_is_follower
+msgid "Is Follower"
+msgstr "Est abonné"
+
+#. module: construction_site
+#: model:ir.model.fields,field_description:construction_site.field_construction_site__write_uid
+msgid "Last Updated by"
+msgstr "Dernière mise à jour par"
+
+#. module: construction_site
+#: model:ir.model.fields,field_description:construction_site.field_construction_site__write_date
+msgid "Last Updated on"
+msgstr "Dernière mise à jour le"
+
+#. module: construction_site
+#: model:ir.model.fields,field_description:construction_site.field_construction_site__message_has_error
+msgid "Message Delivery error"
+msgstr "Erreur d'envoi du message"
+
+#. module: construction_site
+#: model:ir.model.fields,field_description:construction_site.field_construction_site__message_ids
+msgid "Messages"
+msgstr "Messages"
+
+#. module: construction_site
+#: model:ir.model.fields,field_description:construction_site.field_construction_site__my_activity_date_deadline
+msgid "My Activity Deadline"
+msgstr "Échéance de mon activité"
+
+#. module: construction_site
+#: model_terms:ir.ui.view,arch_db:construction_site.view_construction_site_search
+msgid "My Sites"
+msgstr "Mes chantiers"
+
+#. module: construction_site
+#: model:ir.model.fields,field_description:construction_site.field_construction_site__name
+msgid "Name"
+msgstr "Nom"
+
+#. module: construction_site
+#: model:ir.model.fields,field_description:construction_site.field_construction_site__activity_calendar_event_id
+msgid "Next Activity Calendar Event"
+msgstr "Événement du calendrier de la prochaine activité"
+
+#. module: construction_site
+#: model:ir.model.fields,field_description:construction_site.field_construction_site__activity_date_deadline
+msgid "Next Activity Deadline"
+msgstr "Échéance de la prochaine activité"
+
+#. module: construction_site
+#: model:ir.model.fields,field_description:construction_site.field_construction_site__activity_summary
+msgid "Next Activity Summary"
+msgstr "Résumé de la prochaine activité"
+
+#. module: construction_site
+#: model:ir.model.fields,field_description:construction_site.field_construction_site__activity_type_id
+msgid "Next Activity Type"
+msgstr "Type de la prochaine activité"
+
+#. module: construction_site
+#: model:ir.model.fields,field_description:construction_site.field_construction_site__notes
+#: model_terms:ir.ui.view,arch_db:construction_site.view_construction_site_form
+msgid "Notes"
+msgstr "Notes"
+
+#. module: construction_site
+#: model:ir.model.fields,field_description:construction_site.field_construction_site__message_needaction_counter
+msgid "Number of Actions"
+msgstr "Nombre d'actions"
+
+#. module: construction_site
+#: model:ir.model.fields,field_description:construction_site.field_construction_site__message_has_error_counter
+msgid "Number of errors"
+msgstr "Nombre d'erreurs"
+
+#. module: construction_site
+#: model:ir.model.fields,help:construction_site.field_construction_site__message_needaction_counter
+msgid "Number of messages requiring action"
+msgstr "Nombre de messages nécessitant une action"
+
+#. module: construction_site
+#: model:ir.model.fields,help:construction_site.field_construction_site__message_has_error_counter
+msgid "Number of messages with delivery error"
+msgstr "Nombre de messages avec erreur d'envoi"
+
+#. module: construction_site
+#: model:ir.model.fields.selection,name:construction_site.selection__construction_site__state__on_hold
+msgid "On Hold"
+msgstr "En pause"
+
+#. module: construction_site
+#: model:ir.model.fields.selection,name:construction_site.selection__construction_site__state__draft
+msgid "Planned"
+msgstr "Planifié"
+
+#. module: construction_site
+#: model:ir.model.fields,field_description:construction_site.field_construction_site__date_end
+msgid "Planned End Date"
+msgstr "Date de fin prévue"
+
+#. module: construction_site
+#: model:ir.model.fields,field_description:construction_site.field_construction_site__project_id
+msgid "Project"
+msgstr "Projet"
+
+#. module: construction_site
+#: model_terms:ir.ui.view,arch_db:construction_site.view_construction_site_form
+msgid "Put On Hold"
+msgstr "Mettre en pause"
+
+#. module: construction_site
+#: model:ir.model.fields,field_description:construction_site.field_construction_site__rating_ids
+msgid "Ratings"
+msgstr "Évaluations"
+
+#. module: construction_site
+#: model_terms:ir.ui.view,arch_db:construction_site.view_construction_site_form
+msgid "Reset to Planned"
+msgstr "Remettre en planifié"
+
+#. module: construction_site
+#: model:ir.model.fields,field_description:construction_site.field_construction_site__activity_user_id
+msgid "Responsible User"
+msgstr "Utilisateur responsable"
+
+#. module: construction_site
+#: model:ir.model.fields,field_description:construction_site.field_construction_site__message_has_sms_error
+msgid "SMS Delivery error"
+msgstr "Erreur d'envoi SMS"
+
+#. module: construction_site
+#: model:ir.model.fields,field_description:construction_site.field_construction_site__manager_id
+#: model:res.groups,name:construction_site.group_construction_manager
+msgid "Site Manager"
+msgstr "Chef de chantier"
+
+#. module: construction_site
+#: model_terms:ir.ui.view,arch_db:construction_site.view_construction_site_form
+msgid "Site name"
+msgstr "Nom du chantier"
+
+#. module: construction_site
+#: model:ir.ui.menu,name:construction_site.menu_construction_sites
+msgid "Sites"
+msgstr "Chantiers"
+
+#. module: construction_site
+#: model_terms:ir.ui.view,arch_db:construction_site.view_construction_site_form
+msgid "Start"
+msgstr "Démarrer"
+
+#. module: construction_site
+#: model:ir.model.fields,field_description:construction_site.field_construction_site__date_start
+msgid "Start Date"
+msgstr "Date de début"
+
+#. module: construction_site
+#: model:ir.model.fields,field_description:construction_site.field_construction_site__state
+msgid "State"
+msgstr "État"
+
+#. module: construction_site
+#: model_terms:ir.ui.view,arch_db:construction_site.view_construction_site_search
+msgid "Status"
+msgstr "Statut"
+
+#. module: construction_site
+#: model:ir.model.fields,help:construction_site.field_construction_site__activity_state
+msgid ""
+"Status based on activities\n"
+"Overdue: Due date is already passed\n"
+"Today: Activity date is today\n"
+"Planned: Future activities."
+msgstr "Statut basé sur les activités\nEn retard : la date d'échéance est dépassée\nAujourd'hui : la date d'activité est aujourd'hui\nPlanifié : activités futures."
+
+#. module: construction_site
+#: model:ir.model.fields,field_description:construction_site.field_construction_site__task_count
+msgid "Task Count"
+msgstr "Nombre de tâches"
+
+#. module: construction_site
+#: model_terms:ir.ui.view,arch_db:construction_site.view_construction_site_form
+msgid "Tasks"
+msgstr "Tâches"
+
+#. module: construction_site
+#. odoo-python
+#: code:addons/construction_site/models/construction_site.py:0
+msgid "The budget cannot be negative."
+msgstr "Le budget ne peut pas être négatif."
+
+#. module: construction_site
+#. odoo-python
+#: code:addons/construction_site/models/construction_site.py:0
+msgid "The planned end date cannot be before the start date."
+msgstr "La date de fin prévue ne peut pas précéder la date de début."
+
+#. module: construction_site
+#: model:ir.model.constraint,message:construction_site.constraint_construction_site_code_company_uniq
+msgid "The site code must be unique per company."
+msgstr "Le code du chantier doit être unique par société."
+
+#. module: construction_site
+#: model_terms:ir.ui.view,arch_db:construction_site.view_construction_site_list
+msgid "Total"
+msgstr "Total"
+
+#. module: construction_site
+#: model:ir.model.fields,help:construction_site.field_construction_site__activity_exception_decoration
+msgid "Type of the exception activity on record."
+msgstr "Type de l'activité d'exception sur l'enregistrement."
+
+#. module: construction_site
+#: model:res.groups,name:construction_site.group_construction_viewer
+msgid "Viewer"
+msgstr "Lecteur"
+
+#. module: construction_site
+#: model:ir.model.fields,field_description:construction_site.field_construction_site__website_message_ids
+msgid "Website Messages"
+msgstr "Messages du site web"
+
+#. module: construction_site
+#: model:ir.model.fields,help:construction_site.field_construction_site__website_message_ids
+msgid "Website communication history"
+msgstr "Historique des communications du site web"

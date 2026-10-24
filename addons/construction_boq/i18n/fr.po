@@ -1,0 +1,187 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* construction_boq
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 19.0-20261015\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-10-24 18:56+0000\n"
+"PO-Revision-Date: 2026-10-24 18:56+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: construction_boq
+#: model_terms:ir.ui.view,arch_db:construction_boq.view_construction_site_form_boq
+msgid "<span class=\"o_stat_text\">Quotation</span>"
+msgstr "<span class=\"o_stat_text\">Devis</span>"
+
+#. module: construction_boq
+#. odoo-python
+#: code:addons/construction_boq/models/construction_site.py:0
+msgid "A quotation already exists for this site."
+msgstr "Un devis existe déjà pour ce chantier."
+
+#. module: construction_boq
+#. odoo-python
+#: code:addons/construction_boq/models/construction_site.py:0
+msgid "Add bill of quantities lines first."
+msgstr "Ajoutez d'abord des lignes au bordereau des quantités."
+
+#. module: construction_boq
+#: model_terms:ir.ui.view,arch_db:construction_boq.view_construction_site_form_boq
+msgid "Bill of Quantities"
+msgstr "Bordereau des quantités"
+
+#. module: construction_boq
+#: model:ir.model,name:construction_boq.model_construction_boq_line
+msgid "Bill of Quantities Line"
+msgstr "Ligne du bordereau des quantités"
+
+#. module: construction_boq
+#: model:ir.model.fields,field_description:construction_boq.field_construction_site__boq_line_ids
+msgid "BoQ Lines"
+msgstr "Lignes du bordereau"
+
+#. module: construction_boq
+#: model:ir.model.fields,field_description:construction_boq.field_construction_site__boq_total
+msgid "BoQ Total"
+msgstr "Total du bordereau"
+
+#. module: construction_boq
+#: model:ir.model.fields,field_description:construction_boq.field_construction_site__budget_variance
+msgid "Budget Remaining"
+msgstr "Budget restant"
+
+#. module: construction_boq
+#: model:ir.model.fields,help:construction_boq.field_construction_site__budget_variance
+msgid "Budget minus bill of quantities total. Negative means over budget."
+msgstr "Budget moins le total du bordereau des quantités. Une valeur négative signifie un dépassement de budget."
+
+#. module: construction_boq
+#: model:ir.model.fields,field_description:construction_boq.field_construction_boq_line__company_id
+msgid "Company"
+msgstr "Société"
+
+#. module: construction_boq
+#: model:ir.model,name:construction_boq.model_construction_site
+msgid "Construction Site"
+msgstr "Chantier"
+
+#. module: construction_boq
+#: model_terms:ir.ui.view,arch_db:construction_boq.view_construction_site_form_boq
+msgid "Create Quotation"
+msgstr "Créer un devis"
+
+#. module: construction_boq
+#: model:ir.model.fields,field_description:construction_boq.field_construction_boq_line__create_uid
+msgid "Created by"
+msgstr "Créé par"
+
+#. module: construction_boq
+#: model:ir.model.fields,field_description:construction_boq.field_construction_boq_line__create_date
+msgid "Created on"
+msgstr "Créé le"
+
+#. module: construction_boq
+#: model:ir.model.fields,field_description:construction_boq.field_construction_boq_line__currency_id
+msgid "Currency"
+msgstr "Devise"
+
+#. module: construction_boq
+#: model:ir.model.fields,field_description:construction_boq.field_construction_boq_line__name
+msgid "Description"
+msgstr "Description"
+
+#. module: construction_boq
+#: model:ir.model.fields,field_description:construction_boq.field_construction_boq_line__display_name
+#: model:ir.model.fields,field_description:construction_boq.field_construction_site__display_name
+msgid "Display Name"
+msgstr "Nom affiché"
+
+#. module: construction_boq
+#: model:ir.model.fields,field_description:construction_boq.field_construction_boq_line__id
+#: model:ir.model.fields,field_description:construction_boq.field_construction_site__id
+msgid "ID"
+msgstr "ID"
+
+#. module: construction_boq
+#: model:ir.model.fields,field_description:construction_boq.field_construction_boq_line__write_uid
+msgid "Last Updated by"
+msgstr "Dernière mise à jour par"
+
+#. module: construction_boq
+#: model:ir.model.fields,field_description:construction_boq.field_construction_boq_line__write_date
+msgid "Last Updated on"
+msgstr "Dernière mise à jour le"
+
+#. module: construction_boq
+#: model:ir.model.fields,help:construction_boq.field_construction_site__markup
+msgid "Margin applied to cost when creating a quotation."
+msgstr "Marge appliquée au coût lors de la création d'un devis."
+
+#. module: construction_boq
+#: model:ir.model.fields,field_description:construction_boq.field_construction_site__markup
+msgid "Markup (%)"
+msgstr "Marge (%)"
+
+#. module: construction_boq
+#: model:ir.model.fields,field_description:construction_boq.field_construction_boq_line__product_id
+msgid "Product"
+msgstr "Produit"
+
+#. module: construction_boq
+#: model:ir.model.fields,field_description:construction_boq.field_construction_boq_line__quantity
+msgid "Quantity"
+msgstr "Quantité"
+
+#. module: construction_boq
+#. odoo-python
+#: code:addons/construction_boq/models/construction_boq_line.py:0
+msgid "Quantity and unit cost cannot be negative."
+msgstr "La quantité et le coût unitaire ne peuvent pas être négatifs."
+
+#. module: construction_boq
+#: model:ir.model.fields,field_description:construction_boq.field_construction_site__sale_order_id
+msgid "Quotation"
+msgstr "Devis"
+
+#. module: construction_boq
+#: model:ir.model.fields,field_description:construction_boq.field_construction_boq_line__sequence
+msgid "Sequence"
+msgstr "Séquence"
+
+#. module: construction_boq
+#. odoo-python
+#: code:addons/construction_boq/models/construction_site.py:0
+msgid "Set a client on the site before creating a quotation."
+msgstr "Renseignez un client sur le chantier avant de créer un devis."
+
+#. module: construction_boq
+#: model:ir.model.fields,field_description:construction_boq.field_construction_boq_line__site_id
+msgid "Site"
+msgstr "Chantier"
+
+#. module: construction_boq
+#: model:ir.model.fields,field_description:construction_boq.field_construction_boq_line__subtotal
+msgid "Subtotal"
+msgstr "Sous-total"
+
+#. module: construction_boq
+#: model_terms:ir.ui.view,arch_db:construction_boq.view_construction_site_form_boq
+msgid "Total"
+msgstr "Total"
+
+#. module: construction_boq
+#: model:ir.model.fields,field_description:construction_boq.field_construction_boq_line__uom_id
+msgid "Unit"
+msgstr "Unité"
+
+#. module: construction_boq
+#: model:ir.model.fields,field_description:construction_boq.field_construction_boq_line__unit_cost
+msgid "Unit Cost"
+msgstr "Coût unitaire"

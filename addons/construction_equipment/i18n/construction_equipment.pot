@@ -1,0 +1,382 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* construction_equipment
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 19.0-20261015\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-10-24 18:54+0000\n"
+"PO-Revision-Date: 2026-10-24 18:54+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: construction_equipment
+#. odoo-python
+#: code:addons/construction_equipment/models/construction_equipment.py:0
+msgid ""
+"%(equipment)s is already assigned to %(site)s from %(start)s to %(end)s."
+msgstr ""
+
+#. module: construction_equipment
+#. odoo-python
+#: code:addons/construction_equipment/models/construction_equipment.py:0
+msgid "'To' cannot be before 'From'."
+msgstr ""
+
+#. module: construction_equipment
+#: model:ir.model.fields,field_description:construction_equipment.field_construction_equipment__message_needaction
+msgid "Action Needed"
+msgstr ""
+
+#. module: construction_equipment
+#: model:ir.model.fields,field_description:construction_equipment.field_construction_equipment__active
+msgid "Active"
+msgstr ""
+
+#. module: construction_equipment
+#: model_terms:ir.ui.view,arch_db:construction_equipment.view_construction_equipment_search
+msgid "Archived"
+msgstr ""
+
+#. module: construction_equipment
+#: model:ir.model.fields,field_description:construction_equipment.field_construction_equipment__usage_ids
+#: model_terms:ir.ui.view,arch_db:construction_equipment.view_construction_equipment_form
+msgid "Assignments"
+msgstr ""
+
+#. module: construction_equipment
+#: model:ir.model.fields,field_description:construction_equipment.field_construction_equipment__message_attachment_count
+msgid "Attachment Count"
+msgstr ""
+
+#. module: construction_equipment
+#: model:ir.model.fields.selection,name:construction_equipment.selection__construction_equipment__state__available
+#: model_terms:ir.ui.view,arch_db:construction_equipment.view_construction_equipment_search
+msgid "Available"
+msgstr ""
+
+#. module: construction_equipment
+#: model:ir.model.fields,field_description:construction_equipment.field_construction_equipment__category
+#: model_terms:ir.ui.view,arch_db:construction_equipment.view_construction_equipment_search
+msgid "Category"
+msgstr ""
+
+#. module: construction_equipment
+#: model:ir.model.fields,field_description:construction_equipment.field_construction_equipment__company_id
+#: model:ir.model.fields,field_description:construction_equipment.field_construction_equipment_usage__company_id
+msgid "Company"
+msgstr ""
+
+#. module: construction_equipment
+#: model:ir.model.fields.selection,name:construction_equipment.selection__construction_equipment__category__mixer
+msgid "Concrete / mixer"
+msgstr ""
+
+#. module: construction_equipment
+#: model:ir.model,name:construction_equipment.model_construction_equipment
+msgid "Construction Equipment"
+msgstr ""
+
+#. module: construction_equipment
+#: model:ir.model,name:construction_equipment.model_construction_site
+msgid "Construction Site"
+msgstr ""
+
+#. module: construction_equipment
+#: model:ir.model.fields,field_description:construction_equipment.field_construction_equipment_usage__cost
+#: model_terms:ir.ui.view,arch_db:construction_equipment.report_site_cost_equipment
+msgid "Cost"
+msgstr ""
+
+#. module: construction_equipment
+#: model:ir.model.fields.selection,name:construction_equipment.selection__construction_equipment__category__crane
+msgid "Crane / lifting"
+msgstr ""
+
+#. module: construction_equipment
+#: model:ir.model.fields,field_description:construction_equipment.field_construction_equipment__create_uid
+#: model:ir.model.fields,field_description:construction_equipment.field_construction_equipment_usage__create_uid
+msgid "Created by"
+msgstr ""
+
+#. module: construction_equipment
+#: model:ir.model.fields,field_description:construction_equipment.field_construction_equipment__create_date
+#: model:ir.model.fields,field_description:construction_equipment.field_construction_equipment_usage__create_date
+msgid "Created on"
+msgstr ""
+
+#. module: construction_equipment
+#: model:ir.model.fields,field_description:construction_equipment.field_construction_equipment__currency_id
+#: model:ir.model.fields,field_description:construction_equipment.field_construction_equipment_usage__currency_id
+msgid "Currency"
+msgstr ""
+
+#. module: construction_equipment
+#: model:ir.model.fields,field_description:construction_equipment.field_construction_equipment_usage__daily_rate
+msgid "Daily Rate"
+msgstr ""
+
+#. module: construction_equipment
+#: model:ir.model.fields,field_description:construction_equipment.field_construction_equipment__daily_rate
+#: model_terms:ir.ui.view,arch_db:construction_equipment.report_site_cost_equipment
+msgid "Daily rate"
+msgstr ""
+
+#. module: construction_equipment
+#: model:ir.model.fields,field_description:construction_equipment.field_construction_equipment_usage__days
+#: model_terms:ir.ui.view,arch_db:construction_equipment.report_site_cost_equipment
+msgid "Days"
+msgstr ""
+
+#. module: construction_equipment
+#: model:ir.model.fields,help:construction_equipment.field_construction_site__equipment_cost
+msgid "Days on site multiplied by the daily rate, for all assigned equipment."
+msgstr ""
+
+#. module: construction_equipment
+#: model:ir.model.fields,help:construction_equipment.field_construction_equipment__daily_rate
+msgid "Default cost per day charged to a site. Can be changed per assignment."
+msgstr ""
+
+#. module: construction_equipment
+#: model:ir.model.fields,field_description:construction_equipment.field_construction_equipment__display_name
+#: model:ir.model.fields,field_description:construction_equipment.field_construction_equipment_usage__display_name
+#: model:ir.model.fields,field_description:construction_equipment.field_construction_site__display_name
+msgid "Display Name"
+msgstr ""
+
+#. module: construction_equipment
+#: model:ir.actions.act_window,name:construction_equipment.action_construction_equipment
+#: model:ir.model.fields,field_description:construction_equipment.field_construction_equipment_usage__equipment_id
+#: model:ir.model.fields,field_description:construction_equipment.field_construction_site__equipment_usage_ids
+#: model:ir.ui.menu,name:construction_equipment.menu_construction_equipment
+#: model_terms:ir.ui.view,arch_db:construction_equipment.report_site_cost_equipment
+#: model_terms:ir.ui.view,arch_db:construction_equipment.view_construction_site_cost_list_equipment
+#: model_terms:ir.ui.view,arch_db:construction_equipment.view_construction_site_form_equipment
+msgid "Equipment"
+msgstr ""
+
+#. module: construction_equipment
+#: model:ir.model,name:construction_equipment.model_construction_equipment_usage
+msgid "Equipment Assignment to a Site"
+msgstr ""
+
+#. module: construction_equipment
+#: model:ir.model.fields,field_description:construction_equipment.field_construction_site__equipment_cost
+msgid "Equipment Cost"
+msgstr ""
+
+#. module: construction_equipment
+#: model_terms:ir.ui.view,arch_db:construction_equipment.view_construction_equipment_form
+msgid "Equipment name"
+msgstr ""
+
+#. module: construction_equipment
+#: model_terms:ir.ui.view,arch_db:construction_equipment.report_site_cost_equipment
+msgid "Equipment total"
+msgstr ""
+
+#. module: construction_equipment
+#: model:ir.model.fields.selection,name:construction_equipment.selection__construction_equipment__category__excavator
+msgid "Excavator / loader"
+msgstr ""
+
+#. module: construction_equipment
+#: model:ir.model.fields,field_description:construction_equipment.field_construction_equipment__code
+msgid "Fleet number"
+msgstr ""
+
+#. module: construction_equipment
+#: model:ir.model.fields,field_description:construction_equipment.field_construction_equipment__message_follower_ids
+msgid "Followers"
+msgstr ""
+
+#. module: construction_equipment
+#: model:ir.model.fields,field_description:construction_equipment.field_construction_equipment__message_partner_ids
+msgid "Followers (Partners)"
+msgstr ""
+
+#. module: construction_equipment
+#: model:ir.model.fields,field_description:construction_equipment.field_construction_equipment_usage__date_from
+#: model_terms:ir.ui.view,arch_db:construction_equipment.report_site_cost_equipment
+msgid "From"
+msgstr ""
+
+#. module: construction_equipment
+#: model:ir.model.fields,field_description:construction_equipment.field_construction_equipment__has_message
+msgid "Has Message"
+msgstr ""
+
+#. module: construction_equipment
+#: model:ir.model.fields,field_description:construction_equipment.field_construction_equipment__id
+#: model:ir.model.fields,field_description:construction_equipment.field_construction_equipment_usage__id
+#: model:ir.model.fields,field_description:construction_equipment.field_construction_site__id
+msgid "ID"
+msgstr ""
+
+#. module: construction_equipment
+#: model:ir.model.fields,help:construction_equipment.field_construction_equipment__message_needaction
+msgid "If checked, new messages require your attention."
+msgstr ""
+
+#. module: construction_equipment
+#: model:ir.model.fields,help:construction_equipment.field_construction_equipment__message_has_error
+#: model:ir.model.fields,help:construction_equipment.field_construction_equipment__message_has_sms_error
+msgid "If checked, some messages have a delivery error."
+msgstr ""
+
+#. module: construction_equipment
+#: model:ir.model.fields.selection,name:construction_equipment.selection__construction_equipment__state__maintenance
+msgid "In maintenance"
+msgstr ""
+
+#. module: construction_equipment
+#: model:ir.model.fields,field_description:construction_equipment.field_construction_equipment__message_is_follower
+msgid "Is Follower"
+msgstr ""
+
+#. module: construction_equipment
+#: model:ir.model.fields,field_description:construction_equipment.field_construction_equipment__write_uid
+#: model:ir.model.fields,field_description:construction_equipment.field_construction_equipment_usage__write_uid
+msgid "Last Updated by"
+msgstr ""
+
+#. module: construction_equipment
+#: model:ir.model.fields,field_description:construction_equipment.field_construction_equipment__write_date
+#: model:ir.model.fields,field_description:construction_equipment.field_construction_equipment_usage__write_date
+msgid "Last Updated on"
+msgstr ""
+
+#. module: construction_equipment
+#: model:ir.model.fields,field_description:construction_equipment.field_construction_equipment__message_has_error
+msgid "Message Delivery error"
+msgstr ""
+
+#. module: construction_equipment
+#: model:ir.model.fields,field_description:construction_equipment.field_construction_equipment__message_ids
+msgid "Messages"
+msgstr ""
+
+#. module: construction_equipment
+#: model:ir.model.fields,field_description:construction_equipment.field_construction_equipment__name
+msgid "Name"
+msgstr ""
+
+#. module: construction_equipment
+#: model_terms:ir.ui.view,arch_db:construction_equipment.report_site_cost_equipment
+msgid "No equipment assigned."
+msgstr ""
+
+#. module: construction_equipment
+#: model:ir.model.fields,field_description:construction_equipment.field_construction_equipment__notes
+#: model_terms:ir.ui.view,arch_db:construction_equipment.view_construction_equipment_form
+msgid "Notes"
+msgstr ""
+
+#. module: construction_equipment
+#: model:ir.model.fields,field_description:construction_equipment.field_construction_equipment__message_needaction_counter
+msgid "Number of Actions"
+msgstr ""
+
+#. module: construction_equipment
+#: model:ir.model.fields,field_description:construction_equipment.field_construction_equipment__message_has_error_counter
+msgid "Number of errors"
+msgstr ""
+
+#. module: construction_equipment
+#: model:ir.model.fields,help:construction_equipment.field_construction_equipment__message_needaction_counter
+msgid "Number of messages requiring action"
+msgstr ""
+
+#. module: construction_equipment
+#: model:ir.model.fields,help:construction_equipment.field_construction_equipment__message_has_error_counter
+msgid "Number of messages with delivery error"
+msgstr ""
+
+#. module: construction_equipment
+#: model:ir.model.fields.selection,name:construction_equipment.selection__construction_equipment__category__other
+msgid "Other"
+msgstr ""
+
+#. module: construction_equipment
+#: model:ir.model.fields.selection,name:construction_equipment.selection__construction_equipment__category__tool
+msgid "Power tools"
+msgstr ""
+
+#. module: construction_equipment
+#: model:ir.model.fields,field_description:construction_equipment.field_construction_equipment__rating_ids
+msgid "Ratings"
+msgstr ""
+
+#. module: construction_equipment
+#: model_terms:ir.actions.act_window,help:construction_equipment.action_construction_equipment
+msgid "Register your first piece of equipment"
+msgstr ""
+
+#. module: construction_equipment
+#: model:ir.model.fields,field_description:construction_equipment.field_construction_equipment__message_has_sms_error
+msgid "SMS Delivery error"
+msgstr ""
+
+#. module: construction_equipment
+#: model:ir.model.fields.selection,name:construction_equipment.selection__construction_equipment__category__scaffolding
+msgid "Scaffolding / formwork"
+msgstr ""
+
+#. module: construction_equipment
+#: model:ir.model.fields,field_description:construction_equipment.field_construction_equipment_usage__site_id
+msgid "Site"
+msgstr ""
+
+#. module: construction_equipment
+#: model:ir.model.fields,field_description:construction_equipment.field_construction_equipment__state
+msgid "State"
+msgstr ""
+
+#. module: construction_equipment
+#: model_terms:ir.ui.view,arch_db:construction_equipment.view_construction_equipment_search
+msgid "Status"
+msgstr ""
+
+#. module: construction_equipment
+#. odoo-python
+#: code:addons/construction_equipment/models/construction_equipment.py:0
+msgid "The daily rate cannot be negative."
+msgstr ""
+
+#. module: construction_equipment
+#: model:ir.model.constraint,message:construction_equipment.constraint_construction_equipment_code_company_uniq
+msgid "The fleet number must be unique per company."
+msgstr ""
+
+#. module: construction_equipment
+#: model:ir.model.fields,field_description:construction_equipment.field_construction_equipment_usage__date_to
+#: model_terms:ir.ui.view,arch_db:construction_equipment.report_site_cost_equipment
+msgid "To"
+msgstr ""
+
+#. module: construction_equipment
+#: model_terms:ir.ui.view,arch_db:construction_equipment.view_construction_equipment_form
+#: model_terms:ir.ui.view,arch_db:construction_equipment.view_construction_site_form_equipment
+msgid "Total"
+msgstr ""
+
+#. module: construction_equipment
+#: model:ir.model.fields.selection,name:construction_equipment.selection__construction_equipment__category__truck
+msgid "Truck / transport"
+msgstr ""
+
+#. module: construction_equipment
+#: model:ir.model.fields,field_description:construction_equipment.field_construction_equipment__website_message_ids
+msgid "Website Messages"
+msgstr ""
+
+#. module: construction_equipment
+#: model:ir.model.fields,help:construction_equipment.field_construction_equipment__website_message_ids
+msgid "Website communication history"
+msgstr ""

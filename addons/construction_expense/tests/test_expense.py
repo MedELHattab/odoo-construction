@@ -74,3 +74,18 @@ class TestConstructionExpense(TransactionCase):
         self.assertIn("Approved employee expenses", text)
         self.assertIn("Fuel", text)
         self.assertEqual(self.site.action_view_expenses()["domain"], [("site_id", "=", self.site.id)])
+
+    def test_report_renders_in_every_active_language(self):
+        """Inherited report sections must not depend on English text, or printing breaks
+        as soon as a user works in French or Arabic."""
+        languages = self.env["res.lang"].search([("active", "=", True)]).mapped("code")
+        self.assertTrue(languages)
+        for lang in languages:
+            html, _fmt = self.env["ir.actions.report"].with_context(lang=lang)._render_qweb_html(
+                "construction_report.report_site_cost", self.site.ids
+            )
+            text = html.decode()
+            self.assertIn(self.site.name, text, f"report did not render for {lang}")
+            self.assertIn(self.site.code, text, f"site code missing in {lang}")
+            # the sections injected by other modules are all present, whatever the language
+            self.assertGreaterEqual(text.count("<h5"), 6, f"sections missing in {lang}")

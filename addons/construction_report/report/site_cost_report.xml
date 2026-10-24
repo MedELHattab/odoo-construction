@@ -76,7 +76,7 @@
                             </tbody>
                         </table>
 
-                        <h5 class="mt-4">Progress</h5>
+                        <h5 id="section_progress" class="mt-4">Progress</h5>
                         <table class="table table-sm">
                             <tbody>
                                 <tr>

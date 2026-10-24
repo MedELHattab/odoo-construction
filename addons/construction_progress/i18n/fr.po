@@ -1,0 +1,98 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* construction_progress
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 19.0-20261015\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-10-24 18:57+0000\n"
+"PO-Revision-Date: 2026-10-24 18:57+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: construction_progress
+#: model:ir.model,name:construction_progress.model_construction_boq_line
+msgid "Bill of Quantities Line"
+msgstr "Ligne du bordereau des quantités"
+
+#. module: construction_progress
+#: model:ir.model.fields,help:construction_progress.field_construction_site__progress_percent
+msgid "Completed share of the bill of quantities, weighted by cost."
+msgstr "Part réalisée du bordereau des quantités, pondérée par le coût."
+
+#. module: construction_progress
+#: model:ir.model,name:construction_progress.model_construction_site
+msgid "Construction Site"
+msgstr "Chantier"
+
+#. module: construction_progress
+#: model:ir.model.fields,field_description:construction_progress.field_construction_site__cost_variance
+msgid "Cost Variance"
+msgstr "Écart de coût"
+
+#. module: construction_progress
+#: model_terms:ir.ui.view,arch_db:construction_progress.view_construction_site_cost_pivot
+msgid "Cost analysis"
+msgstr "Analyse des coûts"
+
+#. module: construction_progress
+#: model_terms:ir.ui.view,arch_db:construction_progress.view_construction_site_cost_graph
+msgid "Cost by site"
+msgstr "Coûts par chantier"
+
+#. module: construction_progress
+#: model:ir.model.fields,field_description:construction_progress.field_construction_boq_line__display_name
+#: model:ir.model.fields,field_description:construction_progress.field_construction_site__display_name
+msgid "Display Name"
+msgstr "Nom affiché"
+
+#. module: construction_progress
+#: model_terms:ir.ui.view,arch_db:construction_progress.view_construction_site_cost_list_progress
+msgid "Earned"
+msgstr "Acquis"
+
+#. module: construction_progress
+#: model:ir.model.fields,field_description:construction_progress.field_construction_boq_line__earned_value
+#: model:ir.model.fields,field_description:construction_progress.field_construction_site__earned_value
+msgid "Earned Value"
+msgstr "Valeur acquise"
+
+#. module: construction_progress
+#: model:ir.model.fields,help:construction_progress.field_construction_site__cost_variance
+msgid ""
+"Earned value minus actual cost. Negative means you have spent more than the "
+"work done is worth."
+msgstr "Valeur acquise moins coût réel. Une valeur négative signifie que vous avez dépensé plus que la valeur des travaux réalisés."
+
+#. module: construction_progress
+#: model:ir.model.fields,field_description:construction_progress.field_construction_boq_line__id
+#: model:ir.model.fields,field_description:construction_progress.field_construction_site__id
+msgid "ID"
+msgstr "ID"
+
+#. module: construction_progress
+#: model:ir.model.fields,help:construction_progress.field_construction_boq_line__earned_value
+msgid "Planned cost of the work completed so far (subtotal x progress)."
+msgstr "Coût prévu des travaux réalisés à ce jour (sous-total x avancement)."
+
+#. module: construction_progress
+#: model:ir.model.fields,help:construction_progress.field_construction_site__earned_value
+msgid "Planned cost of the work completed so far."
+msgstr "Coût prévu des travaux réalisés à ce jour."
+
+#. module: construction_progress
+#: model:ir.model.fields,field_description:construction_progress.field_construction_boq_line__progress
+#: model:ir.model.fields,field_description:construction_progress.field_construction_site__progress_percent
+msgid "Progress (%)"
+msgstr "Avancement (%)"
+
+#. module: construction_progress
+#. odoo-python
+#: code:addons/construction_progress/models/construction_boq_line.py:0
+msgid "Progress must be between 0 and 100."
+msgstr "L'avancement doit être compris entre 0 et 100."

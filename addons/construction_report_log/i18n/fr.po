@@ -1,0 +1,66 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* construction_report_log
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 19.0-20261015\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-10-24 18:57+0000\n"
+"PO-Revision-Date: 2026-10-24 18:57+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: construction_report_log
+#: model_terms:ir.ui.view,arch_db:construction_report_log.report_site_cost_logs
+msgid "Daily logs"
+msgstr "Journaux de chantier"
+
+#. module: construction_report_log
+#: model_terms:ir.ui.view,arch_db:construction_report_log.report_site_cost_logs
+msgid "Date"
+msgstr "Date"
+
+#. module: construction_report_log
+#: model_terms:ir.ui.view,arch_db:construction_report_log.report_site_cost_logs
+msgid "Incident:"
+msgstr "Incident :"
+
+#. module: construction_report_log
+#: model_terms:ir.ui.view,arch_db:construction_report_log.report_site_cost_logs
+msgid "Issues / incident"
+msgstr "Problèmes / incident"
+
+#. module: construction_report_log
+#: model_terms:ir.ui.view,arch_db:construction_report_log.report_site_cost_logs
+msgid "No daily logs recorded."
+msgstr "Aucun journal de chantier enregistré."
+
+#. module: construction_report_log
+#: model_terms:ir.ui.view,arch_db:construction_report_log.report_site_cost_logs
+msgid "Weather"
+msgstr "Météo"
+
+#. module: construction_report_log
+#: model_terms:ir.ui.view,arch_db:construction_report_log.report_site_cost_logs
+msgid "Work done"
+msgstr "Travaux réalisés"
+
+#. module: construction_report_log
+#: model_terms:ir.ui.view,arch_db:construction_report_log.report_site_cost_logs
+msgid "Workers"
+msgstr "Ouvriers"
+
+#. module: construction_report_log
+#: model_terms:ir.ui.view,arch_db:construction_report_log.report_site_cost_logs
+msgid "log(s), last on"
+msgstr "journal(aux), le dernier le"
+
+#. module: construction_report_log
+#: model_terms:ir.ui.view,arch_db:construction_report_log.report_site_cost_logs
+msgid "safety incident(s) recorded."
+msgstr "incident(s) de sécurité enregistré(s)."

@@ -1,0 +1,330 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* construction_log
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 19.0-20261015\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-10-24 18:57+0000\n"
+"PO-Revision-Date: 2026-10-24 18:57+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: construction_log
+#: model:ir.model.fields,field_description:construction_log.field_construction_site_log__message_needaction
+msgid "Action Needed"
+msgstr "Action requise"
+
+#. module: construction_log
+#: model:ir.model.fields,field_description:construction_log.field_construction_site_log__message_attachment_count
+msgid "Attachment Count"
+msgstr "Nombre de pièces jointes"
+
+#. module: construction_log
+#: model:ir.model.fields,field_description:construction_log.field_construction_site_log__author_id
+msgid "Author"
+msgstr "Auteur"
+
+#. module: construction_log
+#: model:ir.model.fields.selection,name:construction_log.selection__construction_site_log__weather__cloudy
+msgid "Cloudy"
+msgstr "Nuageux"
+
+#. module: construction_log
+#: model:ir.model.fields.selection,name:construction_log.selection__construction_site_log__weather__cold
+msgid "Cold / frost"
+msgstr "Froid / gel"
+
+#. module: construction_log
+#: model:ir.model.fields,field_description:construction_log.field_construction_site_log__company_id
+msgid "Company"
+msgstr "Société"
+
+#. module: construction_log
+#: model:ir.model,name:construction_log.model_construction_site
+msgid "Construction Site"
+msgstr "Chantier"
+
+#. module: construction_log
+#: model:ir.model,name:construction_log.model_construction_site_log
+msgid "Construction Site Daily Log"
+msgstr "Journal de chantier quotidien"
+
+#. module: construction_log
+#: model:ir.model.fields,field_description:construction_log.field_construction_site_log__create_uid
+msgid "Created by"
+msgstr "Créé par"
+
+#. module: construction_log
+#: model:ir.model.fields,field_description:construction_log.field_construction_site_log__create_date
+msgid "Created on"
+msgstr "Créé le"
+
+#. module: construction_log
+#. odoo-python
+#: code:addons/construction_log/models/construction_site.py:0
+#: model:ir.actions.act_window,name:construction_log.action_construction_site_log
+#: model:ir.model.fields,field_description:construction_log.field_construction_site__log_ids
+#: model:ir.ui.menu,name:construction_log.menu_construction_site_log
+#: model_terms:ir.ui.view,arch_db:construction_log.view_construction_site_form_log
+msgid "Daily Logs"
+msgstr "Journaux de chantier"
+
+#. module: construction_log
+#: model:ir.model.fields,field_description:construction_log.field_construction_site_log__date
+msgid "Date"
+msgstr "Date"
+
+#. module: construction_log
+#. odoo-python
+#: code:addons/construction_log/models/construction_site_log.py:0
+msgid "Describe the safety incident before saving the log."
+msgstr "Décrivez l'incident de sécurité avant d'enregistrer le journal."
+
+#. module: construction_log
+#: model:ir.model.fields,field_description:construction_log.field_construction_site__display_name
+#: model:ir.model.fields,field_description:construction_log.field_construction_site_log__display_name
+msgid "Display Name"
+msgstr "Nom affiché"
+
+#. module: construction_log
+#: model:ir.model.fields.selection,name:construction_log.selection__construction_site_log__weather__heat
+msgid "Extreme heat"
+msgstr "Chaleur extrême"
+
+#. module: construction_log
+#: model:ir.model.fields,field_description:construction_log.field_construction_site_log__message_follower_ids
+msgid "Followers"
+msgstr "Abonnés"
+
+#. module: construction_log
+#: model:ir.model.fields,field_description:construction_log.field_construction_site_log__message_partner_ids
+msgid "Followers (Partners)"
+msgstr "Abonnés (partenaires)"
+
+#. module: construction_log
+#: model:ir.model.fields,field_description:construction_log.field_construction_site_log__has_message
+msgid "Has Message"
+msgstr "A un message"
+
+#. module: construction_log
+#: model:ir.model.fields,field_description:construction_log.field_construction_site__id
+#: model:ir.model.fields,field_description:construction_log.field_construction_site_log__id
+msgid "ID"
+msgstr "ID"
+
+#. module: construction_log
+#: model:ir.model.fields,help:construction_log.field_construction_site_log__message_needaction
+msgid "If checked, new messages require your attention."
+msgstr "Si coché, de nouveaux messages requièrent votre attention."
+
+#. module: construction_log
+#: model:ir.model.fields,help:construction_log.field_construction_site_log__message_has_error
+#: model:ir.model.fields,help:construction_log.field_construction_site_log__message_has_sms_error
+msgid "If checked, some messages have a delivery error."
+msgstr "Si coché, certains messages ont une erreur d'envoi."
+
+#. module: construction_log
+#: model_terms:ir.ui.view,arch_db:construction_log.view_construction_site_log_list
+msgid "Incident"
+msgstr "Incident"
+
+#. module: construction_log
+#: model:ir.model.fields,field_description:construction_log.field_construction_site__incident_count
+msgid "Incident Count"
+msgstr "Nombre d'incidents"
+
+#. module: construction_log
+#: model:ir.model.fields,field_description:construction_log.field_construction_site_log__incident_details
+msgid "Incident Details"
+msgstr "Détails de l'incident"
+
+#. module: construction_log
+#: model:ir.model.fields,field_description:construction_log.field_construction_site_log__message_is_follower
+msgid "Is Follower"
+msgstr "Est abonné"
+
+#. module: construction_log
+#: model:ir.model.fields,field_description:construction_log.field_construction_site_log__issues
+msgid "Issues / delays"
+msgstr "Problèmes / retards"
+
+#. module: construction_log
+#: model:ir.model.fields,field_description:construction_log.field_construction_site__last_log_date
+msgid "Last Log Date"
+msgstr "Date du dernier journal"
+
+#. module: construction_log
+#: model:ir.model.fields,field_description:construction_log.field_construction_site_log__write_uid
+msgid "Last Updated by"
+msgstr "Dernière mise à jour par"
+
+#. module: construction_log
+#: model:ir.model.fields,field_description:construction_log.field_construction_site_log__write_date
+msgid "Last Updated on"
+msgstr "Dernière mise à jour le"
+
+#. module: construction_log
+#: model:ir.model.fields,field_description:construction_log.field_construction_site__log_count
+msgid "Log Count"
+msgstr "Nombre de journaux"
+
+#. module: construction_log
+#: model:ir.model.fields,field_description:construction_log.field_construction_site_log__message_has_error
+msgid "Message Delivery error"
+msgstr "Erreur d'envoi du message"
+
+#. module: construction_log
+#: model:ir.model.fields,field_description:construction_log.field_construction_site_log__message_ids
+msgid "Messages"
+msgstr "Messages"
+
+#. module: construction_log
+#: model_terms:ir.ui.view,arch_db:construction_log.view_construction_site_log_search
+msgid "Month"
+msgstr "Mois"
+
+#. module: construction_log
+#: model_terms:ir.ui.view,arch_db:construction_log.view_construction_site_log_search
+msgid "My logs"
+msgstr "Mes journaux"
+
+#. module: construction_log
+#: model:ir.model.fields,field_description:construction_log.field_construction_site_log__message_needaction_counter
+msgid "Number of Actions"
+msgstr "Nombre d'actions"
+
+#. module: construction_log
+#: model:ir.model.fields,field_description:construction_log.field_construction_site_log__message_has_error_counter
+msgid "Number of errors"
+msgstr "Nombre d'erreurs"
+
+#. module: construction_log
+#: model:ir.model.fields,help:construction_log.field_construction_site_log__message_needaction_counter
+msgid "Number of messages requiring action"
+msgstr "Nombre de messages nécessitant une action"
+
+#. module: construction_log
+#: model:ir.model.fields,help:construction_log.field_construction_site_log__message_has_error_counter
+msgid "Number of messages with delivery error"
+msgstr "Nombre de messages avec erreur d'envoi"
+
+#. module: construction_log
+#: model:ir.model.fields,field_description:construction_log.field_construction_site_log__attachment_ids
+#: model_terms:ir.ui.view,arch_db:construction_log.view_construction_site_log_form
+msgid "Photos & documents"
+msgstr "Photos et documents"
+
+#. module: construction_log
+#: model:ir.model.fields.selection,name:construction_log.selection__construction_site_log__weather__rain
+msgid "Rain"
+msgstr "Pluie"
+
+#. module: construction_log
+#: model:ir.model.fields,field_description:construction_log.field_construction_site_log__rating_ids
+msgid "Ratings"
+msgstr "Évaluations"
+
+#. module: construction_log
+#: model:ir.model.fields,field_description:construction_log.field_construction_site_log__message_has_sms_error
+msgid "SMS Delivery error"
+msgstr "Erreur d'envoi SMS"
+
+#. module: construction_log
+#: model:ir.model.fields,field_description:construction_log.field_construction_site_log__safety_incident
+msgid "Safety incident"
+msgstr "Incident de sécurité"
+
+#. module: construction_log
+#: model_terms:ir.ui.view,arch_db:construction_log.view_construction_site_log_search
+msgid "Safety incidents"
+msgstr "Incidents de sécurité"
+
+#. module: construction_log
+#: model:ir.model.fields,field_description:construction_log.field_construction_site_log__site_id
+#: model_terms:ir.ui.view,arch_db:construction_log.view_construction_site_log_search
+msgid "Site"
+msgstr "Chantier"
+
+#. module: construction_log
+#: model:ir.model.fields,help:construction_log.field_construction_site_log__attachment_ids
+msgid "Site photos, delivery notes or any supporting document."
+msgstr "Photos du chantier, bons de livraison ou tout autre justificatif."
+
+#. module: construction_log
+#: model:ir.model.fields.selection,name:construction_log.selection__construction_site_log__weather__storm
+msgid "Storm"
+msgstr "Orage"
+
+#. module: construction_log
+#: model:ir.model.fields.selection,name:construction_log.selection__construction_site_log__weather__wind
+msgid "Strong wind"
+msgstr "Vent fort"
+
+#. module: construction_log
+#: model:ir.model.fields.selection,name:construction_log.selection__construction_site_log__weather__sunny
+msgid "Sunny"
+msgstr "Ensoleillé"
+
+#. module: construction_log
+#. odoo-python
+#: code:addons/construction_log/models/construction_site_log.py:0
+msgid "The number of workers cannot be negative."
+msgstr "Le nombre d'ouvriers ne peut pas être négatif."
+
+#. module: construction_log
+#: model:ir.model.constraint,message:construction_log.constraint_construction_site_log_site_date_uniq
+msgid "There is already a log for this site on that date."
+msgstr "Il existe déjà un journal pour ce chantier à cette date."
+
+#. module: construction_log
+#: model:ir.model.fields,field_description:construction_log.field_construction_site_log__weather
+#: model_terms:ir.ui.view,arch_db:construction_log.view_construction_site_log_search
+msgid "Weather"
+msgstr "Météo"
+
+#. module: construction_log
+#: model:ir.model.fields,field_description:construction_log.field_construction_site_log__website_message_ids
+msgid "Website Messages"
+msgstr "Messages du site web"
+
+#. module: construction_log
+#: model:ir.model.fields,help:construction_log.field_construction_site_log__website_message_ids
+msgid "Website communication history"
+msgstr "Historique des communications du site web"
+
+#. module: construction_log
+#: model_terms:ir.ui.view,arch_db:construction_log.view_construction_site_log_search
+msgid "With issues"
+msgstr "Avec problèmes"
+
+#. module: construction_log
+#: model:ir.model.fields,field_description:construction_log.field_construction_site_log__work_done
+msgid "Work done"
+msgstr "Travaux réalisés"
+
+#. module: construction_log
+#: model_terms:ir.ui.view,arch_db:construction_log.view_construction_site_log_list
+msgid "Worker-days"
+msgstr "Jours-ouvriers"
+
+#. module: construction_log
+#: model:ir.model.fields,field_description:construction_log.field_construction_site_log__workers_count
+msgid "Workers on site"
+msgstr "Ouvriers sur chantier"
+
+#. module: construction_log
+#: model_terms:ir.actions.act_window,help:construction_log.action_construction_site_log
+msgid "Write your first daily site log"
+msgstr "Rédigez votre premier journal de chantier"
+
+#. module: construction_log
+#. odoo-python
+#: code:addons/construction_log/models/construction_site.py:0
+msgid "site_id"
+msgstr "Chantier"

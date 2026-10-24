@@ -1,0 +1,121 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* construction_cost
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 19.0-20261015\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-10-24 18:54+0000\n"
+"PO-Revision-Date: 2026-10-24 18:54+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: construction_cost
+#: model_terms:ir.ui.view,arch_db:construction_cost.view_construction_site_cost_list
+msgid "Actual"
+msgstr ""
+
+#. module: construction_cost
+#: model:ir.model.fields,field_description:construction_cost.field_construction_site__actual_cost
+msgid "Actual Cost"
+msgstr ""
+
+#. module: construction_cost
+#: model_terms:ir.ui.view,arch_db:construction_cost.view_construction_site_cost_list
+msgid "After actual"
+msgstr ""
+
+#. module: construction_cost
+#: model_terms:ir.ui.view,arch_db:construction_cost.view_construction_site_cost_list
+msgid "After commitments"
+msgstr ""
+
+#. module: construction_cost
+#: model:ir.model.fields,field_description:construction_cost.field_construction_site__bill_count
+msgid "Bill Count"
+msgstr ""
+
+#. module: construction_cost
+#: model_terms:ir.ui.view,arch_db:construction_cost.view_construction_site_form_cost
+msgid "Bills"
+msgstr ""
+
+#. module: construction_cost
+#: model_terms:ir.ui.view,arch_db:construction_cost.view_construction_site_cost_list
+msgid "Budget"
+msgstr ""
+
+#. module: construction_cost
+#: model:ir.model.fields,field_description:construction_cost.field_construction_site__budget_after_actual
+msgid "Budget After Actual"
+msgstr ""
+
+#. module: construction_cost
+#: model:ir.model.fields,help:construction_cost.field_construction_site__budget_after_actual
+msgid "Budget minus actual cost. Negative means over budget."
+msgstr ""
+
+#. module: construction_cost
+#: model_terms:ir.ui.view,arch_db:construction_cost.view_construction_site_cost_list
+msgid "Committed"
+msgstr ""
+
+#. module: construction_cost
+#: model:ir.model,name:construction_cost.model_construction_site
+#: model:ir.model.fields,field_description:construction_cost.field_account_bank_statement_line__site_id
+#: model:ir.model.fields,field_description:construction_cost.field_account_move__site_id
+msgid "Construction Site"
+msgstr ""
+
+#. module: construction_cost
+#: model:ir.actions.act_window,name:construction_cost.action_construction_cost_overview
+#: model:ir.ui.menu,name:construction_cost.menu_construction_cost_overview
+msgid "Cost Overview"
+msgstr ""
+
+#. module: construction_cost
+#: model:ir.model.fields,field_description:construction_cost.field_account_move__display_name
+#: model:ir.model.fields,field_description:construction_cost.field_construction_site__display_name
+#: model:ir.model.fields,field_description:construction_cost.field_purchase_order__display_name
+msgid "Display Name"
+msgstr ""
+
+#. module: construction_cost
+#: model:ir.model.fields,field_description:construction_cost.field_account_move__id
+#: model:ir.model.fields,field_description:construction_cost.field_construction_site__id
+#: model:ir.model.fields,field_description:construction_cost.field_purchase_order__id
+msgid "ID"
+msgstr ""
+
+#. module: construction_cost
+#: model:ir.model,name:construction_cost.model_account_move
+msgid "Journal Entry"
+msgstr ""
+
+#. module: construction_cost
+#: model:ir.model,name:construction_cost.model_purchase_order
+msgid "Purchase Order"
+msgstr ""
+
+#. module: construction_cost
+#: model:ir.model.fields,help:construction_cost.field_construction_site__actual_cost
+msgid "Untaxed total of posted vendor bills minus refunds for this site."
+msgstr ""
+
+#. module: construction_cost
+#. odoo-python
+#: code:addons/construction_cost/models/construction_site.py:0
+#: model:ir.model.fields,field_description:construction_cost.field_construction_site__bill_ids
+msgid "Vendor Bills"
+msgstr ""
+
+#. module: construction_cost
+#. odoo-python
+#: code:addons/construction_cost/models/construction_site.py:0
+msgid "site_id"
+msgstr ""

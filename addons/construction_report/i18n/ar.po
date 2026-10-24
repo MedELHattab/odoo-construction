@@ -1,0 +1,197 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* construction_report
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 19.0-20261015\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-10-24 18:57+0000\n"
+"PO-Revision-Date: 2026-10-24 18:57+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: construction_report
+#: model:ir.actions.report,print_report_name:construction_report.action_report_site_cost
+msgid "'Site report - %s' % (object.code or '')"
+msgstr "'تقرير الموقع - %s' % (object.code or '')"
+
+#. module: construction_report
+#: model_terms:ir.ui.view,arch_db:construction_report.report_site_cost
+msgid "Actual (posted vendor bills)"
+msgstr "الفعلي (فواتير الموردين المرحّلة)"
+
+#. module: construction_report
+#: model_terms:ir.ui.view,arch_db:construction_report.report_site_cost
+msgid "Address"
+msgstr "العنوان"
+
+#. module: construction_report
+#: model_terms:ir.ui.view,arch_db:construction_report.report_site_cost
+msgid "Amount"
+msgstr "المبلغ"
+
+#. module: construction_report
+#: model_terms:ir.ui.view,arch_db:construction_report.report_site_cost
+msgid "Bill"
+msgstr "الفاتورة"
+
+#. module: construction_report
+#: model_terms:ir.ui.view,arch_db:construction_report.report_site_cost
+msgid "Bill of quantities"
+msgstr "جدول الكميات"
+
+#. module: construction_report
+#: model_terms:ir.ui.view,arch_db:construction_report.report_site_cost
+msgid "Bill of quantities (planned cost)"
+msgstr "جدول الكميات (التكلفة المخططة)"
+
+#. module: construction_report
+#: model_terms:ir.ui.view,arch_db:construction_report.report_site_cost
+msgid "Budget"
+msgstr "الميزانية"
+
+#. module: construction_report
+#: model_terms:ir.ui.view,arch_db:construction_report.report_site_cost
+msgid "Budget remaining"
+msgstr "الميزانية المتبقية"
+
+#. module: construction_report
+#: model_terms:ir.ui.view,arch_db:construction_report.report_site_cost
+msgid "Client"
+msgstr "العميل"
+
+#. module: construction_report
+#: model_terms:ir.ui.view,arch_db:construction_report.report_site_cost
+msgid "Committed (confirmed purchase orders)"
+msgstr "الملتزم به (أوامر الشراء المؤكدة)"
+
+#. module: construction_report
+#: model_terms:ir.ui.view,arch_db:construction_report.report_site_cost
+msgid "Completed (weighted by cost)"
+msgstr "المنجز (موزون بالتكلفة)"
+
+#. module: construction_report
+#: model_terms:ir.ui.view,arch_db:construction_report.report_site_cost
+msgid "Confirmed purchase orders"
+msgstr "أوامر الشراء المؤكدة"
+
+#. module: construction_report
+#: model_terms:ir.ui.view,arch_db:construction_report.report_site_cost
+msgid "Cost summary"
+msgstr "ملخص التكاليف"
+
+#. module: construction_report
+#: model_terms:ir.ui.view,arch_db:construction_report.report_site_cost
+msgid "Cost variance (earned value minus actual cost)"
+msgstr "انحراف التكلفة (القيمة المكتسبة ناقص التكلفة الفعلية)"
+
+#. module: construction_report
+#: model_terms:ir.ui.view,arch_db:construction_report.report_site_cost
+msgid "Date"
+msgstr "التاريخ"
+
+#. module: construction_report
+#: model_terms:ir.ui.view,arch_db:construction_report.report_site_cost
+msgid "Description"
+msgstr "الوصف"
+
+#. module: construction_report
+#: model_terms:ir.ui.view,arch_db:construction_report.report_site_cost
+msgid "Done"
+msgstr "منجز"
+
+#. module: construction_report
+#: model_terms:ir.ui.view,arch_db:construction_report.report_site_cost
+msgid "Earned value (planned cost of work done)"
+msgstr "القيمة المكتسبة (التكلفة المخططة للأعمال المنجزة)"
+
+#. module: construction_report
+#: model_terms:ir.ui.view,arch_db:construction_report.report_site_cost
+msgid "Item"
+msgstr "البند"
+
+#. module: construction_report
+#: model_terms:ir.ui.view,arch_db:construction_report.report_site_cost
+msgid "No bill of quantities lines."
+msgstr "لا توجد بنود في جدول الكميات."
+
+#. module: construction_report
+#: model_terms:ir.ui.view,arch_db:construction_report.report_site_cost
+msgid "No confirmed purchase orders."
+msgstr "لا توجد أوامر شراء مؤكدة."
+
+#. module: construction_report
+#: model_terms:ir.ui.view,arch_db:construction_report.report_site_cost
+msgid "No posted vendor bills."
+msgstr "لا توجد فواتير موردين مرحّلة."
+
+#. module: construction_report
+#: model_terms:ir.ui.view,arch_db:construction_report.report_site_cost
+msgid "Order"
+msgstr "الطلب"
+
+#. module: construction_report
+#: model_terms:ir.ui.view,arch_db:construction_report.report_site_cost
+msgid "Period"
+msgstr "الفترة"
+
+#. module: construction_report
+#: model_terms:ir.ui.view,arch_db:construction_report.report_site_cost
+msgid "Posted vendor bills"
+msgstr "فواتير الموردين المرحّلة"
+
+#. module: construction_report
+#: model_terms:ir.ui.view,arch_db:construction_report.report_site_cost
+msgid "Progress"
+msgstr "الإنجاز"
+
+#. module: construction_report
+#: model_terms:ir.ui.view,arch_db:construction_report.report_site_cost
+msgid "Qty"
+msgstr "الكمية"
+
+#. module: construction_report
+#: model:ir.actions.report,name:construction_report.action_report_site_cost
+#: model_terms:ir.ui.view,arch_db:construction_report.report_site_cost
+msgid "Site Cost Report"
+msgstr "تقرير تكاليف الموقع"
+
+#. module: construction_report
+#: model_terms:ir.ui.view,arch_db:construction_report.report_site_cost
+msgid "Site manager"
+msgstr "مدير الموقع"
+
+#. module: construction_report
+#: model_terms:ir.ui.view,arch_db:construction_report.report_site_cost
+msgid "Status"
+msgstr "الحالة"
+
+#. module: construction_report
+#: model_terms:ir.ui.view,arch_db:construction_report.report_site_cost
+msgid "Total"
+msgstr "الإجمالي"
+
+#. module: construction_report
+#: model_terms:ir.ui.view,arch_db:construction_report.report_site_cost
+msgid "Unit"
+msgstr "الوحدة"
+
+#. module: construction_report
+#: model_terms:ir.ui.view,arch_db:construction_report.report_site_cost
+msgid "Unit cost"
+msgstr "تكلفة الوحدة"
+
+#. module: construction_report
+#: model_terms:ir.ui.view,arch_db:construction_report.report_site_cost
+msgid "Untaxed amount"
+msgstr "المبلغ بدون ضريبة"
+
+#. module: construction_report
+#: model_terms:ir.ui.view,arch_db:construction_report.report_site_cost
+msgid "Vendor"
+msgstr "المورد"
