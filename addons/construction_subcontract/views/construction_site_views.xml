@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="view_construction_site_form_subcontract" model="ir.ui.view">
+        <field name="name">construction.site.form.subcontract</field>
+        <field name="model">construction.site</field>
+        <field name="inherit_id" ref="construction_site.view_construction_site_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//div[@name='button_box']" position="inside">
+                <button name="action_view_subcontracts" type="object" class="oe_stat_button" icon="fa-handshake-o">
+                    <field name="subcontract_count" widget="statinfo" string="Subcontracts"/>
+                </button>
+            </xpath>
+            <field name="committed_cost" position="after">
+                <field name="subcontract_value" invisible="not subcontract_value"/>
+                <field name="subcontract_retention_held" invisible="not subcontract_retention_held"/>
+            </field>
+        </field>
+    </record>
+</odoo>

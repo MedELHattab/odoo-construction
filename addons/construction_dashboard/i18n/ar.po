@@ -1,0 +1,104 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* construction_dashboard
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 19.0-20261015\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-10-26 12:36+0000\n"
+"PO-Revision-Date: 2026-10-26 12:36+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: construction_dashboard
+#: model_terms:ir.ui.view,arch_db:construction_dashboard.view_construction_site_kanban
+msgid "<span class=\"badge text-bg-danger\">Over budget</span>"
+msgstr "<span class=\"badge text-bg-danger\">تجاوز الميزانية</span>"
+
+#. module: construction_dashboard
+#: model_terms:ir.ui.view,arch_db:construction_dashboard.view_construction_site_kanban
+msgid "<span class=\"badge text-bg-warning\">Near budget limit</span>"
+msgstr "<span class=\"badge text-bg-warning\">قريب من حد الميزانية</span>"
+
+#. module: construction_dashboard
+#: model_terms:ir.ui.view,arch_db:construction_dashboard.view_construction_site_kanban
+msgid "<span class=\"text-muted\">Billed</span>"
+msgstr "<span class=\"text-muted\">المفوتر</span>"
+
+#. module: construction_dashboard
+#: model_terms:ir.ui.view,arch_db:construction_dashboard.view_construction_site_kanban
+msgid "<span class=\"text-muted\">Budget</span>"
+msgstr "<span class=\"text-muted\">الميزانية</span>"
+
+#. module: construction_dashboard
+#: model_terms:ir.ui.view,arch_db:construction_dashboard.view_construction_site_kanban
+msgid "<span class=\"text-muted\">Total cost</span>"
+msgstr "<span class=\"text-muted\">التكلفة الإجمالية</span>"
+
+#. module: construction_dashboard
+#: model_terms:ir.ui.view,arch_db:construction_dashboard.view_construction_site_kanban
+msgid "<span>Margin to date</span>"
+msgstr "<span>الهامش حتى تاريخه</span>"
+
+#. module: construction_dashboard
+#: model_terms:ir.ui.view,arch_db:construction_dashboard.view_construction_site_cost_list_dashboard
+msgid "Billed"
+msgstr "المفوتر"
+
+#. module: construction_dashboard
+#: model_terms:ir.ui.view,arch_db:construction_dashboard.view_construction_site_kanban
+msgid "Budget used"
+msgstr "الميزانية المستهلكة"
+
+#. module: construction_dashboard
+#: model:ir.model.fields,field_description:construction_dashboard.field_construction_site__budget_used_percent
+msgid "Budget used (%)"
+msgstr "الميزانية المستهلكة (%)"
+
+#. module: construction_dashboard
+#: model:ir.model,name:construction_dashboard.model_construction_site
+msgid "Construction Site"
+msgstr "موقع البناء"
+
+#. module: construction_dashboard
+#: model:ir.model.fields,field_description:construction_dashboard.field_construction_site__display_name
+msgid "Display Name"
+msgstr "اسم العرض"
+
+#. module: construction_dashboard
+#: model:ir.model.fields,field_description:construction_dashboard.field_construction_site__id
+msgid "ID"
+msgstr "المعرف"
+
+#. module: construction_dashboard
+#: model_terms:ir.ui.view,arch_db:construction_dashboard.view_construction_site_cost_list_dashboard
+msgid "Margin"
+msgstr "الهامش"
+
+#. module: construction_dashboard
+#: model:ir.model.fields,field_description:construction_dashboard.field_construction_site__margin_to_date
+msgid "Margin To Date"
+msgstr "الهامش حتى تاريخه"
+
+#. module: construction_dashboard
+#: model_terms:ir.ui.view,arch_db:construction_dashboard.view_construction_site_kanban
+msgid "Progress"
+msgstr "الإنجاز"
+
+#. module: construction_dashboard
+#: model:ir.model.fields,help:construction_dashboard.field_construction_site__budget_used_percent
+msgid ""
+"Total cost (bills, labor, equipment, expenses) as a share of the budget."
+msgstr "التكلفة الإجمالية (الفواتير والعمالة والمعدات والمصروفات) كنسبة من الميزانية."
+
+#. module: construction_dashboard
+#: model:ir.model.fields,help:construction_dashboard.field_construction_site__margin_to_date
+msgid ""
+"Work invoiced to the client so far (before retention) minus the total cost "
+"so far."
+msgstr "الأعمال المفوترة للعميل حتى الآن (قبل الضمان) ناقص التكلفة الإجمالية حتى الآن."

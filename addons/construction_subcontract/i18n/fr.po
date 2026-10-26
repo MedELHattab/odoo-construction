@@ -1,0 +1,616 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* construction_subcontract
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 19.0-20261015\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-10-26 12:36+0000\n"
+"PO-Revision-Date: 2026-10-26 12:36+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: construction_subcontract
+#: model_terms:ir.ui.view,arch_db:construction_subcontract.view_construction_subcontract_payment_form
+msgid "<span class=\"o_stat_text\">Vendor bill</span>"
+msgstr "<span class=\"o_stat_text\">Facture fournisseur</span>"
+
+#. module: construction_subcontract
+#. odoo-python
+#: code:addons/construction_subcontract/models/subcontract.py:0
+msgid ""
+"A billed certificate cannot be deleted. Credit the vendor bill instead."
+msgstr "Un décompte facturé ne peut pas être supprimé. Établissez plutôt un avoir sur la facture fournisseur."
+
+#. module: construction_subcontract
+#. odoo-python
+#: code:addons/construction_subcontract/models/subcontract.py:0
+msgid "A subcontract with billed certificates cannot be cancelled."
+msgstr "Un contrat de sous-traitance avec des décomptes facturés ne peut pas être annulé."
+
+#. module: construction_subcontract
+#: model:ir.model.fields,field_description:construction_subcontract.field_construction_subcontract__message_needaction
+#: model:ir.model.fields,field_description:construction_subcontract.field_construction_subcontract_payment__message_needaction
+msgid "Action Needed"
+msgstr "Action requise"
+
+#. module: construction_subcontract
+#: model_terms:ir.actions.act_window,help:construction_subcontract.action_construction_subcontract
+msgid ""
+"Agree a contract amount with a subcontractor, then bill payment certificates"
+" against it."
+msgstr "Convenez d'un montant de contrat avec un sous-traitant, puis facturez les décomptes de paiement correspondants."
+
+#. module: construction_subcontract
+#: model:ir.model.fields,help:construction_subcontract.field_construction_subcontract_payment__net_amount
+msgid "Amount to pay now: certified amount minus retention."
+msgstr "Montant à payer maintenant : montant certifié moins la retenue de garantie."
+
+#. module: construction_subcontract
+#: model:ir.model.fields,field_description:construction_subcontract.field_construction_subcontract__message_attachment_count
+#: model:ir.model.fields,field_description:construction_subcontract.field_construction_subcontract_payment__message_attachment_count
+msgid "Attachment Count"
+msgstr "Nombre de pièces jointes"
+
+#. module: construction_subcontract
+#: model:ir.model.fields,field_description:construction_subcontract.field_construction_subcontract__balance
+#: model_terms:ir.ui.view,arch_db:construction_subcontract.view_construction_subcontract_list
+msgid "Balance"
+msgstr "Solde"
+
+#. module: construction_subcontract
+#. odoo-python
+#: code:addons/construction_subcontract/models/subcontract.py:0
+msgid "Bill or cancel the draft payment certificates first."
+msgstr "Facturez ou annulez d'abord les décomptes de paiement en brouillon."
+
+#. module: construction_subcontract
+#: model:ir.model.fields.selection,name:construction_subcontract.selection__construction_subcontract_payment__state__billed
+msgid "Billed"
+msgstr "Facturé"
+
+#. module: construction_subcontract
+#: model_terms:ir.ui.view,arch_db:construction_subcontract.view_construction_subcontract_form
+#: model_terms:ir.ui.view,arch_db:construction_subcontract.view_construction_subcontract_payment_form
+msgid "Cancel"
+msgstr "Annuler"
+
+#. module: construction_subcontract
+#: model:ir.model.fields.selection,name:construction_subcontract.selection__construction_subcontract__state__cancelled
+#: model:ir.model.fields.selection,name:construction_subcontract.selection__construction_subcontract_payment__state__cancelled
+msgid "Cancelled"
+msgstr "Annulé"
+
+#. module: construction_subcontract
+#: model_terms:ir.ui.view,arch_db:construction_subcontract.view_construction_subcontract_form
+#: model_terms:ir.ui.view,arch_db:construction_subcontract.view_construction_subcontract_list
+msgid "Certified"
+msgstr "Certifié"
+
+#. module: construction_subcontract
+#: model:ir.model.fields,field_description:construction_subcontract.field_construction_subcontract__certified_amount
+msgid "Certified Amount"
+msgstr "Montant certifié"
+
+#. module: construction_subcontract
+#: model:ir.model.fields,field_description:construction_subcontract.field_construction_subcontract_payment__gross_amount
+msgid "Certified amount"
+msgstr "Montant certifié"
+
+#. module: construction_subcontract
+#: model:ir.model.fields,field_description:construction_subcontract.field_construction_subcontract__company_id
+#: model:ir.model.fields,field_description:construction_subcontract.field_construction_subcontract_payment__company_id
+msgid "Company"
+msgstr "Société"
+
+#. module: construction_subcontract
+#: model_terms:ir.ui.view,arch_db:construction_subcontract.view_construction_subcontract_form
+msgid "Complete"
+msgstr "Terminer"
+
+#. module: construction_subcontract
+#: model:ir.model.fields.selection,name:construction_subcontract.selection__construction_subcontract__state__completed
+msgid "Completed"
+msgstr "Terminé"
+
+#. module: construction_subcontract
+#: model:ir.model,name:construction_subcontract.model_construction_site
+msgid "Construction Site"
+msgstr "Chantier"
+
+#. module: construction_subcontract
+#: model:ir.model.fields,field_description:construction_subcontract.field_construction_subcontract__contract_amount
+msgid "Contract Amount"
+msgstr "Montant du contrat"
+
+#. module: construction_subcontract
+#: model:ir.model.fields,help:construction_subcontract.field_construction_subcontract__balance
+msgid "Contract amount not yet certified."
+msgstr "Montant du contrat non encore certifié."
+
+#. module: construction_subcontract
+#: model_terms:ir.ui.view,arch_db:construction_subcontract.view_construction_subcontract_list
+msgid "Contracts"
+msgstr "Contrats"
+
+#. module: construction_subcontract
+#: model_terms:ir.ui.view,arch_db:construction_subcontract.view_construction_subcontract_payment_form
+msgid "Create Vendor Bill"
+msgstr "Créer la facture fournisseur"
+
+#. module: construction_subcontract
+#: model_terms:ir.actions.act_window,help:construction_subcontract.action_construction_subcontract
+msgid "Create your first subcontract"
+msgstr "Créez votre premier contrat de sous-traitance"
+
+#. module: construction_subcontract
+#: model:ir.model.fields,field_description:construction_subcontract.field_construction_subcontract__create_uid
+#: model:ir.model.fields,field_description:construction_subcontract.field_construction_subcontract_payment__create_uid
+msgid "Created by"
+msgstr "Créé par"
+
+#. module: construction_subcontract
+#: model:ir.model.fields,field_description:construction_subcontract.field_construction_subcontract__create_date
+#: model:ir.model.fields,field_description:construction_subcontract.field_construction_subcontract_payment__create_date
+msgid "Created on"
+msgstr "Créé le"
+
+#. module: construction_subcontract
+#: model:ir.model.fields,field_description:construction_subcontract.field_construction_subcontract__currency_id
+#: model:ir.model.fields,field_description:construction_subcontract.field_construction_subcontract_payment__currency_id
+msgid "Currency"
+msgstr "Devise"
+
+#. module: construction_subcontract
+#: model:ir.model.fields,field_description:construction_subcontract.field_construction_subcontract_payment__date
+msgid "Date"
+msgstr "Date"
+
+#. module: construction_subcontract
+#: model:ir.model.fields,field_description:construction_subcontract.field_construction_site__display_name
+#: model:ir.model.fields,field_description:construction_subcontract.field_construction_subcontract__display_name
+#: model:ir.model.fields,field_description:construction_subcontract.field_construction_subcontract_payment__display_name
+msgid "Display Name"
+msgstr "Nom affiché"
+
+#. module: construction_subcontract
+#: model:ir.model.fields.selection,name:construction_subcontract.selection__construction_subcontract__state__draft
+#: model:ir.model.fields.selection,name:construction_subcontract.selection__construction_subcontract_payment__state__draft
+msgid "Draft"
+msgstr "Brouillon"
+
+#. module: construction_subcontract
+#. odoo-python
+#: code:addons/construction_subcontract/models/subcontract.py:0
+msgid "Enter the certified amount before billing."
+msgstr "Saisissez le montant certifié avant de facturer."
+
+#. module: construction_subcontract
+#: model:ir.model.fields,field_description:construction_subcontract.field_construction_subcontract__message_follower_ids
+#: model:ir.model.fields,field_description:construction_subcontract.field_construction_subcontract_payment__message_follower_ids
+msgid "Followers"
+msgstr "Abonnés"
+
+#. module: construction_subcontract
+#: model:ir.model.fields,field_description:construction_subcontract.field_construction_subcontract__message_partner_ids
+#: model:ir.model.fields,field_description:construction_subcontract.field_construction_subcontract_payment__message_partner_ids
+msgid "Followers (Partners)"
+msgstr "Abonnés (partenaires)"
+
+#. module: construction_subcontract
+#: model:ir.model.fields,field_description:construction_subcontract.field_construction_subcontract__has_message
+#: model:ir.model.fields,field_description:construction_subcontract.field_construction_subcontract_payment__has_message
+msgid "Has Message"
+msgstr "A un message"
+
+#. module: construction_subcontract
+#: model:ir.model.fields,field_description:construction_subcontract.field_construction_site__id
+#: model:ir.model.fields,field_description:construction_subcontract.field_construction_subcontract__id
+#: model:ir.model.fields,field_description:construction_subcontract.field_construction_subcontract_payment__id
+msgid "ID"
+msgstr "ID"
+
+#. module: construction_subcontract
+#: model:ir.model.fields,help:construction_subcontract.field_construction_subcontract__message_needaction
+#: model:ir.model.fields,help:construction_subcontract.field_construction_subcontract_payment__message_needaction
+msgid "If checked, new messages require your attention."
+msgstr "Si coché, de nouveaux messages requièrent votre attention."
+
+#. module: construction_subcontract
+#: model:ir.model.fields,help:construction_subcontract.field_construction_subcontract__message_has_error
+#: model:ir.model.fields,help:construction_subcontract.field_construction_subcontract__message_has_sms_error
+#: model:ir.model.fields,help:construction_subcontract.field_construction_subcontract_payment__message_has_error
+#: model:ir.model.fields,help:construction_subcontract.field_construction_subcontract_payment__message_has_sms_error
+msgid "If checked, some messages have a delivery error."
+msgstr "Si coché, certains messages ont une erreur d'envoi."
+
+#. module: construction_subcontract
+#: model:ir.model.fields.selection,name:construction_subcontract.selection__construction_subcontract__state__active
+#: model_terms:ir.ui.view,arch_db:construction_subcontract.view_construction_subcontract_search
+msgid "In progress"
+msgstr "En cours"
+
+#. module: construction_subcontract
+#: model:ir.model.fields,field_description:construction_subcontract.field_construction_subcontract__message_is_follower
+#: model:ir.model.fields,field_description:construction_subcontract.field_construction_subcontract_payment__message_is_follower
+msgid "Is Follower"
+msgstr "Est abonné"
+
+#. module: construction_subcontract
+#: model:ir.model.fields,field_description:construction_subcontract.field_construction_subcontract__write_uid
+#: model:ir.model.fields,field_description:construction_subcontract.field_construction_subcontract_payment__write_uid
+msgid "Last Updated by"
+msgstr "Dernière mise à jour par"
+
+#. module: construction_subcontract
+#: model:ir.model.fields,field_description:construction_subcontract.field_construction_subcontract__write_date
+#: model:ir.model.fields,field_description:construction_subcontract.field_construction_subcontract_payment__write_date
+msgid "Last Updated on"
+msgstr "Dernière mise à jour le"
+
+#. module: construction_subcontract
+#: model:ir.model.fields,field_description:construction_subcontract.field_construction_subcontract__message_has_error
+#: model:ir.model.fields,field_description:construction_subcontract.field_construction_subcontract_payment__message_has_error
+msgid "Message Delivery error"
+msgstr "Erreur d'envoi du message"
+
+#. module: construction_subcontract
+#: model:ir.model.fields,field_description:construction_subcontract.field_construction_subcontract__message_ids
+#: model:ir.model.fields,field_description:construction_subcontract.field_construction_subcontract_payment__message_ids
+msgid "Messages"
+msgstr "Messages"
+
+#. module: construction_subcontract
+#: model:ir.model.fields,field_description:construction_subcontract.field_construction_subcontract__name
+#: model:ir.model.fields,field_description:construction_subcontract.field_construction_subcontract_payment__name
+msgid "Name"
+msgstr "Nom"
+
+#. module: construction_subcontract
+#: model:ir.model.fields,field_description:construction_subcontract.field_construction_subcontract_payment__net_amount
+msgid "Net Amount"
+msgstr "Montant net"
+
+#. module: construction_subcontract
+#: model_terms:ir.ui.view,arch_db:construction_subcontract.view_construction_subcontract_form
+msgid "New Payment Certificate"
+msgstr "Nouveau décompte de paiement"
+
+#. module: construction_subcontract
+#: model:ir.model.fields,field_description:construction_subcontract.field_construction_subcontract__message_needaction_counter
+#: model:ir.model.fields,field_description:construction_subcontract.field_construction_subcontract_payment__message_needaction_counter
+msgid "Number of Actions"
+msgstr "Nombre d'actions"
+
+#. module: construction_subcontract
+#: model:ir.model.fields,field_description:construction_subcontract.field_construction_subcontract__message_has_error_counter
+#: model:ir.model.fields,field_description:construction_subcontract.field_construction_subcontract_payment__message_has_error_counter
+msgid "Number of errors"
+msgstr "Nombre d'erreurs"
+
+#. module: construction_subcontract
+#: model:ir.model.fields,help:construction_subcontract.field_construction_subcontract__message_needaction_counter
+#: model:ir.model.fields,help:construction_subcontract.field_construction_subcontract_payment__message_needaction_counter
+msgid "Number of messages requiring action"
+msgstr "Nombre de messages nécessitant une action"
+
+#. module: construction_subcontract
+#: model:ir.model.fields,help:construction_subcontract.field_construction_subcontract__message_has_error_counter
+#: model:ir.model.fields,help:construction_subcontract.field_construction_subcontract_payment__message_has_error_counter
+msgid "Number of messages with delivery error"
+msgstr "Nombre de messages avec erreur d'envoi"
+
+#. module: construction_subcontract
+#. odoo-python
+#: code:addons/construction_subcontract/models/subcontract.py:0
+msgid "Only draft certificates can be billed."
+msgstr "Seuls les décomptes en brouillon peuvent être facturés."
+
+#. module: construction_subcontract
+#. odoo-python
+#: code:addons/construction_subcontract/models/subcontract.py:0
+msgid "Only draft certificates can be cancelled."
+msgstr "Seuls les décomptes en brouillon peuvent être annulés."
+
+#. module: construction_subcontract
+#. odoo-python
+#: code:addons/construction_subcontract/models/subcontract.py:0
+msgid "Only draft or cancelled subcontracts can be deleted."
+msgstr "Seuls les contrats de sous-traitance en brouillon ou annulés peuvent être supprimés."
+
+#. module: construction_subcontract
+#. odoo-python
+#: code:addons/construction_subcontract/models/subcontract.py:0
+msgid "Only draft subcontracts can be started."
+msgstr "Seuls les contrats de sous-traitance en brouillon peuvent être démarrés."
+
+#. module: construction_subcontract
+#. odoo-python
+#: code:addons/construction_subcontract/models/subcontract.py:0
+msgid "Only subcontracts in progress can be completed."
+msgstr "Seuls les contrats de sous-traitance en cours peuvent être terminés."
+
+#. module: construction_subcontract
+#: model:ir.model.fields,field_description:construction_subcontract.field_construction_subcontract__payment_ids
+#: model_terms:ir.ui.view,arch_db:construction_subcontract.view_construction_subcontract_form
+msgid "Payment certificates"
+msgstr "Décomptes de paiement"
+
+#. module: construction_subcontract
+#: model:ir.model.fields,field_description:construction_subcontract.field_construction_subcontract__rating_ids
+#: model:ir.model.fields,field_description:construction_subcontract.field_construction_subcontract_payment__rating_ids
+msgid "Ratings"
+msgstr "Évaluations"
+
+#. module: construction_subcontract
+#: model_terms:ir.ui.view,arch_db:construction_subcontract.view_construction_subcontract_form
+msgid "Release Retention"
+msgstr "Libérer la retenue de garantie"
+
+#. module: construction_subcontract
+#: model_terms:ir.ui.view,arch_db:construction_subcontract.view_construction_subcontract_form
+#: model_terms:ir.ui.view,arch_db:construction_subcontract.view_construction_subcontract_list
+msgid "Retention"
+msgstr "Retenue de garantie"
+
+#. module: construction_subcontract
+#: model:ir.model.fields,field_description:construction_subcontract.field_construction_subcontract__retention_percent
+#: model:ir.model.fields,field_description:construction_subcontract.field_construction_subcontract_payment__retention_percent
+msgid "Retention (%)"
+msgstr "Retenue de garantie (%)"
+
+#. module: construction_subcontract
+#: model:ir.model.fields,field_description:construction_subcontract.field_construction_subcontract_payment__retention_amount
+msgid "Retention Amount"
+msgstr "Montant de la retenue"
+
+#. module: construction_subcontract
+#: model:ir.model.fields,field_description:construction_subcontract.field_construction_subcontract__retention_held
+msgid "Retention Held"
+msgstr "Retenue conservée"
+
+#. module: construction_subcontract
+#: model:ir.model.fields,field_description:construction_subcontract.field_construction_subcontract__retention_released
+msgid "Retention Released"
+msgstr "Retenue libérée"
+
+#. module: construction_subcontract
+#. odoo-python
+#: code:addons/construction_subcontract/models/subcontract.py:0
+msgid "Retention can only be released once the subcontract is completed."
+msgstr "La retenue de garantie ne peut être libérée qu'une fois le contrat de sous-traitance terminé."
+
+#. module: construction_subcontract
+#: model_terms:ir.ui.view,arch_db:construction_subcontract.view_construction_subcontract_search
+msgid "Retention held"
+msgstr "Retenue conservée"
+
+#. module: construction_subcontract
+#. odoo-python
+#: code:addons/construction_subcontract/models/subcontract.py:0
+msgid "Retention must be between 0 and 100 percent."
+msgstr "La retenue de garantie doit être comprise entre 0 et 100 %."
+
+#. module: construction_subcontract
+#. odoo-python
+#: code:addons/construction_subcontract/models/subcontract.py:0
+msgid ""
+"Retention of %s released. Pay it against the vendor bills of this "
+"subcontract."
+msgstr "Retenue de garantie de %s libérée. Réglez-la sur les factures fournisseurs de ce contrat de sous-traitance."
+
+#. module: construction_subcontract
+#: model:ir.model.fields,help:construction_subcontract.field_construction_site__subcontract_retention_held
+msgid "Retention withheld from subcontractors and not yet released."
+msgstr "Retenue de garantie prélevée sur les sous-traitants et non encore libérée."
+
+#. module: construction_subcontract
+#: model:ir.model.fields,help:construction_subcontract.field_construction_subcontract__retention_held
+msgid "Retention withheld on billed certificates and not yet released."
+msgstr "Retenue de garantie prélevée sur les décomptes facturés et non encore libérée."
+
+#. module: construction_subcontract
+#: model:ir.model.fields,field_description:construction_subcontract.field_construction_subcontract__message_has_sms_error
+#: model:ir.model.fields,field_description:construction_subcontract.field_construction_subcontract_payment__message_has_sms_error
+msgid "SMS Delivery error"
+msgstr "Erreur d'envoi SMS"
+
+#. module: construction_subcontract
+#: model:ir.model.fields,field_description:construction_subcontract.field_construction_subcontract__title
+#: model_terms:ir.ui.view,arch_db:construction_subcontract.view_construction_subcontract_form
+msgid "Scope of work"
+msgstr "Objet des travaux"
+
+#. module: construction_subcontract
+#. odoo-python
+#: code:addons/construction_subcontract/models/subcontract.py:0
+msgid "Set the contract amount before starting the subcontract."
+msgstr "Renseignez le montant du contrat avant de démarrer le contrat de sous-traitance."
+
+#. module: construction_subcontract
+#: model:ir.model.fields,help:construction_subcontract.field_construction_subcontract__retention_percent
+msgid ""
+"Share of each certified amount withheld until the subcontractor completes "
+"the work."
+msgstr "Part de chaque montant certifié retenue jusqu'à l'achèvement des travaux par le sous-traitant."
+
+#. module: construction_subcontract
+#: model:ir.model.fields,field_description:construction_subcontract.field_construction_subcontract__site_id
+#: model:ir.model.fields,field_description:construction_subcontract.field_construction_subcontract_payment__site_id
+#: model_terms:ir.ui.view,arch_db:construction_subcontract.view_construction_subcontract_search
+msgid "Site"
+msgstr "Chantier"
+
+#. module: construction_subcontract
+#: model_terms:ir.ui.view,arch_db:construction_subcontract.view_construction_subcontract_form
+msgid "Start"
+msgstr "Démarrer"
+
+#. module: construction_subcontract
+#: model:ir.model.fields,field_description:construction_subcontract.field_construction_subcontract__date_start
+msgid "Start date"
+msgstr "Date de début"
+
+#. module: construction_subcontract
+#: model:ir.model.fields,field_description:construction_subcontract.field_construction_subcontract__state
+#: model:ir.model.fields,field_description:construction_subcontract.field_construction_subcontract_payment__state
+msgid "State"
+msgstr "État"
+
+#. module: construction_subcontract
+#: model_terms:ir.ui.view,arch_db:construction_subcontract.view_construction_subcontract_search
+msgid "Status"
+msgstr "Statut"
+
+#. module: construction_subcontract
+#: model:ir.model,name:construction_subcontract.model_construction_subcontract
+#: model:ir.model.fields,field_description:construction_subcontract.field_construction_subcontract_payment__subcontract_id
+msgid "Subcontract"
+msgstr "Contrat de sous-traitance"
+
+#. module: construction_subcontract
+#. odoo-python
+#: code:addons/construction_subcontract/models/subcontract.py:0
+msgid ""
+"Subcontract %(contract)s. Retention of %(percent)s%% (%(amount)s) is "
+"withheld: pay %(net)s now."
+msgstr "Contrat de sous-traitance %(contract)s. Une retenue de garantie de %(percent)s%% (%(amount)s) est prélevée : payer %(net)s maintenant."
+
+#. module: construction_subcontract
+#: model:ir.model.fields,field_description:construction_subcontract.field_construction_site__subcontract_count
+msgid "Subcontract Count"
+msgstr "Nombre de contrats de sous-traitance"
+
+#. module: construction_subcontract
+#: model:ir.model,name:construction_subcontract.model_construction_subcontract_payment
+msgid "Subcontract Payment Certificate"
+msgstr "Décompte de paiement de sous-traitance"
+
+#. module: construction_subcontract
+#: model:ir.model.fields,field_description:construction_subcontract.field_construction_site__subcontract_retention_held
+msgid "Subcontract Retention Held"
+msgstr "Retenue conservée sur sous-traitance"
+
+#. module: construction_subcontract
+#: model:ir.model.fields,field_description:construction_subcontract.field_construction_site__subcontract_value
+msgid "Subcontract Value"
+msgstr "Valeur de la sous-traitance"
+
+#. module: construction_subcontract
+#: model:ir.model.fields,field_description:construction_subcontract.field_construction_subcontract__partner_id
+#: model:ir.model.fields,field_description:construction_subcontract.field_construction_subcontract_payment__partner_id
+#: model_terms:ir.ui.view,arch_db:construction_subcontract.view_construction_subcontract_search
+msgid "Subcontractor"
+msgstr "Sous-traitant"
+
+#. module: construction_subcontract
+#. odoo-python
+#: code:addons/construction_subcontract/models/construction_site.py:0
+#: model:ir.actions.act_window,name:construction_subcontract.action_construction_subcontract
+#: model:ir.model.fields,field_description:construction_subcontract.field_construction_site__subcontract_ids
+#: model:ir.ui.menu,name:construction_subcontract.menu_construction_subcontract
+#: model_terms:ir.ui.view,arch_db:construction_subcontract.view_construction_site_form_subcontract
+msgid "Subcontracts"
+msgstr "Sous-traitance"
+
+#. module: construction_subcontract
+#: model_terms:ir.ui.view,arch_db:construction_subcontract.view_construction_subcontract_form
+msgid "Terms"
+msgstr "Conditions"
+
+#. module: construction_subcontract
+#: model:ir.model.fields,field_description:construction_subcontract.field_construction_subcontract__description
+msgid "Terms and conditions"
+msgstr "Conditions générales"
+
+#. module: construction_subcontract
+#. odoo-python
+#: code:addons/construction_subcontract/models/subcontract.py:0
+msgid "The certified amount cannot be negative."
+msgstr "Le montant certifié ne peut pas être négatif."
+
+#. module: construction_subcontract
+#. odoo-python
+#: code:addons/construction_subcontract/models/subcontract.py:0
+msgid "The contract amount cannot be negative."
+msgstr "Le montant du contrat ne peut pas être négatif."
+
+#. module: construction_subcontract
+#. odoo-python
+#: code:addons/construction_subcontract/models/subcontract.py:0
+msgid "The subcontract must be in progress to bill a certificate."
+msgstr "Le contrat de sous-traitance doit être en cours pour facturer un décompte."
+
+#. module: construction_subcontract
+#. odoo-python
+#: code:addons/construction_subcontract/models/subcontract.py:0
+msgid "There is no retention to release."
+msgstr "Il n'y a aucune retenue de garantie à libérer."
+
+#. module: construction_subcontract
+#. odoo-python
+#: code:addons/construction_subcontract/models/subcontract.py:0
+msgid ""
+"This certificate would bring the total certified to %(total)s, above the "
+"contract amount of %(contract)s."
+msgstr "Ce décompte porterait le total certifié à %(total)s, au-dessus du montant du contrat de %(contract)s."
+
+#. module: construction_subcontract
+#. odoo-python
+#: code:addons/construction_subcontract/models/subcontract.py:0
+msgid "This subcontract cannot be cancelled."
+msgstr "Ce contrat de sous-traitance ne peut pas être annulé."
+
+#. module: construction_subcontract
+#: model_terms:ir.ui.view,arch_db:construction_subcontract.view_construction_subcontract_form
+msgid "To pay"
+msgstr "À payer"
+
+#. module: construction_subcontract
+#: model:ir.model.fields,help:construction_subcontract.field_construction_site__subcontract_value
+msgid "Value of the subcontracts in progress or completed on this site."
+msgstr "Valeur des contrats de sous-traitance en cours ou terminés sur ce chantier."
+
+#. module: construction_subcontract
+#: model:ir.model.fields,field_description:construction_subcontract.field_construction_subcontract_payment__bill_id
+msgid "Vendor bill"
+msgstr "Facture fournisseur"
+
+#. module: construction_subcontract
+#: model:ir.model.fields,field_description:construction_subcontract.field_construction_subcontract__website_message_ids
+#: model:ir.model.fields,field_description:construction_subcontract.field_construction_subcontract_payment__website_message_ids
+msgid "Website Messages"
+msgstr "Messages du site web"
+
+#. module: construction_subcontract
+#: model:ir.model.fields,help:construction_subcontract.field_construction_subcontract__website_message_ids
+#: model:ir.model.fields,help:construction_subcontract.field_construction_subcontract_payment__website_message_ids
+msgid "Website communication history"
+msgstr "Historique des communications du site web"
+
+#. module: construction_subcontract
+#: model:ir.model.fields,field_description:construction_subcontract.field_construction_subcontract_payment__description
+msgid "Work certified"
+msgstr "Travaux certifiés"
+
+#. module: construction_subcontract
+#: model:ir.model.fields,help:construction_subcontract.field_construction_subcontract__certified_amount
+msgid "Work certified and billed so far (gross, before retention)."
+msgstr "Travaux certifiés et facturés à ce jour (brut, avant retenue)."
+
+#. module: construction_subcontract
+#. odoo-python
+#: code:addons/construction_subcontract/models/subcontract.py:0
+msgid "You need invoicing rights to create a vendor bill."
+msgstr "Vous devez disposer des droits de facturation pour créer une facture fournisseur."
+
+#. module: construction_subcontract
+#. odoo-python
+#: code:addons/construction_subcontract/models/construction_site.py:0
+msgid "site_id"
+msgstr "Chantier"

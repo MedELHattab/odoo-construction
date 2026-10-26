@@ -1,0 +1,546 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* construction_billing
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 19.0-20261015\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-10-26 12:36+0000\n"
+"PO-Revision-Date: 2026-10-26 12:36+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: construction_billing
+#. odoo-python
+#: code:addons/construction_billing/models/progress_statement.py:0
+msgid "%(item)s (%(previous).0f%% to %(current).0f%%)"
+msgstr ""
+
+#. module: construction_billing
+#. odoo-python
+#: code:addons/construction_billing/models/progress_statement.py:0
+msgid ""
+"'%(item)s': progress billed to date must be between the previously billed "
+"percentage (%(previous).1f%%) and 100%%."
+msgstr ""
+
+#. module: construction_billing
+#: model_terms:ir.ui.view,arch_db:construction_billing.view_construction_progress_statement_form
+msgid "<span class=\"o_stat_text\">Invoice</span>"
+msgstr ""
+
+#. module: construction_billing
+#: model:ir.model.fields,field_description:construction_billing.field_construction_progress_statement__message_needaction
+msgid "Action Needed"
+msgstr ""
+
+#. module: construction_billing
+#. odoo-python
+#: code:addons/construction_billing/models/construction_site.py:0
+msgid "Add bill of quantities lines first."
+msgstr ""
+
+#. module: construction_billing
+#: model:ir.model.fields,help:construction_billing.field_construction_progress_statement__net_amount
+msgid "Amount invoiced to the client: gross minus the retention held back."
+msgstr ""
+
+#. module: construction_billing
+#. odoo-python
+#: code:addons/construction_billing/models/progress_statement.py:0
+msgid "An invoiced statement cannot be deleted. Credit the invoice instead."
+msgstr ""
+
+#. module: construction_billing
+#: model:ir.model.fields,field_description:construction_billing.field_construction_progress_statement__message_attachment_count
+msgid "Attachment Count"
+msgstr ""
+
+#. module: construction_billing
+#: model_terms:ir.actions.act_window,help:construction_billing.action_construction_progress_statement
+msgid "Bill your first progress statement"
+msgstr ""
+
+#. module: construction_billing
+#: model:ir.model.fields,field_description:construction_billing.field_construction_site__billed_percent
+msgid "Billed (%)"
+msgstr ""
+
+#. module: construction_billing
+#: model:ir.model.fields,field_description:construction_billing.field_construction_site__billed_amount
+msgid "Billed Amount"
+msgstr ""
+
+#. module: construction_billing
+#: model:ir.model.fields,field_description:construction_billing.field_construction_progress_statement_line__current_progress
+msgid "Billed to date (%)"
+msgstr ""
+
+#. module: construction_billing
+#: model:ir.model.fields,field_description:construction_billing.field_construction_progress_statement_line__boq_line_id
+msgid "BoQ line"
+msgstr ""
+
+#. module: construction_billing
+#: model_terms:ir.ui.view,arch_db:construction_billing.view_construction_progress_statement_form
+msgid "Cancel"
+msgstr ""
+
+#. module: construction_billing
+#: model:ir.model.fields.selection,name:construction_billing.selection__construction_progress_statement__state__cancelled
+msgid "Cancelled"
+msgstr ""
+
+#. module: construction_billing
+#: model:ir.model.fields,field_description:construction_billing.field_construction_progress_statement__partner_id
+msgid "Client"
+msgstr ""
+
+#. module: construction_billing
+#: model:ir.model.fields,field_description:construction_billing.field_construction_progress_statement__company_id
+msgid "Company"
+msgstr ""
+
+#. module: construction_billing
+#: model:ir.model,name:construction_billing.model_construction_site
+msgid "Construction Site"
+msgstr ""
+
+#. module: construction_billing
+#: model:ir.model.fields,field_description:construction_billing.field_construction_progress_statement_line__contract_value
+#: model:ir.model.fields,field_description:construction_billing.field_construction_site__contract_value
+msgid "Contract Value"
+msgstr ""
+
+#. module: construction_billing
+#: model_terms:ir.ui.view,arch_db:construction_billing.view_construction_progress_statement_form
+msgid "Create Invoice"
+msgstr ""
+
+#. module: construction_billing
+#: model:ir.model.fields,field_description:construction_billing.field_construction_progress_statement__create_uid
+#: model:ir.model.fields,field_description:construction_billing.field_construction_progress_statement_line__create_uid
+msgid "Created by"
+msgstr ""
+
+#. module: construction_billing
+#: model:ir.model.fields,field_description:construction_billing.field_construction_progress_statement__create_date
+#: model:ir.model.fields,field_description:construction_billing.field_construction_progress_statement_line__create_date
+msgid "Created on"
+msgstr ""
+
+#. module: construction_billing
+#: model:ir.model.fields,field_description:construction_billing.field_construction_progress_statement__currency_id
+#: model:ir.model.fields,field_description:construction_billing.field_construction_progress_statement_line__currency_id
+msgid "Currency"
+msgstr ""
+
+#. module: construction_billing
+#: model:ir.model.fields,field_description:construction_billing.field_construction_progress_statement__date
+msgid "Date"
+msgstr ""
+
+#. module: construction_billing
+#: model:ir.model.fields,field_description:construction_billing.field_construction_progress_statement_line__name
+msgid "Description"
+msgstr ""
+
+#. module: construction_billing
+#: model:ir.model.fields,field_description:construction_billing.field_construction_progress_statement__display_name
+#: model:ir.model.fields,field_description:construction_billing.field_construction_progress_statement_line__display_name
+#: model:ir.model.fields,field_description:construction_billing.field_construction_site__display_name
+msgid "Display Name"
+msgstr ""
+
+#. module: construction_billing
+#: model:ir.model.fields.selection,name:construction_billing.selection__construction_progress_statement__state__draft
+#: model_terms:ir.ui.view,arch_db:construction_billing.view_construction_progress_statement_search
+msgid "Draft"
+msgstr ""
+
+#. module: construction_billing
+#: model:ir.model.fields,field_description:construction_billing.field_construction_progress_statement__message_follower_ids
+msgid "Followers"
+msgstr ""
+
+#. module: construction_billing
+#: model:ir.model.fields,field_description:construction_billing.field_construction_progress_statement__message_partner_ids
+msgid "Followers (Partners)"
+msgstr ""
+
+#. module: construction_billing
+#: model:ir.model.fields,help:construction_billing.field_construction_progress_statement__release_amount
+msgid ""
+"For a retention release: the amount of held-back retention being invoiced."
+msgstr ""
+
+#. module: construction_billing
+#: model_terms:ir.ui.view,arch_db:construction_billing.view_construction_progress_statement_form
+#: model_terms:ir.ui.view,arch_db:construction_billing.view_construction_progress_statement_list
+msgid "Gross"
+msgstr ""
+
+#. module: construction_billing
+#: model:ir.model.fields,field_description:construction_billing.field_construction_progress_statement__gross_amount
+msgid "Gross Amount"
+msgstr ""
+
+#. module: construction_billing
+#: model:ir.model.fields,help:construction_billing.field_construction_site__billed_amount
+msgid ""
+"Gross value of the work invoiced to the client so far (before retention)."
+msgstr ""
+
+#. module: construction_billing
+#: model:ir.model.fields,field_description:construction_billing.field_construction_progress_statement__has_message
+msgid "Has Message"
+msgstr ""
+
+#. module: construction_billing
+#: model:ir.model.fields,field_description:construction_billing.field_construction_progress_statement__id
+#: model:ir.model.fields,field_description:construction_billing.field_construction_progress_statement_line__id
+#: model:ir.model.fields,field_description:construction_billing.field_construction_site__id
+msgid "ID"
+msgstr ""
+
+#. module: construction_billing
+#: model:ir.model.fields,help:construction_billing.field_construction_progress_statement__message_needaction
+msgid "If checked, new messages require your attention."
+msgstr ""
+
+#. module: construction_billing
+#: model:ir.model.fields,help:construction_billing.field_construction_progress_statement__message_has_error
+#: model:ir.model.fields,help:construction_billing.field_construction_progress_statement__message_has_sms_error
+msgid "If checked, some messages have a delivery error."
+msgstr ""
+
+#. module: construction_billing
+#: model_terms:ir.ui.view,arch_db:construction_billing.view_construction_progress_statement_form
+msgid "Internal note"
+msgstr ""
+
+#. module: construction_billing
+#: model:ir.model.fields,field_description:construction_billing.field_construction_progress_statement__invoice_id
+msgid "Invoice"
+msgstr ""
+
+#. module: construction_billing
+#: model:ir.model.fields.selection,name:construction_billing.selection__construction_progress_statement__state__invoiced
+#: model_terms:ir.ui.view,arch_db:construction_billing.view_construction_progress_statement_list
+#: model_terms:ir.ui.view,arch_db:construction_billing.view_construction_progress_statement_search
+msgid "Invoiced"
+msgstr ""
+
+#. module: construction_billing
+#: model:ir.model.fields,field_description:construction_billing.field_construction_progress_statement__message_is_follower
+msgid "Is Follower"
+msgstr ""
+
+#. module: construction_billing
+#: model:ir.model.fields,field_description:construction_billing.field_construction_progress_statement__kind
+msgid "Kind"
+msgstr ""
+
+#. module: construction_billing
+#: model:ir.model.fields,field_description:construction_billing.field_construction_progress_statement__write_uid
+#: model:ir.model.fields,field_description:construction_billing.field_construction_progress_statement_line__write_uid
+msgid "Last Updated by"
+msgstr ""
+
+#. module: construction_billing
+#: model:ir.model.fields,field_description:construction_billing.field_construction_progress_statement__write_date
+#: model:ir.model.fields,field_description:construction_billing.field_construction_progress_statement_line__write_date
+msgid "Last Updated on"
+msgstr ""
+
+#. module: construction_billing
+#: model:ir.model.fields,field_description:construction_billing.field_construction_progress_statement__line_ids
+msgid "Lines"
+msgstr ""
+
+#. module: construction_billing
+#: model:ir.model.fields,field_description:construction_billing.field_construction_progress_statement__message_has_error
+msgid "Message Delivery error"
+msgstr ""
+
+#. module: construction_billing
+#: model:ir.model.fields,field_description:construction_billing.field_construction_progress_statement__message_ids
+msgid "Messages"
+msgstr ""
+
+#. module: construction_billing
+#: model:ir.model.fields,field_description:construction_billing.field_construction_progress_statement__name
+msgid "Name"
+msgstr ""
+
+#. module: construction_billing
+#: model:ir.model.fields,field_description:construction_billing.field_construction_progress_statement__net_amount
+msgid "Net Amount"
+msgstr ""
+
+#. module: construction_billing
+#: model_terms:ir.ui.view,arch_db:construction_billing.view_construction_site_form_billing
+msgid "New Progress Statement"
+msgstr ""
+
+#. module: construction_billing
+#: model:ir.model.fields,field_description:construction_billing.field_construction_progress_statement__note
+msgid "Note"
+msgstr ""
+
+#. module: construction_billing
+#: model:ir.model.fields,field_description:construction_billing.field_construction_progress_statement__message_needaction_counter
+msgid "Number of Actions"
+msgstr ""
+
+#. module: construction_billing
+#: model:ir.model.fields,field_description:construction_billing.field_construction_progress_statement__message_has_error_counter
+msgid "Number of errors"
+msgstr ""
+
+#. module: construction_billing
+#: model:ir.model.fields,help:construction_billing.field_construction_progress_statement__message_needaction_counter
+msgid "Number of messages requiring action"
+msgstr ""
+
+#. module: construction_billing
+#: model:ir.model.fields,help:construction_billing.field_construction_progress_statement__message_has_error_counter
+msgid "Number of messages with delivery error"
+msgstr ""
+
+#. module: construction_billing
+#. odoo-python
+#: code:addons/construction_billing/models/progress_statement.py:0
+msgid "Only draft statements can be cancelled."
+msgstr ""
+
+#. module: construction_billing
+#. odoo-python
+#: code:addons/construction_billing/models/progress_statement.py:0
+msgid "Only draft statements can be invoiced."
+msgstr ""
+
+#. module: construction_billing
+#. odoo-python
+#: code:addons/construction_billing/models/progress_statement.py:0
+msgid ""
+"Only one draft progress statement per site is allowed. Invoice or cancel the"
+" existing draft first."
+msgstr ""
+
+#. module: construction_billing
+#: model_terms:ir.actions.act_window,help:construction_billing.action_construction_progress_statement
+msgid ""
+"Open a site and click New Progress Statement to invoice the work done so "
+"far."
+msgstr ""
+
+#. module: construction_billing
+#: model:ir.model.fields,field_description:construction_billing.field_construction_progress_statement_line__previous_progress
+msgid "Previously billed (%)"
+msgstr ""
+
+#. module: construction_billing
+#: model:ir.model.fields.selection,name:construction_billing.selection__construction_progress_statement__kind__progress
+msgid "Progress"
+msgstr ""
+
+#. module: construction_billing
+#: model:ir.actions.act_window,name:construction_billing.action_construction_progress_statement
+#: model:ir.ui.menu,name:construction_billing.menu_construction_progress_statement
+msgid "Progress Billing"
+msgstr ""
+
+#. module: construction_billing
+#: model:ir.model,name:construction_billing.model_construction_progress_statement
+msgid "Progress Statement (interim client invoice)"
+msgstr ""
+
+#. module: construction_billing
+#: model:ir.model,name:construction_billing.model_construction_progress_statement_line
+msgid "Progress Statement Line"
+msgstr ""
+
+#. module: construction_billing
+#. odoo-python
+#: code:addons/construction_billing/models/construction_site.py:0
+#: model:ir.model.fields,field_description:construction_billing.field_construction_site__statement_ids
+msgid "Progress Statements"
+msgstr ""
+
+#. module: construction_billing
+#: model:ir.model.fields,field_description:construction_billing.field_construction_progress_statement__rating_ids
+msgid "Ratings"
+msgstr ""
+
+#. module: construction_billing
+#: model:ir.model.fields,field_description:construction_billing.field_construction_progress_statement__release_amount
+msgid "Release Amount"
+msgstr ""
+
+#. module: construction_billing
+#: model_terms:ir.ui.view,arch_db:construction_billing.view_construction_site_form_billing
+msgid "Release Retention"
+msgstr ""
+
+#. module: construction_billing
+#: model_terms:ir.ui.view,arch_db:construction_billing.view_construction_progress_statement_list
+msgid "Retention"
+msgstr ""
+
+#. module: construction_billing
+#: model:ir.model.fields,field_description:construction_billing.field_construction_progress_statement__retention_percent
+#: model:ir.model.fields,field_description:construction_billing.field_construction_site__retention_percent
+msgid "Retention (%)"
+msgstr ""
+
+#. module: construction_billing
+#: model:ir.model.fields,field_description:construction_billing.field_construction_progress_statement__retention_amount
+msgid "Retention Amount"
+msgstr ""
+
+#. module: construction_billing
+#: model:ir.model.fields,field_description:construction_billing.field_construction_site__retention_held
+msgid "Retention Held"
+msgstr ""
+
+#. module: construction_billing
+#. odoo-python
+#: code:addons/construction_billing/models/progress_statement.py:0
+msgid "Retention held back (%s%%)"
+msgstr ""
+
+#. module: construction_billing
+#. odoo-python
+#: code:addons/construction_billing/models/progress_statement.py:0
+msgid "Retention must be between 0 and 100 percent."
+msgstr ""
+
+#. module: construction_billing
+#: model:ir.model.fields.selection,name:construction_billing.selection__construction_progress_statement__kind__retention
+msgid "Retention release"
+msgstr ""
+
+#. module: construction_billing
+#. odoo-python
+#: code:addons/construction_billing/models/progress_statement.py:0
+msgid "Retention release - %s"
+msgstr ""
+
+#. module: construction_billing
+#: model:ir.model.fields,help:construction_billing.field_construction_site__retention_held
+msgid "Retention withheld on invoiced statements and not yet released."
+msgstr ""
+
+#. module: construction_billing
+#: model:ir.model.fields,field_description:construction_billing.field_construction_progress_statement__message_has_sms_error
+msgid "SMS Delivery error"
+msgstr ""
+
+#. module: construction_billing
+#: model:ir.model.fields,help:construction_billing.field_construction_progress_statement_line__contract_value
+msgid ""
+"Selling value of the line when the statement was created (cost plus site "
+"markup)."
+msgstr ""
+
+#. module: construction_billing
+#: model:ir.model.fields,field_description:construction_billing.field_construction_progress_statement_line__sequence
+msgid "Sequence"
+msgstr ""
+
+#. module: construction_billing
+#. odoo-python
+#: code:addons/construction_billing/models/progress_statement.py:0
+msgid "Set a client on the site before invoicing."
+msgstr ""
+
+#. module: construction_billing
+#: model:ir.model.fields,help:construction_billing.field_construction_site__retention_percent
+msgid "Share of each progress invoice held back until the end of the works."
+msgstr ""
+
+#. module: construction_billing
+#: model:ir.model.fields,field_description:construction_billing.field_construction_progress_statement__site_id
+#: model_terms:ir.ui.view,arch_db:construction_billing.view_construction_progress_statement_search
+msgid "Site"
+msgstr ""
+
+#. module: construction_billing
+#: model:ir.model.fields,field_description:construction_billing.field_construction_progress_statement__state
+msgid "State"
+msgstr ""
+
+#. module: construction_billing
+#: model:ir.model.fields,field_description:construction_billing.field_construction_progress_statement_line__statement_id
+msgid "Statement"
+msgstr ""
+
+#. module: construction_billing
+#: model:ir.model.fields,field_description:construction_billing.field_construction_site__statement_count
+msgid "Statement Count"
+msgstr ""
+
+#. module: construction_billing
+#: model_terms:ir.ui.view,arch_db:construction_billing.view_construction_site_form_billing
+msgid "Statements"
+msgstr ""
+
+#. module: construction_billing
+#: model_terms:ir.ui.view,arch_db:construction_billing.view_construction_progress_statement_search
+msgid "Status"
+msgstr ""
+
+#. module: construction_billing
+#. odoo-python
+#: code:addons/construction_billing/models/construction_site.py:0
+msgid "There is no retention to release on this site."
+msgstr ""
+
+#. module: construction_billing
+#. odoo-python
+#: code:addons/construction_billing/models/progress_statement.py:0
+msgid "There is nothing to invoice on this statement."
+msgstr ""
+
+#. module: construction_billing
+#: model:ir.model.fields,field_description:construction_billing.field_construction_progress_statement_line__amount
+msgid "This period"
+msgstr ""
+
+#. module: construction_billing
+#: model:ir.model.fields,field_description:construction_billing.field_construction_progress_statement_line__period_progress
+msgid "This period (%)"
+msgstr ""
+
+#. module: construction_billing
+#: model:ir.model.fields,help:construction_billing.field_construction_site__contract_value
+msgid "Total selling value of the bill of quantities (cost plus markup)."
+msgstr ""
+
+#. module: construction_billing
+#: model:ir.model.fields,field_description:construction_billing.field_construction_progress_statement__website_message_ids
+msgid "Website Messages"
+msgstr ""
+
+#. module: construction_billing
+#: model:ir.model.fields,help:construction_billing.field_construction_progress_statement__website_message_ids
+msgid "Website communication history"
+msgstr ""
+
+#. module: construction_billing
+#. odoo-python
+#: code:addons/construction_billing/models/progress_statement.py:0
+msgid "You need invoicing rights to issue a client invoice."
+msgstr ""
+
+#. module: construction_billing
+#. odoo-python
+#: code:addons/construction_billing/models/construction_site.py:0
+msgid "site_id"
+msgstr ""

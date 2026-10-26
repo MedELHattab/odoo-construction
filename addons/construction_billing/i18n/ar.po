@@ -1,0 +1,546 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* construction_billing
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 19.0-20261015\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-10-26 12:36+0000\n"
+"PO-Revision-Date: 2026-10-26 12:36+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: construction_billing
+#. odoo-python
+#: code:addons/construction_billing/models/progress_statement.py:0
+msgid "%(item)s (%(previous).0f%% to %(current).0f%%)"
+msgstr "%(item)s (من %(previous).0f%% إلى %(current).0f%%)"
+
+#. module: construction_billing
+#. odoo-python
+#: code:addons/construction_billing/models/progress_statement.py:0
+msgid ""
+"'%(item)s': progress billed to date must be between the previously billed "
+"percentage (%(previous).1f%%) and 100%%."
+msgstr "'%(item)s': يجب أن تكون نسبة الإنجاز المفوترة حتى تاريخه بين النسبة المفوترة سابقاً (%(previous).1f%%) و100%%."
+
+#. module: construction_billing
+#: model_terms:ir.ui.view,arch_db:construction_billing.view_construction_progress_statement_form
+msgid "<span class=\"o_stat_text\">Invoice</span>"
+msgstr "<span class=\"o_stat_text\">الفاتورة</span>"
+
+#. module: construction_billing
+#: model:ir.model.fields,field_description:construction_billing.field_construction_progress_statement__message_needaction
+msgid "Action Needed"
+msgstr "إجراء مطلوب"
+
+#. module: construction_billing
+#. odoo-python
+#: code:addons/construction_billing/models/construction_site.py:0
+msgid "Add bill of quantities lines first."
+msgstr "أضف بنود جدول الكميات أولاً."
+
+#. module: construction_billing
+#: model:ir.model.fields,help:construction_billing.field_construction_progress_statement__net_amount
+msgid "Amount invoiced to the client: gross minus the retention held back."
+msgstr "المبلغ المفوتر للعميل: الإجمالي ناقص مبلغ الضمان المحتجز."
+
+#. module: construction_billing
+#. odoo-python
+#: code:addons/construction_billing/models/progress_statement.py:0
+msgid "An invoiced statement cannot be deleted. Credit the invoice instead."
+msgstr "لا يمكن حذف مستخلص تمت فوترته. أنشئ إشعاراً دائناً للفاتورة بدلاً من ذلك."
+
+#. module: construction_billing
+#: model:ir.model.fields,field_description:construction_billing.field_construction_progress_statement__message_attachment_count
+msgid "Attachment Count"
+msgstr "عدد المرفقات"
+
+#. module: construction_billing
+#: model_terms:ir.actions.act_window,help:construction_billing.action_construction_progress_statement
+msgid "Bill your first progress statement"
+msgstr "أصدر أول مستخلص أعمال"
+
+#. module: construction_billing
+#: model:ir.model.fields,field_description:construction_billing.field_construction_site__billed_percent
+msgid "Billed (%)"
+msgstr "المفوتر (%)"
+
+#. module: construction_billing
+#: model:ir.model.fields,field_description:construction_billing.field_construction_site__billed_amount
+msgid "Billed Amount"
+msgstr "المبلغ المفوتر"
+
+#. module: construction_billing
+#: model:ir.model.fields,field_description:construction_billing.field_construction_progress_statement_line__current_progress
+msgid "Billed to date (%)"
+msgstr "المفوتر حتى تاريخه (%)"
+
+#. module: construction_billing
+#: model:ir.model.fields,field_description:construction_billing.field_construction_progress_statement_line__boq_line_id
+msgid "BoQ line"
+msgstr "بند جدول الكميات"
+
+#. module: construction_billing
+#: model_terms:ir.ui.view,arch_db:construction_billing.view_construction_progress_statement_form
+msgid "Cancel"
+msgstr "إلغاء"
+
+#. module: construction_billing
+#: model:ir.model.fields.selection,name:construction_billing.selection__construction_progress_statement__state__cancelled
+msgid "Cancelled"
+msgstr "ملغى"
+
+#. module: construction_billing
+#: model:ir.model.fields,field_description:construction_billing.field_construction_progress_statement__partner_id
+msgid "Client"
+msgstr "العميل"
+
+#. module: construction_billing
+#: model:ir.model.fields,field_description:construction_billing.field_construction_progress_statement__company_id
+msgid "Company"
+msgstr "الشركة"
+
+#. module: construction_billing
+#: model:ir.model,name:construction_billing.model_construction_site
+msgid "Construction Site"
+msgstr "موقع البناء"
+
+#. module: construction_billing
+#: model:ir.model.fields,field_description:construction_billing.field_construction_progress_statement_line__contract_value
+#: model:ir.model.fields,field_description:construction_billing.field_construction_site__contract_value
+msgid "Contract Value"
+msgstr "قيمة العقد"
+
+#. module: construction_billing
+#: model_terms:ir.ui.view,arch_db:construction_billing.view_construction_progress_statement_form
+msgid "Create Invoice"
+msgstr "إنشاء فاتورة"
+
+#. module: construction_billing
+#: model:ir.model.fields,field_description:construction_billing.field_construction_progress_statement__create_uid
+#: model:ir.model.fields,field_description:construction_billing.field_construction_progress_statement_line__create_uid
+msgid "Created by"
+msgstr "أنشئ بواسطة"
+
+#. module: construction_billing
+#: model:ir.model.fields,field_description:construction_billing.field_construction_progress_statement__create_date
+#: model:ir.model.fields,field_description:construction_billing.field_construction_progress_statement_line__create_date
+msgid "Created on"
+msgstr "أنشئ في"
+
+#. module: construction_billing
+#: model:ir.model.fields,field_description:construction_billing.field_construction_progress_statement__currency_id
+#: model:ir.model.fields,field_description:construction_billing.field_construction_progress_statement_line__currency_id
+msgid "Currency"
+msgstr "العملة"
+
+#. module: construction_billing
+#: model:ir.model.fields,field_description:construction_billing.field_construction_progress_statement__date
+msgid "Date"
+msgstr "التاريخ"
+
+#. module: construction_billing
+#: model:ir.model.fields,field_description:construction_billing.field_construction_progress_statement_line__name
+msgid "Description"
+msgstr "الوصف"
+
+#. module: construction_billing
+#: model:ir.model.fields,field_description:construction_billing.field_construction_progress_statement__display_name
+#: model:ir.model.fields,field_description:construction_billing.field_construction_progress_statement_line__display_name
+#: model:ir.model.fields,field_description:construction_billing.field_construction_site__display_name
+msgid "Display Name"
+msgstr "اسم العرض"
+
+#. module: construction_billing
+#: model:ir.model.fields.selection,name:construction_billing.selection__construction_progress_statement__state__draft
+#: model_terms:ir.ui.view,arch_db:construction_billing.view_construction_progress_statement_search
+msgid "Draft"
+msgstr "مسودة"
+
+#. module: construction_billing
+#: model:ir.model.fields,field_description:construction_billing.field_construction_progress_statement__message_follower_ids
+msgid "Followers"
+msgstr "المتابعون"
+
+#. module: construction_billing
+#: model:ir.model.fields,field_description:construction_billing.field_construction_progress_statement__message_partner_ids
+msgid "Followers (Partners)"
+msgstr "المتابعون (الشركاء)"
+
+#. module: construction_billing
+#: model:ir.model.fields,help:construction_billing.field_construction_progress_statement__release_amount
+msgid ""
+"For a retention release: the amount of held-back retention being invoiced."
+msgstr "لإفراج الضمان: مبلغ الضمان المحتجز الذي تتم فوترته."
+
+#. module: construction_billing
+#: model_terms:ir.ui.view,arch_db:construction_billing.view_construction_progress_statement_form
+#: model_terms:ir.ui.view,arch_db:construction_billing.view_construction_progress_statement_list
+msgid "Gross"
+msgstr "الإجمالي"
+
+#. module: construction_billing
+#: model:ir.model.fields,field_description:construction_billing.field_construction_progress_statement__gross_amount
+msgid "Gross Amount"
+msgstr "المبلغ الإجمالي"
+
+#. module: construction_billing
+#: model:ir.model.fields,help:construction_billing.field_construction_site__billed_amount
+msgid ""
+"Gross value of the work invoiced to the client so far (before retention)."
+msgstr "القيمة الإجمالية للأعمال المفوترة للعميل حتى الآن (قبل الضمان)."
+
+#. module: construction_billing
+#: model:ir.model.fields,field_description:construction_billing.field_construction_progress_statement__has_message
+msgid "Has Message"
+msgstr "يحتوي على رسالة"
+
+#. module: construction_billing
+#: model:ir.model.fields,field_description:construction_billing.field_construction_progress_statement__id
+#: model:ir.model.fields,field_description:construction_billing.field_construction_progress_statement_line__id
+#: model:ir.model.fields,field_description:construction_billing.field_construction_site__id
+msgid "ID"
+msgstr "المعرف"
+
+#. module: construction_billing
+#: model:ir.model.fields,help:construction_billing.field_construction_progress_statement__message_needaction
+msgid "If checked, new messages require your attention."
+msgstr "إذا تم تحديده، فهناك رسائل جديدة تتطلب انتباهك."
+
+#. module: construction_billing
+#: model:ir.model.fields,help:construction_billing.field_construction_progress_statement__message_has_error
+#: model:ir.model.fields,help:construction_billing.field_construction_progress_statement__message_has_sms_error
+msgid "If checked, some messages have a delivery error."
+msgstr "إذا تم تحديده، فإن بعض الرسائل بها خطأ في التسليم."
+
+#. module: construction_billing
+#: model_terms:ir.ui.view,arch_db:construction_billing.view_construction_progress_statement_form
+msgid "Internal note"
+msgstr "ملاحظة داخلية"
+
+#. module: construction_billing
+#: model:ir.model.fields,field_description:construction_billing.field_construction_progress_statement__invoice_id
+msgid "Invoice"
+msgstr "الفاتورة"
+
+#. module: construction_billing
+#: model:ir.model.fields.selection,name:construction_billing.selection__construction_progress_statement__state__invoiced
+#: model_terms:ir.ui.view,arch_db:construction_billing.view_construction_progress_statement_list
+#: model_terms:ir.ui.view,arch_db:construction_billing.view_construction_progress_statement_search
+msgid "Invoiced"
+msgstr "مفوتر"
+
+#. module: construction_billing
+#: model:ir.model.fields,field_description:construction_billing.field_construction_progress_statement__message_is_follower
+msgid "Is Follower"
+msgstr "متابع"
+
+#. module: construction_billing
+#: model:ir.model.fields,field_description:construction_billing.field_construction_progress_statement__kind
+msgid "Kind"
+msgstr "النوع"
+
+#. module: construction_billing
+#: model:ir.model.fields,field_description:construction_billing.field_construction_progress_statement__write_uid
+#: model:ir.model.fields,field_description:construction_billing.field_construction_progress_statement_line__write_uid
+msgid "Last Updated by"
+msgstr "آخر تحديث بواسطة"
+
+#. module: construction_billing
+#: model:ir.model.fields,field_description:construction_billing.field_construction_progress_statement__write_date
+#: model:ir.model.fields,field_description:construction_billing.field_construction_progress_statement_line__write_date
+msgid "Last Updated on"
+msgstr "آخر تحديث في"
+
+#. module: construction_billing
+#: model:ir.model.fields,field_description:construction_billing.field_construction_progress_statement__line_ids
+msgid "Lines"
+msgstr "البنود"
+
+#. module: construction_billing
+#: model:ir.model.fields,field_description:construction_billing.field_construction_progress_statement__message_has_error
+msgid "Message Delivery error"
+msgstr "خطأ في تسليم الرسالة"
+
+#. module: construction_billing
+#: model:ir.model.fields,field_description:construction_billing.field_construction_progress_statement__message_ids
+msgid "Messages"
+msgstr "الرسائل"
+
+#. module: construction_billing
+#: model:ir.model.fields,field_description:construction_billing.field_construction_progress_statement__name
+msgid "Name"
+msgstr "الاسم"
+
+#. module: construction_billing
+#: model:ir.model.fields,field_description:construction_billing.field_construction_progress_statement__net_amount
+msgid "Net Amount"
+msgstr "المبلغ الصافي"
+
+#. module: construction_billing
+#: model_terms:ir.ui.view,arch_db:construction_billing.view_construction_site_form_billing
+msgid "New Progress Statement"
+msgstr "مستخلص أعمال جديد"
+
+#. module: construction_billing
+#: model:ir.model.fields,field_description:construction_billing.field_construction_progress_statement__note
+msgid "Note"
+msgstr "ملاحظة"
+
+#. module: construction_billing
+#: model:ir.model.fields,field_description:construction_billing.field_construction_progress_statement__message_needaction_counter
+msgid "Number of Actions"
+msgstr "عدد الإجراءات"
+
+#. module: construction_billing
+#: model:ir.model.fields,field_description:construction_billing.field_construction_progress_statement__message_has_error_counter
+msgid "Number of errors"
+msgstr "عدد الأخطاء"
+
+#. module: construction_billing
+#: model:ir.model.fields,help:construction_billing.field_construction_progress_statement__message_needaction_counter
+msgid "Number of messages requiring action"
+msgstr "عدد الرسائل التي تتطلب إجراءً"
+
+#. module: construction_billing
+#: model:ir.model.fields,help:construction_billing.field_construction_progress_statement__message_has_error_counter
+msgid "Number of messages with delivery error"
+msgstr "عدد الرسائل التي بها خطأ في التسليم"
+
+#. module: construction_billing
+#. odoo-python
+#: code:addons/construction_billing/models/progress_statement.py:0
+msgid "Only draft statements can be cancelled."
+msgstr "يمكن إلغاء المستخلصات في حالة المسودة فقط."
+
+#. module: construction_billing
+#. odoo-python
+#: code:addons/construction_billing/models/progress_statement.py:0
+msgid "Only draft statements can be invoiced."
+msgstr "يمكن فوترة المستخلصات في حالة المسودة فقط."
+
+#. module: construction_billing
+#. odoo-python
+#: code:addons/construction_billing/models/progress_statement.py:0
+msgid ""
+"Only one draft progress statement per site is allowed. Invoice or cancel the"
+" existing draft first."
+msgstr "يُسمح بمستخلص أعمال واحد فقط في حالة المسودة لكل موقع. قم بفوترة المسودة الحالية أو إلغائها أولاً."
+
+#. module: construction_billing
+#: model_terms:ir.actions.act_window,help:construction_billing.action_construction_progress_statement
+msgid ""
+"Open a site and click New Progress Statement to invoice the work done so "
+"far."
+msgstr "افتح موقعاً وانقر على مستخلص أعمال جديد لفوترة الأعمال المنجزة حتى الآن."
+
+#. module: construction_billing
+#: model:ir.model.fields,field_description:construction_billing.field_construction_progress_statement_line__previous_progress
+msgid "Previously billed (%)"
+msgstr "المفوتر سابقاً (%)"
+
+#. module: construction_billing
+#: model:ir.model.fields.selection,name:construction_billing.selection__construction_progress_statement__kind__progress
+msgid "Progress"
+msgstr "الإنجاز"
+
+#. module: construction_billing
+#: model:ir.actions.act_window,name:construction_billing.action_construction_progress_statement
+#: model:ir.ui.menu,name:construction_billing.menu_construction_progress_statement
+msgid "Progress Billing"
+msgstr "الفوترة حسب الإنجاز"
+
+#. module: construction_billing
+#: model:ir.model,name:construction_billing.model_construction_progress_statement
+msgid "Progress Statement (interim client invoice)"
+msgstr "مستخلص أعمال (فاتورة مرحلية للعميل)"
+
+#. module: construction_billing
+#: model:ir.model,name:construction_billing.model_construction_progress_statement_line
+msgid "Progress Statement Line"
+msgstr "بند مستخلص الأعمال"
+
+#. module: construction_billing
+#. odoo-python
+#: code:addons/construction_billing/models/construction_site.py:0
+#: model:ir.model.fields,field_description:construction_billing.field_construction_site__statement_ids
+msgid "Progress Statements"
+msgstr "مستخلصات الأعمال"
+
+#. module: construction_billing
+#: model:ir.model.fields,field_description:construction_billing.field_construction_progress_statement__rating_ids
+msgid "Ratings"
+msgstr "التقييمات"
+
+#. module: construction_billing
+#: model:ir.model.fields,field_description:construction_billing.field_construction_progress_statement__release_amount
+msgid "Release Amount"
+msgstr "المبلغ المفرج عنه"
+
+#. module: construction_billing
+#: model_terms:ir.ui.view,arch_db:construction_billing.view_construction_site_form_billing
+msgid "Release Retention"
+msgstr "الإفراج عن مبلغ الضمان"
+
+#. module: construction_billing
+#: model_terms:ir.ui.view,arch_db:construction_billing.view_construction_progress_statement_list
+msgid "Retention"
+msgstr "مبلغ الضمان المحتجز"
+
+#. module: construction_billing
+#: model:ir.model.fields,field_description:construction_billing.field_construction_progress_statement__retention_percent
+#: model:ir.model.fields,field_description:construction_billing.field_construction_site__retention_percent
+msgid "Retention (%)"
+msgstr "نسبة الضمان المحتجز (%)"
+
+#. module: construction_billing
+#: model:ir.model.fields,field_description:construction_billing.field_construction_progress_statement__retention_amount
+msgid "Retention Amount"
+msgstr "مبلغ الضمان المحتجز"
+
+#. module: construction_billing
+#: model:ir.model.fields,field_description:construction_billing.field_construction_site__retention_held
+msgid "Retention Held"
+msgstr "الضمان المحتجز"
+
+#. module: construction_billing
+#. odoo-python
+#: code:addons/construction_billing/models/progress_statement.py:0
+msgid "Retention held back (%s%%)"
+msgstr "ضمان محتجز (%s%%)"
+
+#. module: construction_billing
+#. odoo-python
+#: code:addons/construction_billing/models/progress_statement.py:0
+msgid "Retention must be between 0 and 100 percent."
+msgstr "يجب أن تكون نسبة الضمان بين 0 و100 بالمئة."
+
+#. module: construction_billing
+#: model:ir.model.fields.selection,name:construction_billing.selection__construction_progress_statement__kind__retention
+msgid "Retention release"
+msgstr "الإفراج عن الضمان"
+
+#. module: construction_billing
+#. odoo-python
+#: code:addons/construction_billing/models/progress_statement.py:0
+msgid "Retention release - %s"
+msgstr "الإفراج عن الضمان - %s"
+
+#. module: construction_billing
+#: model:ir.model.fields,help:construction_billing.field_construction_site__retention_held
+msgid "Retention withheld on invoiced statements and not yet released."
+msgstr "الضمان المحتجز من المستخلصات المفوترة ولم يتم الإفراج عنه بعد."
+
+#. module: construction_billing
+#: model:ir.model.fields,field_description:construction_billing.field_construction_progress_statement__message_has_sms_error
+msgid "SMS Delivery error"
+msgstr "خطأ في تسليم الرسالة النصية"
+
+#. module: construction_billing
+#: model:ir.model.fields,help:construction_billing.field_construction_progress_statement_line__contract_value
+msgid ""
+"Selling value of the line when the statement was created (cost plus site "
+"markup)."
+msgstr "قيمة البيع للبند عند إنشاء المستخلص (التكلفة زائد هامش الموقع)."
+
+#. module: construction_billing
+#: model:ir.model.fields,field_description:construction_billing.field_construction_progress_statement_line__sequence
+msgid "Sequence"
+msgstr "التسلسل"
+
+#. module: construction_billing
+#. odoo-python
+#: code:addons/construction_billing/models/progress_statement.py:0
+msgid "Set a client on the site before invoicing."
+msgstr "حدّد عميلاً للموقع قبل الفوترة."
+
+#. module: construction_billing
+#: model:ir.model.fields,help:construction_billing.field_construction_site__retention_percent
+msgid "Share of each progress invoice held back until the end of the works."
+msgstr "نسبة من كل فاتورة إنجاز يتم احتجازها حتى نهاية الأعمال."
+
+#. module: construction_billing
+#: model:ir.model.fields,field_description:construction_billing.field_construction_progress_statement__site_id
+#: model_terms:ir.ui.view,arch_db:construction_billing.view_construction_progress_statement_search
+msgid "Site"
+msgstr "الموقع"
+
+#. module: construction_billing
+#: model:ir.model.fields,field_description:construction_billing.field_construction_progress_statement__state
+msgid "State"
+msgstr "الحالة"
+
+#. module: construction_billing
+#: model:ir.model.fields,field_description:construction_billing.field_construction_progress_statement_line__statement_id
+msgid "Statement"
+msgstr "المستخلص"
+
+#. module: construction_billing
+#: model:ir.model.fields,field_description:construction_billing.field_construction_site__statement_count
+msgid "Statement Count"
+msgstr "عدد المستخلصات"
+
+#. module: construction_billing
+#: model_terms:ir.ui.view,arch_db:construction_billing.view_construction_site_form_billing
+msgid "Statements"
+msgstr "المستخلصات"
+
+#. module: construction_billing
+#: model_terms:ir.ui.view,arch_db:construction_billing.view_construction_progress_statement_search
+msgid "Status"
+msgstr "الحالة"
+
+#. module: construction_billing
+#. odoo-python
+#: code:addons/construction_billing/models/construction_site.py:0
+msgid "There is no retention to release on this site."
+msgstr "لا يوجد ضمان محتجز للإفراج عنه في هذا الموقع."
+
+#. module: construction_billing
+#. odoo-python
+#: code:addons/construction_billing/models/progress_statement.py:0
+msgid "There is nothing to invoice on this statement."
+msgstr "لا يوجد ما يمكن فوترته في هذا المستخلص."
+
+#. module: construction_billing
+#: model:ir.model.fields,field_description:construction_billing.field_construction_progress_statement_line__amount
+msgid "This period"
+msgstr "هذه الفترة"
+
+#. module: construction_billing
+#: model:ir.model.fields,field_description:construction_billing.field_construction_progress_statement_line__period_progress
+msgid "This period (%)"
+msgstr "هذه الفترة (%)"
+
+#. module: construction_billing
+#: model:ir.model.fields,help:construction_billing.field_construction_site__contract_value
+msgid "Total selling value of the bill of quantities (cost plus markup)."
+msgstr "إجمالي قيمة البيع لجدول الكميات (التكلفة زائد هامش الربح)."
+
+#. module: construction_billing
+#: model:ir.model.fields,field_description:construction_billing.field_construction_progress_statement__website_message_ids
+msgid "Website Messages"
+msgstr "رسائل الموقع الإلكتروني"
+
+#. module: construction_billing
+#: model:ir.model.fields,help:construction_billing.field_construction_progress_statement__website_message_ids
+msgid "Website communication history"
+msgstr "سجل اتصالات الموقع الإلكتروني"
+
+#. module: construction_billing
+#. odoo-python
+#: code:addons/construction_billing/models/progress_statement.py:0
+msgid "You need invoicing rights to issue a client invoice."
+msgstr "تحتاج إلى صلاحيات الفوترة لإصدار فاتورة عميل."
+
+#. module: construction_billing
+#. odoo-python
+#: code:addons/construction_billing/models/construction_site.py:0
+msgid "site_id"
+msgstr "الموقع"

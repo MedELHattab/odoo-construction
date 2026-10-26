@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="seq_construction_subcontract" model="ir.sequence">
+        <field name="name">Subcontract</field>
+        <field name="code">construction.subcontract</field>
+        <field name="prefix">SC/</field>
+        <field name="padding">4</field>
+        <field name="company_id" eval="False"/>
+    </record>
+    <record id="seq_construction_subcontract_payment" model="ir.sequence">
+        <field name="name">Subcontract Payment Certificate</field>
+        <field name="code">construction.subcontract.payment</field>
+        <field name="prefix">SP/</field>
+        <field name="padding">4</field>
+        <field name="company_id" eval="False"/>
+    </record>
+</odoo>

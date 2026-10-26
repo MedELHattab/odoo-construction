@@ -1,0 +1,104 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* construction_dashboard
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 19.0-20261015\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-10-26 12:36+0000\n"
+"PO-Revision-Date: 2026-10-26 12:36+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: construction_dashboard
+#: model_terms:ir.ui.view,arch_db:construction_dashboard.view_construction_site_kanban
+msgid "<span class=\"badge text-bg-danger\">Over budget</span>"
+msgstr ""
+
+#. module: construction_dashboard
+#: model_terms:ir.ui.view,arch_db:construction_dashboard.view_construction_site_kanban
+msgid "<span class=\"badge text-bg-warning\">Near budget limit</span>"
+msgstr ""
+
+#. module: construction_dashboard
+#: model_terms:ir.ui.view,arch_db:construction_dashboard.view_construction_site_kanban
+msgid "<span class=\"text-muted\">Billed</span>"
+msgstr ""
+
+#. module: construction_dashboard
+#: model_terms:ir.ui.view,arch_db:construction_dashboard.view_construction_site_kanban
+msgid "<span class=\"text-muted\">Budget</span>"
+msgstr ""
+
+#. module: construction_dashboard
+#: model_terms:ir.ui.view,arch_db:construction_dashboard.view_construction_site_kanban
+msgid "<span class=\"text-muted\">Total cost</span>"
+msgstr ""
+
+#. module: construction_dashboard
+#: model_terms:ir.ui.view,arch_db:construction_dashboard.view_construction_site_kanban
+msgid "<span>Margin to date</span>"
+msgstr ""
+
+#. module: construction_dashboard
+#: model_terms:ir.ui.view,arch_db:construction_dashboard.view_construction_site_cost_list_dashboard
+msgid "Billed"
+msgstr ""
+
+#. module: construction_dashboard
+#: model_terms:ir.ui.view,arch_db:construction_dashboard.view_construction_site_kanban
+msgid "Budget used"
+msgstr ""
+
+#. module: construction_dashboard
+#: model:ir.model.fields,field_description:construction_dashboard.field_construction_site__budget_used_percent
+msgid "Budget used (%)"
+msgstr ""
+
+#. module: construction_dashboard
+#: model:ir.model,name:construction_dashboard.model_construction_site
+msgid "Construction Site"
+msgstr ""
+
+#. module: construction_dashboard
+#: model:ir.model.fields,field_description:construction_dashboard.field_construction_site__display_name
+msgid "Display Name"
+msgstr ""
+
+#. module: construction_dashboard
+#: model:ir.model.fields,field_description:construction_dashboard.field_construction_site__id
+msgid "ID"
+msgstr ""
+
+#. module: construction_dashboard
+#: model_terms:ir.ui.view,arch_db:construction_dashboard.view_construction_site_cost_list_dashboard
+msgid "Margin"
+msgstr ""
+
+#. module: construction_dashboard
+#: model:ir.model.fields,field_description:construction_dashboard.field_construction_site__margin_to_date
+msgid "Margin To Date"
+msgstr ""
+
+#. module: construction_dashboard
+#: model_terms:ir.ui.view,arch_db:construction_dashboard.view_construction_site_kanban
+msgid "Progress"
+msgstr ""
+
+#. module: construction_dashboard
+#: model:ir.model.fields,help:construction_dashboard.field_construction_site__budget_used_percent
+msgid ""
+"Total cost (bills, labor, equipment, expenses) as a share of the budget."
+msgstr ""
+
+#. module: construction_dashboard
+#: model:ir.model.fields,help:construction_dashboard.field_construction_site__margin_to_date
+msgid ""
+"Work invoiced to the client so far (before retention) minus the total cost "
+"so far."
+msgstr ""

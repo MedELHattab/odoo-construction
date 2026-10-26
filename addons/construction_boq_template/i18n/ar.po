@@ -1,0 +1,317 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* construction_boq_template
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 19.0-20261015\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-10-26 12:36+0000\n"
+"PO-Revision-Date: 2026-10-26 12:36+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: construction_boq_template
+#: model:ir.model.fields,field_description:construction_boq_template.field_construction_boq_category__active
+#: model:ir.model.fields,field_description:construction_boq_template.field_construction_boq_template__active
+msgid "Active"
+msgstr "نشط"
+
+#. module: construction_boq_template
+#: model_terms:ir.ui.view,arch_db:construction_boq_template.view_boq_template_apply_form
+msgid "Apply"
+msgstr "تطبيق"
+
+#. module: construction_boq_template
+#: model_terms:ir.ui.view,arch_db:construction_boq_template.view_construction_site_form_boq_template
+msgid "Apply Template"
+msgstr "تطبيق قالب"
+
+#. module: construction_boq_template
+#: model:ir.actions.act_window,name:construction_boq_template.action_open_apply_template
+msgid "Apply a BoQ Template"
+msgstr "تطبيق قالب جدول كميات"
+
+#. module: construction_boq_template
+#: model:ir.model,name:construction_boq_template.model_construction_boq_template_apply
+msgid "Apply a BoQ Template to a Site"
+msgstr "تطبيق قالب جدول كميات على موقع"
+
+#. module: construction_boq_template
+#: model:ir.model,name:construction_boq_template.model_construction_boq_line
+msgid "Bill of Quantities Line"
+msgstr "بند جدول الكميات"
+
+#. module: construction_boq_template
+#: model:ir.model,name:construction_boq_template.model_construction_boq_template
+msgid "Bill of Quantities Template"
+msgstr "قالب جدول الكميات"
+
+#. module: construction_boq_template
+#: model:ir.model,name:construction_boq_template.model_construction_boq_template_line
+msgid "Bill of Quantities Template Line"
+msgstr "بند قالب جدول الكميات"
+
+#. module: construction_boq_template
+#: model:ir.actions.act_window,name:construction_boq_template.action_construction_boq_analysis
+#: model:ir.ui.menu,name:construction_boq_template.menu_construction_boq_analysis
+msgid "BoQ Analysis"
+msgstr "تحليل جدول الكميات"
+
+#. module: construction_boq_template
+#: model:ir.model,name:construction_boq_template.model_construction_boq_category
+msgid "BoQ Cost Category"
+msgstr "فئة تكلفة جدول الكميات"
+
+#. module: construction_boq_template
+#: model:ir.actions.act_window,name:construction_boq_template.action_construction_boq_template
+#: model:ir.ui.menu,name:construction_boq_template.menu_construction_boq_template
+msgid "BoQ Templates"
+msgstr "قوالب جدول الكميات"
+
+#. module: construction_boq_template
+#: model_terms:ir.ui.view,arch_db:construction_boq_template.view_construction_boq_line_pivot
+msgid "BoQ analysis"
+msgstr "تحليل جدول الكميات"
+
+#. module: construction_boq_template
+#: model_terms:ir.ui.view,arch_db:construction_boq_template.view_boq_template_apply_form
+#: model_terms:ir.ui.view,arch_db:construction_boq_template.view_boq_template_save_form
+msgid "Cancel"
+msgstr "إلغاء"
+
+#. module: construction_boq_template
+#: model:ir.model.fields,field_description:construction_boq_template.field_construction_boq_line__category_id
+#: model:ir.model.fields,field_description:construction_boq_template.field_construction_boq_template_line__category_id
+#: model_terms:ir.ui.view,arch_db:construction_boq_template.view_construction_boq_line_search
+msgid "Category"
+msgstr "الفئة"
+
+#. module: construction_boq_template
+#: model:ir.model.fields,field_description:construction_boq_template.field_construction_boq_category__code
+msgid "Code"
+msgstr "الرمز"
+
+#. module: construction_boq_template
+#: model:ir.model.fields,field_description:construction_boq_template.field_construction_boq_template__company_id
+msgid "Company"
+msgstr "الشركة"
+
+#. module: construction_boq_template
+#: model:ir.ui.menu,name:construction_boq_template.menu_construction_config
+msgid "Configuration"
+msgstr "الإعدادات"
+
+#. module: construction_boq_template
+#: model:ir.actions.act_window,name:construction_boq_template.action_construction_boq_category
+#: model:ir.ui.menu,name:construction_boq_template.menu_construction_boq_category
+msgid "Cost Categories"
+msgstr "فئات التكلفة"
+
+#. module: construction_boq_template
+#: model_terms:ir.actions.act_window,help:construction_boq_template.action_construction_boq_template
+msgid "Create a reusable bill of quantities template"
+msgstr "أنشئ قالب جدول كميات قابلاً لإعادة الاستخدام"
+
+#. module: construction_boq_template
+#: model:ir.model.fields,field_description:construction_boq_template.field_construction_boq_category__create_uid
+#: model:ir.model.fields,field_description:construction_boq_template.field_construction_boq_template__create_uid
+#: model:ir.model.fields,field_description:construction_boq_template.field_construction_boq_template_apply__create_uid
+#: model:ir.model.fields,field_description:construction_boq_template.field_construction_boq_template_line__create_uid
+#: model:ir.model.fields,field_description:construction_boq_template.field_construction_boq_template_save__create_uid
+msgid "Created by"
+msgstr "أنشئ بواسطة"
+
+#. module: construction_boq_template
+#: model:ir.model.fields,field_description:construction_boq_template.field_construction_boq_category__create_date
+#: model:ir.model.fields,field_description:construction_boq_template.field_construction_boq_template__create_date
+#: model:ir.model.fields,field_description:construction_boq_template.field_construction_boq_template_apply__create_date
+#: model:ir.model.fields,field_description:construction_boq_template.field_construction_boq_template_line__create_date
+#: model:ir.model.fields,field_description:construction_boq_template.field_construction_boq_template_save__create_date
+msgid "Created on"
+msgstr "أنشئ في"
+
+#. module: construction_boq_template
+#: model:ir.model.fields,field_description:construction_boq_template.field_construction_boq_template__currency_id
+#: model:ir.model.fields,field_description:construction_boq_template.field_construction_boq_template_line__currency_id
+msgid "Currency"
+msgstr "العملة"
+
+#. module: construction_boq_template
+#: model:ir.model.fields,field_description:construction_boq_template.field_construction_boq_template__description
+#: model:ir.model.fields,field_description:construction_boq_template.field_construction_boq_template_line__name
+msgid "Description"
+msgstr "الوصف"
+
+#. module: construction_boq_template
+#: model:ir.model.fields,field_description:construction_boq_template.field_construction_boq_category__display_name
+#: model:ir.model.fields,field_description:construction_boq_template.field_construction_boq_line__display_name
+#: model:ir.model.fields,field_description:construction_boq_template.field_construction_boq_template__display_name
+#: model:ir.model.fields,field_description:construction_boq_template.field_construction_boq_template_apply__display_name
+#: model:ir.model.fields,field_description:construction_boq_template.field_construction_boq_template_line__display_name
+#: model:ir.model.fields,field_description:construction_boq_template.field_construction_boq_template_save__display_name
+msgid "Display Name"
+msgstr "اسم العرض"
+
+#. module: construction_boq_template
+#: model:ir.model.fields,field_description:construction_boq_template.field_construction_boq_category__id
+#: model:ir.model.fields,field_description:construction_boq_template.field_construction_boq_line__id
+#: model:ir.model.fields,field_description:construction_boq_template.field_construction_boq_template__id
+#: model:ir.model.fields,field_description:construction_boq_template.field_construction_boq_template_apply__id
+#: model:ir.model.fields,field_description:construction_boq_template.field_construction_boq_template_line__id
+#: model:ir.model.fields,field_description:construction_boq_template.field_construction_boq_template_save__id
+msgid "ID"
+msgstr "المعرف"
+
+#. module: construction_boq_template
+#: model:ir.model.fields,field_description:construction_boq_template.field_construction_boq_category__write_uid
+#: model:ir.model.fields,field_description:construction_boq_template.field_construction_boq_template__write_uid
+#: model:ir.model.fields,field_description:construction_boq_template.field_construction_boq_template_apply__write_uid
+#: model:ir.model.fields,field_description:construction_boq_template.field_construction_boq_template_line__write_uid
+#: model:ir.model.fields,field_description:construction_boq_template.field_construction_boq_template_save__write_uid
+msgid "Last Updated by"
+msgstr "آخر تحديث بواسطة"
+
+#. module: construction_boq_template
+#: model:ir.model.fields,field_description:construction_boq_template.field_construction_boq_category__write_date
+#: model:ir.model.fields,field_description:construction_boq_template.field_construction_boq_template__write_date
+#: model:ir.model.fields,field_description:construction_boq_template.field_construction_boq_template_apply__write_date
+#: model:ir.model.fields,field_description:construction_boq_template.field_construction_boq_template_line__write_date
+#: model:ir.model.fields,field_description:construction_boq_template.field_construction_boq_template_save__write_date
+msgid "Last Updated on"
+msgstr "آخر تحديث في"
+
+#. module: construction_boq_template
+#: model:ir.model.fields,field_description:construction_boq_template.field_construction_boq_template__line_ids
+msgid "Lines"
+msgstr "البنود"
+
+#. module: construction_boq_template
+#: model:ir.model.fields,field_description:construction_boq_template.field_construction_boq_category__name
+#: model:ir.model.fields,field_description:construction_boq_template.field_construction_boq_template__name
+msgid "Name"
+msgstr "الاسم"
+
+#. module: construction_boq_template
+#: model:ir.model.fields,field_description:construction_boq_template.field_construction_boq_template_line__product_id
+msgid "Product"
+msgstr "المنتج"
+
+#. module: construction_boq_template
+#: model:ir.model.fields,field_description:construction_boq_template.field_construction_boq_template_line__quantity
+msgid "Quantity"
+msgstr "الكمية"
+
+#. module: construction_boq_template
+#. odoo-python
+#: code:addons/construction_boq_template/models/boq_template.py:0
+msgid "Quantity and unit cost cannot be negative."
+msgstr "لا يمكن أن تكون الكمية وتكلفة الوحدة سالبتين."
+
+#. module: construction_boq_template
+#: model:ir.model.fields,field_description:construction_boq_template.field_construction_boq_template_apply__factor
+msgid "Quantity multiplier"
+msgstr "معامل الكمية"
+
+#. module: construction_boq_template
+#: model:ir.model.fields,field_description:construction_boq_template.field_construction_boq_template_apply__replace
+msgid "Replace existing lines"
+msgstr "استبدال البنود الحالية"
+
+#. module: construction_boq_template
+#: model:ir.model,name:construction_boq_template.model_construction_boq_template_save
+msgid "Save a Site's BoQ as a Template"
+msgstr "حفظ جدول كميات موقع كقالب"
+
+#. module: construction_boq_template
+#: model:ir.actions.act_window,name:construction_boq_template.action_open_save_template
+msgid "Save as BoQ Template"
+msgstr "حفظ كقالب جدول كميات"
+
+#. module: construction_boq_template
+#: model_terms:ir.ui.view,arch_db:construction_boq_template.view_construction_site_form_boq_template
+msgid "Save as Template"
+msgstr "حفظ كقالب"
+
+#. module: construction_boq_template
+#: model_terms:ir.ui.view,arch_db:construction_boq_template.view_boq_template_save_form
+msgid "Save template"
+msgstr "حفظ القالب"
+
+#. module: construction_boq_template
+#: model:ir.model.fields,help:construction_boq_template.field_construction_boq_template_apply__factor
+msgid "Scale all template quantities, for example 2 for twice the size."
+msgstr "تحجيم جميع كميات القالب، مثلاً 2 لمضاعفة الحجم."
+
+#. module: construction_boq_template
+#: model:ir.model.fields,field_description:construction_boq_template.field_construction_boq_category__sequence
+#: model:ir.model.fields,field_description:construction_boq_template.field_construction_boq_template_line__sequence
+msgid "Sequence"
+msgstr "التسلسل"
+
+#. module: construction_boq_template
+#: model:ir.model.fields,help:construction_boq_template.field_construction_boq_category__code
+msgid "Short cost code, for example 03-CON."
+msgstr "رمز تكلفة مختصر، مثل 03-CON."
+
+#. module: construction_boq_template
+#: model:ir.model.fields,field_description:construction_boq_template.field_construction_boq_template_apply__site_id
+#: model:ir.model.fields,field_description:construction_boq_template.field_construction_boq_template_save__site_id
+#: model_terms:ir.ui.view,arch_db:construction_boq_template.view_construction_boq_line_search
+msgid "Site"
+msgstr "الموقع"
+
+#. module: construction_boq_template
+#: model:ir.model.fields,field_description:construction_boq_template.field_construction_boq_template_line__subtotal
+msgid "Subtotal"
+msgstr "المجموع الفرعي"
+
+#. module: construction_boq_template
+#: model:ir.model.fields,field_description:construction_boq_template.field_construction_boq_template_apply__template_id
+#: model:ir.model.fields,field_description:construction_boq_template.field_construction_boq_template_line__template_id
+msgid "Template"
+msgstr "القالب"
+
+#. module: construction_boq_template
+#: model:ir.model.fields,field_description:construction_boq_template.field_construction_boq_template_save__name
+#: model_terms:ir.ui.view,arch_db:construction_boq_template.view_construction_boq_template_form
+msgid "Template name"
+msgstr "اسم القالب"
+
+#. module: construction_boq_template
+#: model:ir.model.constraint,message:construction_boq_template.constraint_construction_boq_category_code_uniq
+msgid "The cost code must be unique."
+msgstr "يجب أن يكون رمز التكلفة فريداً."
+
+#. module: construction_boq_template
+#. odoo-python
+#: code:addons/construction_boq_template/wizards/boq_template_wizards.py:0
+msgid "The quantity multiplier must be greater than zero."
+msgstr "يجب أن يكون معامل الكمية أكبر من صفر."
+
+#. module: construction_boq_template
+#. odoo-python
+#: code:addons/construction_boq_template/wizards/boq_template_wizards.py:0
+msgid "The site has no bill of quantities lines to save."
+msgstr "لا توجد بنود في جدول كميات الموقع لحفظها."
+
+#. module: construction_boq_template
+#: model:ir.model.fields,field_description:construction_boq_template.field_construction_boq_template__total
+#: model_terms:ir.ui.view,arch_db:construction_boq_template.view_construction_boq_line_list
+#: model_terms:ir.ui.view,arch_db:construction_boq_template.view_construction_boq_template_form
+msgid "Total"
+msgstr "الإجمالي"
+
+#. module: construction_boq_template
+#: model:ir.model.fields,field_description:construction_boq_template.field_construction_boq_template_line__uom_id
+msgid "Unit"
+msgstr "الوحدة"
+
+#. module: construction_boq_template
+#: model:ir.model.fields,field_description:construction_boq_template.field_construction_boq_template_line__unit_cost
+msgid "Unit Cost"
+msgstr "تكلفة الوحدة"

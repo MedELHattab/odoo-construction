@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="view_construction_site_form_alert" model="ir.ui.view">
+        <field name="name">construction.site.form.alert</field>
+        <field name="model">construction.site</field>
+        <field name="inherit_id" ref="construction_site.view_construction_site_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//header" position="inside">
+                <button name="action_run_alerts" string="Check Alerts" type="object"
+                        groups="construction_site.group_construction_admin"/>
+            </xpath>
+            <field name="budget_after_total" position="after">
+                <field name="budget_alert_level" widget="badge"
+                       decoration-warning="budget_alert_level == 'warning'"
+                       decoration-danger="budget_alert_level == 'over'"
+                       invisible="budget_alert_level == 'none'"/>
+            </field>
+        </field>
+    </record>
+</odoo>

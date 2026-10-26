@@ -1,0 +1,134 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* construction_alert
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 19.0-20261015\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-10-26 12:36+0000\n"
+"PO-Revision-Date: 2026-10-26 12:36+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: construction_alert
+#. odoo-python
+#: code:addons/construction_alert/models/construction_site.py:0
+msgid "%s new alert(s) raised."
+msgstr "%s nouvelle(s) alerte(s) déclenchée(s)."
+
+#. module: construction_alert
+#. odoo-python
+#: code:addons/construction_alert/models/construction_site.py:0
+msgid "Alerts checked"
+msgstr "Alertes vérifiées"
+
+#. module: construction_alert
+#: model:ir.model.fields,field_description:construction_alert.field_construction_site__budget_alert_level
+msgid "Budget Alert Level"
+msgstr "Niveau d'alerte budget"
+
+#. module: construction_alert
+#. odoo-python
+#: code:addons/construction_alert/models/construction_site.py:0
+msgid "Budget nearly used: %s"
+msgstr "Budget presque consommé : %s"
+
+#. module: construction_alert
+#: model_terms:ir.ui.view,arch_db:construction_alert.view_construction_site_form_alert
+msgid "Check Alerts"
+msgstr "Vérifier les alertes"
+
+#. module: construction_alert
+#: model:ir.model,name:construction_alert.model_construction_site
+msgid "Construction Site"
+msgstr "Chantier"
+
+#. module: construction_alert
+#: model:ir.actions.server,name:construction_alert.ir_cron_construction_alerts_ir_actions_server
+msgid "Construction: daily site alerts"
+msgstr "Chantiers : alertes quotidiennes"
+
+#. module: construction_alert
+#: model:ir.model.fields,field_description:construction_alert.field_construction_site__display_name
+msgid "Display Name"
+msgstr "Nom affiché"
+
+#. module: construction_alert
+#: model:ir.model.fields,help:construction_alert.field_construction_site__budget_alert_level
+msgid ""
+"Highest budget alert already sent. It resets when spending falls back under "
+"the limit, so a site is alerted once per level instead of every day."
+msgstr "Niveau d'alerte budget le plus élevé déjà envoyé. Il se réinitialise lorsque les dépenses repassent sous la limite, afin qu'un chantier soit alerté une fois par niveau et non chaque jour."
+
+#. module: construction_alert
+#: model:ir.model.fields,field_description:construction_alert.field_construction_site__id
+msgid "ID"
+msgstr "ID"
+
+#. module: construction_alert
+#. odoo-python
+#: code:addons/construction_alert/models/construction_site.py:0
+msgid "Missing daily log for %(day)s: %(site)s"
+msgstr "Journal de chantier manquant pour le %(day)s : %(site)s"
+
+#. module: construction_alert
+#: model:ir.model.fields.selection,name:construction_alert.selection__construction_site__budget_alert_level__warning
+msgid "Near budget limit"
+msgstr "Proche de la limite du budget"
+
+#. module: construction_alert
+#. odoo-python
+#: code:addons/construction_alert/models/construction_site.py:0
+msgid "No daily log was recorded for %s."
+msgstr "Aucun journal de chantier n'a été enregistré pour le %s."
+
+#. module: construction_alert
+#: model:ir.model.fields.selection,name:construction_alert.selection__construction_site__budget_alert_level__over
+msgid "Over budget"
+msgstr "Budget dépassé"
+
+#. module: construction_alert
+#. odoo-python
+#: code:addons/construction_alert/models/construction_site.py:0
+msgid "Over budget: %s"
+msgstr "Budget dépassé : %s"
+
+#. module: construction_alert
+#: model:ir.model.fields,field_description:construction_alert.field_construction_site__overdue_alerted
+msgid "Overdue Alerted"
+msgstr "Retard signalé"
+
+#. module: construction_alert
+#. odoo-python
+#: code:addons/construction_alert/models/construction_site.py:0
+msgid "Past planned end date: %s"
+msgstr "Date de fin prévue dépassée : %s"
+
+#. module: construction_alert
+#. odoo-python
+#: code:addons/construction_alert/models/construction_site.py:0
+msgid "The planned end date was %s and the site is still in progress."
+msgstr "La date de fin prévue était le %s et le chantier est toujours en cours."
+
+#. module: construction_alert
+#. odoo-python
+#: code:addons/construction_alert/models/construction_site.py:0
+msgid "Total cost %(spent)s exceeds the budget of %(budget)s."
+msgstr "Le coût total de %(spent)s dépasse le budget de %(budget)s."
+
+#. module: construction_alert
+#. odoo-python
+#: code:addons/construction_alert/models/construction_site.py:0
+msgid ""
+"Total cost %(spent)s has reached %(percent).0f%% of the %(budget)s budget."
+msgstr "Le coût total de %(spent)s a atteint %(percent).0f%% du budget de %(budget)s."
+
+#. module: construction_alert
+#: model:ir.model.fields.selection,name:construction_alert.selection__construction_site__budget_alert_level__none
+msgid "Within budget"
+msgstr "Dans le budget"

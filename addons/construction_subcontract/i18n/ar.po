@@ -1,0 +1,616 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* construction_subcontract
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 19.0-20261015\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-10-26 12:36+0000\n"
+"PO-Revision-Date: 2026-10-26 12:36+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: construction_subcontract
+#: model_terms:ir.ui.view,arch_db:construction_subcontract.view_construction_subcontract_payment_form
+msgid "<span class=\"o_stat_text\">Vendor bill</span>"
+msgstr "<span class=\"o_stat_text\">فاتورة المورد</span>"
+
+#. module: construction_subcontract
+#. odoo-python
+#: code:addons/construction_subcontract/models/subcontract.py:0
+msgid ""
+"A billed certificate cannot be deleted. Credit the vendor bill instead."
+msgstr "لا يمكن حذف شهادة دفع تمت فوترتها. أنشئ إشعاراً دائناً لفاتورة المورد بدلاً من ذلك."
+
+#. module: construction_subcontract
+#. odoo-python
+#: code:addons/construction_subcontract/models/subcontract.py:0
+msgid "A subcontract with billed certificates cannot be cancelled."
+msgstr "لا يمكن إلغاء عقد مقاولة من الباطن توجد له شهادات دفع مفوترة."
+
+#. module: construction_subcontract
+#: model:ir.model.fields,field_description:construction_subcontract.field_construction_subcontract__message_needaction
+#: model:ir.model.fields,field_description:construction_subcontract.field_construction_subcontract_payment__message_needaction
+msgid "Action Needed"
+msgstr "إجراء مطلوب"
+
+#. module: construction_subcontract
+#: model_terms:ir.actions.act_window,help:construction_subcontract.action_construction_subcontract
+msgid ""
+"Agree a contract amount with a subcontractor, then bill payment certificates"
+" against it."
+msgstr "اتفق على مبلغ العقد مع مقاول من الباطن، ثم افوتر شهادات الدفع عليه."
+
+#. module: construction_subcontract
+#: model:ir.model.fields,help:construction_subcontract.field_construction_subcontract_payment__net_amount
+msgid "Amount to pay now: certified amount minus retention."
+msgstr "المبلغ المستحق الدفع الآن: المبلغ المعتمد ناقص الضمان المحتجز."
+
+#. module: construction_subcontract
+#: model:ir.model.fields,field_description:construction_subcontract.field_construction_subcontract__message_attachment_count
+#: model:ir.model.fields,field_description:construction_subcontract.field_construction_subcontract_payment__message_attachment_count
+msgid "Attachment Count"
+msgstr "عدد المرفقات"
+
+#. module: construction_subcontract
+#: model:ir.model.fields,field_description:construction_subcontract.field_construction_subcontract__balance
+#: model_terms:ir.ui.view,arch_db:construction_subcontract.view_construction_subcontract_list
+msgid "Balance"
+msgstr "الرصيد"
+
+#. module: construction_subcontract
+#. odoo-python
+#: code:addons/construction_subcontract/models/subcontract.py:0
+msgid "Bill or cancel the draft payment certificates first."
+msgstr "افوتر شهادات الدفع في حالة المسودة أو ألغِها أولاً."
+
+#. module: construction_subcontract
+#: model:ir.model.fields.selection,name:construction_subcontract.selection__construction_subcontract_payment__state__billed
+msgid "Billed"
+msgstr "المفوتر"
+
+#. module: construction_subcontract
+#: model_terms:ir.ui.view,arch_db:construction_subcontract.view_construction_subcontract_form
+#: model_terms:ir.ui.view,arch_db:construction_subcontract.view_construction_subcontract_payment_form
+msgid "Cancel"
+msgstr "إلغاء"
+
+#. module: construction_subcontract
+#: model:ir.model.fields.selection,name:construction_subcontract.selection__construction_subcontract__state__cancelled
+#: model:ir.model.fields.selection,name:construction_subcontract.selection__construction_subcontract_payment__state__cancelled
+msgid "Cancelled"
+msgstr "ملغى"
+
+#. module: construction_subcontract
+#: model_terms:ir.ui.view,arch_db:construction_subcontract.view_construction_subcontract_form
+#: model_terms:ir.ui.view,arch_db:construction_subcontract.view_construction_subcontract_list
+msgid "Certified"
+msgstr "المعتمد"
+
+#. module: construction_subcontract
+#: model:ir.model.fields,field_description:construction_subcontract.field_construction_subcontract__certified_amount
+msgid "Certified Amount"
+msgstr "المبلغ المعتمد"
+
+#. module: construction_subcontract
+#: model:ir.model.fields,field_description:construction_subcontract.field_construction_subcontract_payment__gross_amount
+msgid "Certified amount"
+msgstr "المبلغ المعتمد"
+
+#. module: construction_subcontract
+#: model:ir.model.fields,field_description:construction_subcontract.field_construction_subcontract__company_id
+#: model:ir.model.fields,field_description:construction_subcontract.field_construction_subcontract_payment__company_id
+msgid "Company"
+msgstr "الشركة"
+
+#. module: construction_subcontract
+#: model_terms:ir.ui.view,arch_db:construction_subcontract.view_construction_subcontract_form
+msgid "Complete"
+msgstr "إنهاء"
+
+#. module: construction_subcontract
+#: model:ir.model.fields.selection,name:construction_subcontract.selection__construction_subcontract__state__completed
+msgid "Completed"
+msgstr "مكتمل"
+
+#. module: construction_subcontract
+#: model:ir.model,name:construction_subcontract.model_construction_site
+msgid "Construction Site"
+msgstr "موقع البناء"
+
+#. module: construction_subcontract
+#: model:ir.model.fields,field_description:construction_subcontract.field_construction_subcontract__contract_amount
+msgid "Contract Amount"
+msgstr "مبلغ العقد"
+
+#. module: construction_subcontract
+#: model:ir.model.fields,help:construction_subcontract.field_construction_subcontract__balance
+msgid "Contract amount not yet certified."
+msgstr "مبلغ العقد الذي لم يُعتمد بعد."
+
+#. module: construction_subcontract
+#: model_terms:ir.ui.view,arch_db:construction_subcontract.view_construction_subcontract_list
+msgid "Contracts"
+msgstr "العقود"
+
+#. module: construction_subcontract
+#: model_terms:ir.ui.view,arch_db:construction_subcontract.view_construction_subcontract_payment_form
+msgid "Create Vendor Bill"
+msgstr "إنشاء فاتورة مورد"
+
+#. module: construction_subcontract
+#: model_terms:ir.actions.act_window,help:construction_subcontract.action_construction_subcontract
+msgid "Create your first subcontract"
+msgstr "أنشئ أول عقد مقاولة من الباطن"
+
+#. module: construction_subcontract
+#: model:ir.model.fields,field_description:construction_subcontract.field_construction_subcontract__create_uid
+#: model:ir.model.fields,field_description:construction_subcontract.field_construction_subcontract_payment__create_uid
+msgid "Created by"
+msgstr "أنشئ بواسطة"
+
+#. module: construction_subcontract
+#: model:ir.model.fields,field_description:construction_subcontract.field_construction_subcontract__create_date
+#: model:ir.model.fields,field_description:construction_subcontract.field_construction_subcontract_payment__create_date
+msgid "Created on"
+msgstr "أنشئ في"
+
+#. module: construction_subcontract
+#: model:ir.model.fields,field_description:construction_subcontract.field_construction_subcontract__currency_id
+#: model:ir.model.fields,field_description:construction_subcontract.field_construction_subcontract_payment__currency_id
+msgid "Currency"
+msgstr "العملة"
+
+#. module: construction_subcontract
+#: model:ir.model.fields,field_description:construction_subcontract.field_construction_subcontract_payment__date
+msgid "Date"
+msgstr "التاريخ"
+
+#. module: construction_subcontract
+#: model:ir.model.fields,field_description:construction_subcontract.field_construction_site__display_name
+#: model:ir.model.fields,field_description:construction_subcontract.field_construction_subcontract__display_name
+#: model:ir.model.fields,field_description:construction_subcontract.field_construction_subcontract_payment__display_name
+msgid "Display Name"
+msgstr "اسم العرض"
+
+#. module: construction_subcontract
+#: model:ir.model.fields.selection,name:construction_subcontract.selection__construction_subcontract__state__draft
+#: model:ir.model.fields.selection,name:construction_subcontract.selection__construction_subcontract_payment__state__draft
+msgid "Draft"
+msgstr "مسودة"
+
+#. module: construction_subcontract
+#. odoo-python
+#: code:addons/construction_subcontract/models/subcontract.py:0
+msgid "Enter the certified amount before billing."
+msgstr "أدخل المبلغ المعتمد قبل الفوترة."
+
+#. module: construction_subcontract
+#: model:ir.model.fields,field_description:construction_subcontract.field_construction_subcontract__message_follower_ids
+#: model:ir.model.fields,field_description:construction_subcontract.field_construction_subcontract_payment__message_follower_ids
+msgid "Followers"
+msgstr "المتابعون"
+
+#. module: construction_subcontract
+#: model:ir.model.fields,field_description:construction_subcontract.field_construction_subcontract__message_partner_ids
+#: model:ir.model.fields,field_description:construction_subcontract.field_construction_subcontract_payment__message_partner_ids
+msgid "Followers (Partners)"
+msgstr "المتابعون (الشركاء)"
+
+#. module: construction_subcontract
+#: model:ir.model.fields,field_description:construction_subcontract.field_construction_subcontract__has_message
+#: model:ir.model.fields,field_description:construction_subcontract.field_construction_subcontract_payment__has_message
+msgid "Has Message"
+msgstr "يحتوي على رسالة"
+
+#. module: construction_subcontract
+#: model:ir.model.fields,field_description:construction_subcontract.field_construction_site__id
+#: model:ir.model.fields,field_description:construction_subcontract.field_construction_subcontract__id
+#: model:ir.model.fields,field_description:construction_subcontract.field_construction_subcontract_payment__id
+msgid "ID"
+msgstr "المعرف"
+
+#. module: construction_subcontract
+#: model:ir.model.fields,help:construction_subcontract.field_construction_subcontract__message_needaction
+#: model:ir.model.fields,help:construction_subcontract.field_construction_subcontract_payment__message_needaction
+msgid "If checked, new messages require your attention."
+msgstr "إذا تم تحديده، فهناك رسائل جديدة تتطلب انتباهك."
+
+#. module: construction_subcontract
+#: model:ir.model.fields,help:construction_subcontract.field_construction_subcontract__message_has_error
+#: model:ir.model.fields,help:construction_subcontract.field_construction_subcontract__message_has_sms_error
+#: model:ir.model.fields,help:construction_subcontract.field_construction_subcontract_payment__message_has_error
+#: model:ir.model.fields,help:construction_subcontract.field_construction_subcontract_payment__message_has_sms_error
+msgid "If checked, some messages have a delivery error."
+msgstr "إذا تم تحديده، فإن بعض الرسائل بها خطأ في التسليم."
+
+#. module: construction_subcontract
+#: model:ir.model.fields.selection,name:construction_subcontract.selection__construction_subcontract__state__active
+#: model_terms:ir.ui.view,arch_db:construction_subcontract.view_construction_subcontract_search
+msgid "In progress"
+msgstr "قيد التنفيذ"
+
+#. module: construction_subcontract
+#: model:ir.model.fields,field_description:construction_subcontract.field_construction_subcontract__message_is_follower
+#: model:ir.model.fields,field_description:construction_subcontract.field_construction_subcontract_payment__message_is_follower
+msgid "Is Follower"
+msgstr "متابع"
+
+#. module: construction_subcontract
+#: model:ir.model.fields,field_description:construction_subcontract.field_construction_subcontract__write_uid
+#: model:ir.model.fields,field_description:construction_subcontract.field_construction_subcontract_payment__write_uid
+msgid "Last Updated by"
+msgstr "آخر تحديث بواسطة"
+
+#. module: construction_subcontract
+#: model:ir.model.fields,field_description:construction_subcontract.field_construction_subcontract__write_date
+#: model:ir.model.fields,field_description:construction_subcontract.field_construction_subcontract_payment__write_date
+msgid "Last Updated on"
+msgstr "آخر تحديث في"
+
+#. module: construction_subcontract
+#: model:ir.model.fields,field_description:construction_subcontract.field_construction_subcontract__message_has_error
+#: model:ir.model.fields,field_description:construction_subcontract.field_construction_subcontract_payment__message_has_error
+msgid "Message Delivery error"
+msgstr "خطأ في تسليم الرسالة"
+
+#. module: construction_subcontract
+#: model:ir.model.fields,field_description:construction_subcontract.field_construction_subcontract__message_ids
+#: model:ir.model.fields,field_description:construction_subcontract.field_construction_subcontract_payment__message_ids
+msgid "Messages"
+msgstr "الرسائل"
+
+#. module: construction_subcontract
+#: model:ir.model.fields,field_description:construction_subcontract.field_construction_subcontract__name
+#: model:ir.model.fields,field_description:construction_subcontract.field_construction_subcontract_payment__name
+msgid "Name"
+msgstr "الاسم"
+
+#. module: construction_subcontract
+#: model:ir.model.fields,field_description:construction_subcontract.field_construction_subcontract_payment__net_amount
+msgid "Net Amount"
+msgstr "المبلغ الصافي"
+
+#. module: construction_subcontract
+#: model_terms:ir.ui.view,arch_db:construction_subcontract.view_construction_subcontract_form
+msgid "New Payment Certificate"
+msgstr "شهادة دفع جديدة"
+
+#. module: construction_subcontract
+#: model:ir.model.fields,field_description:construction_subcontract.field_construction_subcontract__message_needaction_counter
+#: model:ir.model.fields,field_description:construction_subcontract.field_construction_subcontract_payment__message_needaction_counter
+msgid "Number of Actions"
+msgstr "عدد الإجراءات"
+
+#. module: construction_subcontract
+#: model:ir.model.fields,field_description:construction_subcontract.field_construction_subcontract__message_has_error_counter
+#: model:ir.model.fields,field_description:construction_subcontract.field_construction_subcontract_payment__message_has_error_counter
+msgid "Number of errors"
+msgstr "عدد الأخطاء"
+
+#. module: construction_subcontract
+#: model:ir.model.fields,help:construction_subcontract.field_construction_subcontract__message_needaction_counter
+#: model:ir.model.fields,help:construction_subcontract.field_construction_subcontract_payment__message_needaction_counter
+msgid "Number of messages requiring action"
+msgstr "عدد الرسائل التي تتطلب إجراءً"
+
+#. module: construction_subcontract
+#: model:ir.model.fields,help:construction_subcontract.field_construction_subcontract__message_has_error_counter
+#: model:ir.model.fields,help:construction_subcontract.field_construction_subcontract_payment__message_has_error_counter
+msgid "Number of messages with delivery error"
+msgstr "عدد الرسائل التي بها خطأ في التسليم"
+
+#. module: construction_subcontract
+#. odoo-python
+#: code:addons/construction_subcontract/models/subcontract.py:0
+msgid "Only draft certificates can be billed."
+msgstr "يمكن فوترة شهادات الدفع في حالة المسودة فقط."
+
+#. module: construction_subcontract
+#. odoo-python
+#: code:addons/construction_subcontract/models/subcontract.py:0
+msgid "Only draft certificates can be cancelled."
+msgstr "يمكن إلغاء شهادات الدفع في حالة المسودة فقط."
+
+#. module: construction_subcontract
+#. odoo-python
+#: code:addons/construction_subcontract/models/subcontract.py:0
+msgid "Only draft or cancelled subcontracts can be deleted."
+msgstr "يمكن حذف عقود المقاولة من الباطن في حالة المسودة أو الملغاة فقط."
+
+#. module: construction_subcontract
+#. odoo-python
+#: code:addons/construction_subcontract/models/subcontract.py:0
+msgid "Only draft subcontracts can be started."
+msgstr "يمكن بدء عقود المقاولة من الباطن في حالة المسودة فقط."
+
+#. module: construction_subcontract
+#. odoo-python
+#: code:addons/construction_subcontract/models/subcontract.py:0
+msgid "Only subcontracts in progress can be completed."
+msgstr "يمكن إنهاء عقود المقاولة من الباطن قيد التنفيذ فقط."
+
+#. module: construction_subcontract
+#: model:ir.model.fields,field_description:construction_subcontract.field_construction_subcontract__payment_ids
+#: model_terms:ir.ui.view,arch_db:construction_subcontract.view_construction_subcontract_form
+msgid "Payment certificates"
+msgstr "شهادات الدفع"
+
+#. module: construction_subcontract
+#: model:ir.model.fields,field_description:construction_subcontract.field_construction_subcontract__rating_ids
+#: model:ir.model.fields,field_description:construction_subcontract.field_construction_subcontract_payment__rating_ids
+msgid "Ratings"
+msgstr "التقييمات"
+
+#. module: construction_subcontract
+#: model_terms:ir.ui.view,arch_db:construction_subcontract.view_construction_subcontract_form
+msgid "Release Retention"
+msgstr "الإفراج عن مبلغ الضمان"
+
+#. module: construction_subcontract
+#: model_terms:ir.ui.view,arch_db:construction_subcontract.view_construction_subcontract_form
+#: model_terms:ir.ui.view,arch_db:construction_subcontract.view_construction_subcontract_list
+msgid "Retention"
+msgstr "مبلغ الضمان المحتجز"
+
+#. module: construction_subcontract
+#: model:ir.model.fields,field_description:construction_subcontract.field_construction_subcontract__retention_percent
+#: model:ir.model.fields,field_description:construction_subcontract.field_construction_subcontract_payment__retention_percent
+msgid "Retention (%)"
+msgstr "نسبة الضمان المحتجز (%)"
+
+#. module: construction_subcontract
+#: model:ir.model.fields,field_description:construction_subcontract.field_construction_subcontract_payment__retention_amount
+msgid "Retention Amount"
+msgstr "مبلغ الضمان المحتجز"
+
+#. module: construction_subcontract
+#: model:ir.model.fields,field_description:construction_subcontract.field_construction_subcontract__retention_held
+msgid "Retention Held"
+msgstr "الضمان المحتجز"
+
+#. module: construction_subcontract
+#: model:ir.model.fields,field_description:construction_subcontract.field_construction_subcontract__retention_released
+msgid "Retention Released"
+msgstr "الضمان المفرج عنه"
+
+#. module: construction_subcontract
+#. odoo-python
+#: code:addons/construction_subcontract/models/subcontract.py:0
+msgid "Retention can only be released once the subcontract is completed."
+msgstr "لا يمكن الإفراج عن الضمان إلا بعد اكتمال عقد المقاولة من الباطن."
+
+#. module: construction_subcontract
+#: model_terms:ir.ui.view,arch_db:construction_subcontract.view_construction_subcontract_search
+msgid "Retention held"
+msgstr "الضمان المحتجز"
+
+#. module: construction_subcontract
+#. odoo-python
+#: code:addons/construction_subcontract/models/subcontract.py:0
+msgid "Retention must be between 0 and 100 percent."
+msgstr "يجب أن تكون نسبة الضمان بين 0 و100 بالمئة."
+
+#. module: construction_subcontract
+#. odoo-python
+#: code:addons/construction_subcontract/models/subcontract.py:0
+msgid ""
+"Retention of %s released. Pay it against the vendor bills of this "
+"subcontract."
+msgstr "تم الإفراج عن ضمان قدره %s. ادفعه مقابل فواتير الموردين الخاصة بهذا العقد."
+
+#. module: construction_subcontract
+#: model:ir.model.fields,help:construction_subcontract.field_construction_site__subcontract_retention_held
+msgid "Retention withheld from subcontractors and not yet released."
+msgstr "الضمان المحتجز من مقاولي الباطن ولم يتم الإفراج عنه بعد."
+
+#. module: construction_subcontract
+#: model:ir.model.fields,help:construction_subcontract.field_construction_subcontract__retention_held
+msgid "Retention withheld on billed certificates and not yet released."
+msgstr "الضمان المحتجز من شهادات الدفع المفوترة ولم يتم الإفراج عنه بعد."
+
+#. module: construction_subcontract
+#: model:ir.model.fields,field_description:construction_subcontract.field_construction_subcontract__message_has_sms_error
+#: model:ir.model.fields,field_description:construction_subcontract.field_construction_subcontract_payment__message_has_sms_error
+msgid "SMS Delivery error"
+msgstr "خطأ في تسليم الرسالة النصية"
+
+#. module: construction_subcontract
+#: model:ir.model.fields,field_description:construction_subcontract.field_construction_subcontract__title
+#: model_terms:ir.ui.view,arch_db:construction_subcontract.view_construction_subcontract_form
+msgid "Scope of work"
+msgstr "نطاق العمل"
+
+#. module: construction_subcontract
+#. odoo-python
+#: code:addons/construction_subcontract/models/subcontract.py:0
+msgid "Set the contract amount before starting the subcontract."
+msgstr "حدّد مبلغ العقد قبل بدء عقد المقاولة من الباطن."
+
+#. module: construction_subcontract
+#: model:ir.model.fields,help:construction_subcontract.field_construction_subcontract__retention_percent
+msgid ""
+"Share of each certified amount withheld until the subcontractor completes "
+"the work."
+msgstr "نسبة من كل مبلغ معتمد يتم احتجازها حتى يُنهي المقاول من الباطن العمل."
+
+#. module: construction_subcontract
+#: model:ir.model.fields,field_description:construction_subcontract.field_construction_subcontract__site_id
+#: model:ir.model.fields,field_description:construction_subcontract.field_construction_subcontract_payment__site_id
+#: model_terms:ir.ui.view,arch_db:construction_subcontract.view_construction_subcontract_search
+msgid "Site"
+msgstr "الموقع"
+
+#. module: construction_subcontract
+#: model_terms:ir.ui.view,arch_db:construction_subcontract.view_construction_subcontract_form
+msgid "Start"
+msgstr "بدء"
+
+#. module: construction_subcontract
+#: model:ir.model.fields,field_description:construction_subcontract.field_construction_subcontract__date_start
+msgid "Start date"
+msgstr "تاريخ البدء"
+
+#. module: construction_subcontract
+#: model:ir.model.fields,field_description:construction_subcontract.field_construction_subcontract__state
+#: model:ir.model.fields,field_description:construction_subcontract.field_construction_subcontract_payment__state
+msgid "State"
+msgstr "الحالة"
+
+#. module: construction_subcontract
+#: model_terms:ir.ui.view,arch_db:construction_subcontract.view_construction_subcontract_search
+msgid "Status"
+msgstr "الحالة"
+
+#. module: construction_subcontract
+#: model:ir.model,name:construction_subcontract.model_construction_subcontract
+#: model:ir.model.fields,field_description:construction_subcontract.field_construction_subcontract_payment__subcontract_id
+msgid "Subcontract"
+msgstr "عقد مقاولة من الباطن"
+
+#. module: construction_subcontract
+#. odoo-python
+#: code:addons/construction_subcontract/models/subcontract.py:0
+msgid ""
+"Subcontract %(contract)s. Retention of %(percent)s%% (%(amount)s) is "
+"withheld: pay %(net)s now."
+msgstr "عقد المقاولة من الباطن %(contract)s. تم احتجاز ضمان بنسبة %(percent)s%% (%(amount)s): ادفع %(net)s الآن."
+
+#. module: construction_subcontract
+#: model:ir.model.fields,field_description:construction_subcontract.field_construction_site__subcontract_count
+msgid "Subcontract Count"
+msgstr "عدد عقود المقاولة من الباطن"
+
+#. module: construction_subcontract
+#: model:ir.model,name:construction_subcontract.model_construction_subcontract_payment
+msgid "Subcontract Payment Certificate"
+msgstr "شهادة دفع مقاولة من الباطن"
+
+#. module: construction_subcontract
+#: model:ir.model.fields,field_description:construction_subcontract.field_construction_site__subcontract_retention_held
+msgid "Subcontract Retention Held"
+msgstr "الضمان المحتجز من المقاولة من الباطن"
+
+#. module: construction_subcontract
+#: model:ir.model.fields,field_description:construction_subcontract.field_construction_site__subcontract_value
+msgid "Subcontract Value"
+msgstr "قيمة المقاولة من الباطن"
+
+#. module: construction_subcontract
+#: model:ir.model.fields,field_description:construction_subcontract.field_construction_subcontract__partner_id
+#: model:ir.model.fields,field_description:construction_subcontract.field_construction_subcontract_payment__partner_id
+#: model_terms:ir.ui.view,arch_db:construction_subcontract.view_construction_subcontract_search
+msgid "Subcontractor"
+msgstr "مقاول من الباطن"
+
+#. module: construction_subcontract
+#. odoo-python
+#: code:addons/construction_subcontract/models/construction_site.py:0
+#: model:ir.actions.act_window,name:construction_subcontract.action_construction_subcontract
+#: model:ir.model.fields,field_description:construction_subcontract.field_construction_site__subcontract_ids
+#: model:ir.ui.menu,name:construction_subcontract.menu_construction_subcontract
+#: model_terms:ir.ui.view,arch_db:construction_subcontract.view_construction_site_form_subcontract
+msgid "Subcontracts"
+msgstr "المقاولة من الباطن"
+
+#. module: construction_subcontract
+#: model_terms:ir.ui.view,arch_db:construction_subcontract.view_construction_subcontract_form
+msgid "Terms"
+msgstr "الشروط"
+
+#. module: construction_subcontract
+#: model:ir.model.fields,field_description:construction_subcontract.field_construction_subcontract__description
+msgid "Terms and conditions"
+msgstr "الشروط والأحكام"
+
+#. module: construction_subcontract
+#. odoo-python
+#: code:addons/construction_subcontract/models/subcontract.py:0
+msgid "The certified amount cannot be negative."
+msgstr "لا يمكن أن يكون المبلغ المعتمد سالباً."
+
+#. module: construction_subcontract
+#. odoo-python
+#: code:addons/construction_subcontract/models/subcontract.py:0
+msgid "The contract amount cannot be negative."
+msgstr "لا يمكن أن يكون مبلغ العقد سالباً."
+
+#. module: construction_subcontract
+#. odoo-python
+#: code:addons/construction_subcontract/models/subcontract.py:0
+msgid "The subcontract must be in progress to bill a certificate."
+msgstr "يجب أن يكون عقد المقاولة من الباطن قيد التنفيذ لفوترة شهادة دفع."
+
+#. module: construction_subcontract
+#. odoo-python
+#: code:addons/construction_subcontract/models/subcontract.py:0
+msgid "There is no retention to release."
+msgstr "لا يوجد ضمان محتجز للإفراج عنه."
+
+#. module: construction_subcontract
+#. odoo-python
+#: code:addons/construction_subcontract/models/subcontract.py:0
+msgid ""
+"This certificate would bring the total certified to %(total)s, above the "
+"contract amount of %(contract)s."
+msgstr "ستجعل هذه الشهادة إجمالي المعتمد %(total)s، وهو أعلى من مبلغ العقد البالغ %(contract)s."
+
+#. module: construction_subcontract
+#. odoo-python
+#: code:addons/construction_subcontract/models/subcontract.py:0
+msgid "This subcontract cannot be cancelled."
+msgstr "لا يمكن إلغاء عقد المقاولة من الباطن هذا."
+
+#. module: construction_subcontract
+#: model_terms:ir.ui.view,arch_db:construction_subcontract.view_construction_subcontract_form
+msgid "To pay"
+msgstr "المستحق الدفع"
+
+#. module: construction_subcontract
+#: model:ir.model.fields,help:construction_subcontract.field_construction_site__subcontract_value
+msgid "Value of the subcontracts in progress or completed on this site."
+msgstr "قيمة عقود المقاولة من الباطن قيد التنفيذ أو المكتملة في هذا الموقع."
+
+#. module: construction_subcontract
+#: model:ir.model.fields,field_description:construction_subcontract.field_construction_subcontract_payment__bill_id
+msgid "Vendor bill"
+msgstr "فاتورة المورد"
+
+#. module: construction_subcontract
+#: model:ir.model.fields,field_description:construction_subcontract.field_construction_subcontract__website_message_ids
+#: model:ir.model.fields,field_description:construction_subcontract.field_construction_subcontract_payment__website_message_ids
+msgid "Website Messages"
+msgstr "رسائل الموقع الإلكتروني"
+
+#. module: construction_subcontract
+#: model:ir.model.fields,help:construction_subcontract.field_construction_subcontract__website_message_ids
+#: model:ir.model.fields,help:construction_subcontract.field_construction_subcontract_payment__website_message_ids
+msgid "Website communication history"
+msgstr "سجل اتصالات الموقع الإلكتروني"
+
+#. module: construction_subcontract
+#: model:ir.model.fields,field_description:construction_subcontract.field_construction_subcontract_payment__description
+msgid "Work certified"
+msgstr "الأعمال المعتمدة"
+
+#. module: construction_subcontract
+#: model:ir.model.fields,help:construction_subcontract.field_construction_subcontract__certified_amount
+msgid "Work certified and billed so far (gross, before retention)."
+msgstr "الأعمال المعتمدة والمفوترة حتى الآن (الإجمالي، قبل الضمان)."
+
+#. module: construction_subcontract
+#. odoo-python
+#: code:addons/construction_subcontract/models/subcontract.py:0
+msgid "You need invoicing rights to create a vendor bill."
+msgstr "تحتاج إلى صلاحيات الفوترة لإنشاء فاتورة مورد."
+
+#. module: construction_subcontract
+#. odoo-python
+#: code:addons/construction_subcontract/models/construction_site.py:0
+msgid "site_id"
+msgstr "الموقع"

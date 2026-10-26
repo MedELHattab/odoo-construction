@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="view_construction_site_kanban" model="ir.ui.view">
+        <field name="name">construction.site.kanban</field>
+        <field name="model">construction.site</field>
+        <field name="arch" type="xml">
+            <kanban default_group_by="state" group_create="false" group_delete="false" class="o_kanban_construction">
+                <field name="state"/>
+                <field name="currency_id"/>
+                <field name="budget_alert_level"/>
+                <templates>
+                    <t t-name="card">
+                        <div class="d-flex justify-content-between align-items-start mb-1">
+                            <div>
+                                <field name="name" class="fw-bold fs-5"/>
+                                <div class="text-muted"><field name="code"/> <field name="partner_id"/></div>
+                            </div>
+                            <field name="manager_id" widget="many2one_avatar_user"/>
+                        </div>
+
+                        <div class="mb-2" t-if="record.budget_alert_level.raw_value == 'over'">
+                            <span class="badge text-bg-danger">Over budget</span>
+                        </div>
+                        <div class="mb-2" t-elif="record.budget_alert_level.raw_value == 'warning'">
+                            <span class="badge text-bg-warning">Near budget limit</span>
+                        </div>
+
+                        <div class="small text-muted">Progress</div>
+                        <field name="progress_percent" widget="progressbar"/>
+                        <div class="small text-muted mt-1">Budget used</div>
+                        <field name="budget_used_percent" widget="progressbar"/>
+
+                        <div class="d-flex justify-content-between mt-2">
+                            <span class="text-muted">Budget</span><field name="budget"/>
+                        </div>
+                        <div class="d-flex justify-content-between">
+                            <span class="text-muted">Total cost</span><field name="total_cost"/>
+                        </div>
+                        <div class="d-flex justify-content-between">
+                            <span class="text-muted">Billed</span><field name="billed_amount"/>
+                        </div>
+                        <div class="d-flex justify-content-between fw-bold">
+                            <span>Margin to date</span>
+                            <field name="margin_to_date"
+                                   decoration-danger="margin_to_date &lt; 0"
+                                   decoration-success="margin_to_date &gt;= 0"/>
+                        </div>
+                    </t>
+                </templates>
+            </kanban>
+        </field>
+    </record>
+
+    <record id="construction_site.action_construction_site" model="ir.actions.act_window">
+        <field name="view_mode">kanban,list,form</field>
+    </record>
+
+    <!-- margin columns in the existing analysis views -->
+    <record id="view_construction_site_cost_list_dashboard" model="ir.ui.view">
+        <field name="name">construction.site.cost.list.dashboard</field>
+        <field name="model">construction.site</field>
+        <field name="inherit_id" ref="construction_cost.view_construction_site_cost_list"/>
+        <field name="arch" type="xml">
+            <field name="total_cost" position="after">
+                <field name="billed_amount" sum="Billed"/>
+                <field name="margin_to_date" sum="Margin"
+                       decoration-danger="margin_to_date &lt; 0"/>
+            </field>
+        </field>
+    </record>
+
+    <record id="view_construction_site_cost_pivot_dashboard" model="ir.ui.view">
+        <field name="name">construction.site.cost.pivot.dashboard</field>
+        <field name="model">construction.site</field>
+        <field name="inherit_id" ref="construction_progress.view_construction_site_cost_pivot"/>
+        <field name="arch" type="xml">
+            <field name="total_cost" position="after">
+                <field name="billed_amount" type="measure"/>
+                <field name="margin_to_date" type="measure"/>
+            </field>
+        </field>
+    </record>
+
+    <record id="view_construction_site_form_dashboard" model="ir.ui.view">
+        <field name="name">construction.site.form.dashboard</field>
+        <field name="model">construction.site</field>
+        <field name="inherit_id" ref="construction_site.view_construction_site_form"/>
+        <field name="arch" type="xml">
+            <field name="budget_after_total" position="after">
+                <field name="budget_used_percent" widget="progressbar"/>
+                <field name="margin_to_date"
+                       decoration-danger="margin_to_date &lt; 0" decoration-success="margin_to_date &gt;= 0"/>
+            </field>
+        </field>
+    </record>
+</odoo>

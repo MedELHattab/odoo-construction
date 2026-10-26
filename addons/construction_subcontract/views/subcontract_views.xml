@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="view_construction_subcontract_list" model="ir.ui.view">
+        <field name="name">construction.subcontract.list</field>
+        <field name="model">construction.subcontract</field>
+        <field name="arch" type="xml">
+            <list decoration-muted="state == 'cancelled'">
+                <field name="name"/>
+                <field name="title"/>
+                <field name="site_id"/>
+                <field name="partner_id"/>
+                <field name="contract_amount" sum="Contracts"/>
+                <field name="certified_amount" sum="Certified"/>
+                <field name="balance" sum="Balance"/>
+                <field name="retention_held" sum="Retention"/>
+                <field name="state" widget="badge" decoration-success="state == 'completed'"
+                       decoration-info="state == 'active'"/>
+                <field name="currency_id" column_invisible="True"/>
+            </list>
+        </field>
+    </record>
+
+    <record id="view_construction_subcontract_form" model="ir.ui.view">
+        <field name="name">construction.subcontract.form</field>
+        <field name="model">construction.subcontract</field>
+        <field name="arch" type="xml">
+            <form>
+                <header>
+                    <button name="action_activate" string="Start" type="object" class="btn-primary"
+                            invisible="state != 'draft'"/>
+                    <button name="action_new_payment" string="New Payment Certificate" type="object"
+                            class="btn-primary" invisible="state != 'active'"/>
+                    <button name="action_complete" string="Complete" type="object" invisible="state != 'active'"/>
+                    <button name="action_release_retention" string="Release Retention" type="object"
+                            invisible="state != 'completed' or retention_held &lt;= 0"/>
+                    <button name="action_cancel" string="Cancel" type="object"
+                            invisible="state not in ('draft', 'active')"/>
+                    <field name="state" widget="statusbar" statusbar_visible="draft,active,completed"/>
+                </header>
+                <sheet>
+                    <div class="oe_title">
+                        <h2><field name="name"/></h2>
+                        <h1><field name="title" placeholder="Scope of work" readonly="state != 'draft'"/></h1>
+                    </div>
+                    <group>
+                        <group>
+                            <field name="site_id" readonly="state != 'draft'"/>
+                            <field name="partner_id" readonly="state != 'draft'"
+                                   context="{'default_is_subcontractor': True}"/>
+                            <field name="date_start"/>
+                        </group>
+                        <group>
+                            <field name="contract_amount" readonly="state != 'draft'"/>
+                            <field name="retention_percent" readonly="state != 'draft'"/>
+                            <field name="certified_amount"/>
+                            <field name="balance"/>
+                            <field name="retention_held"/>
+                            <field name="retention_released"/>
+                            <field name="company_id" invisible="True"/>
+                            <field name="currency_id" invisible="True"/>
+                        </group>
+                    </group>
+                    <notebook>
+                        <page string="Payment certificates" name="payments">
+                            <field name="payment_ids" readonly="True">
+                                <list>
+                                    <field name="name"/>
+                                    <field name="date"/>
+                                    <field name="description"/>
+                                    <field name="gross_amount" sum="Certified"/>
+                                    <field name="retention_amount" sum="Retention"/>
+                                    <field name="net_amount" sum="To pay"/>
+                                    <field name="state" widget="badge" decoration-success="state == 'billed'"/>
+                                    <field name="currency_id" column_invisible="True"/>
+                                </list>
+                            </field>
+                        </page>
+                        <page string="Terms" name="terms"><field name="description"/></page>
+                    </notebook>
+                </sheet>
+                <chatter/>
+            </form>
+        </field>
+    </record>
+
+    <record id="view_construction_subcontract_search" model="ir.ui.view">
+        <field name="name">construction.subcontract.search</field>
+        <field name="model">construction.subcontract</field>
+        <field name="arch" type="xml">
+            <search>
+                <field name="name"/>
+                <field name="title"/>
+                <field name="partner_id"/>
+                <field name="site_id"/>
+                <filter name="active" string="In progress" domain="[('state', '=', 'active')]"/>
+                <filter name="retention" string="Retention held" domain="[('retention_held', '&gt;', 0)]"/>
+                <group>
+                    <filter name="group_site" string="Site" context="{'group_by': 'site_id'}"/>
+                    <filter name="group_partner" string="Subcontractor" context="{'group_by': 'partner_id'}"/>
+                    <filter name="group_state" string="Status" context="{'group_by': 'state'}"/>
+                </group>
+            </search>
+        </field>
+    </record>
+
+    <record id="view_construction_subcontract_payment_form" model="ir.ui.view">
+        <field name="name">construction.subcontract.payment.form</field>
+        <field name="model">construction.subcontract.payment</field>
+        <field name="arch" type="xml">
+            <form>
+                <header>
+                    <button name="action_bill" string="Create Vendor Bill" type="object" class="btn-primary"
+                            invisible="state != 'draft'" groups="account.group_account_invoice"/>
+                    <button name="action_cancel" string="Cancel" type="object" invisible="state != 'draft'"/>
+                    <field name="state" widget="statusbar" statusbar_visible="draft,billed"/>
+                </header>
+                <sheet>
+                    <div class="oe_button_box" name="button_box">
+                        <button name="action_open_bill" type="object" class="oe_stat_button"
+                                icon="fa-file-text-o" invisible="not bill_id">
+                            <div class="o_stat_info"><span class="o_stat_text">Vendor bill</span></div>
+                        </button>
+                    </div>
+                    <div class="oe_title"><h1><field name="name"/></h1></div>
+                    <group>
+                        <group>
+                            <field name="subcontract_id" readonly="state != 'draft'"/>
+                            <field name="partner_id"/>
+                            <field name="site_id"/>
+                            <field name="description" readonly="state != 'draft'"/>
+                        </group>
+                        <group>
+                            <field name="date" readonly="state != 'draft'"/>
+                            <field name="gross_amount" readonly="state != 'draft'"/>
+                            <field name="retention_percent" readonly="state != 'draft'"/>
+                            <field name="retention_amount"/>
+                            <field name="net_amount"/>
+                            <field name="company_id" invisible="True"/>
+                            <field name="currency_id" invisible="True"/>
+                        </group>
+                    </group>
+                </sheet>
+                <chatter/>
+            </form>
+        </field>
+    </record>
+
+    <record id="action_construction_subcontract" model="ir.actions.act_window">
+        <field name="name">Subcontracts</field>
+        <field name="res_model">construction.subcontract</field>
+        <field name="view_mode">list,form</field>
+        <field name="help" type="html">
+            <p class="o_view_nocontent_smiling_face">Create your first subcontract</p>
+            <p>Agree a contract amount with a subcontractor, then bill payment certificates against it.</p>
+        </field>
+    </record>
+
+    <menuitem id="menu_construction_subcontract" name="Subcontracts"
+              parent="construction_site.menu_construction_root"
+              action="action_construction_subcontract" sequence="27"/>
+</odoo>

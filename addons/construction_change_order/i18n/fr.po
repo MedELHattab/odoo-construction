@@ -1,0 +1,447 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* construction_change_order
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 19.0-20261015\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-10-26 12:36+0000\n"
+"PO-Revision-Date: 2026-10-26 12:36+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: construction_change_order
+#: model:ir.model.fields,field_description:construction_change_order.field_construction_change_order__message_needaction
+msgid "Action Needed"
+msgstr "Action requise"
+
+#. module: construction_change_order
+#. odoo-python
+#: code:addons/construction_change_order/models/change_order.py:0
+msgid "Add at least one line before approving the change order."
+msgstr "Ajoutez au moins une ligne avant d'approuver l'avenant."
+
+#. module: construction_change_order
+#. odoo-python
+#: code:addons/construction_change_order/models/change_order.py:0
+msgid "Add at least one line before sending the change order."
+msgstr "Ajoutez au moins une ligne avant d'envoyer l'avenant."
+
+#. module: construction_change_order
+#. odoo-python
+#: code:addons/construction_change_order/models/change_order.py:0
+msgid "An approved change order cannot be deleted."
+msgstr "Un avenant approuvé ne peut pas être supprimé."
+
+#. module: construction_change_order
+#. odoo-python
+#: code:addons/construction_change_order/models/change_order.py:0
+msgid "An approved change order is locked."
+msgstr "Un avenant approuvé est verrouillé."
+
+#. module: construction_change_order
+#: model_terms:ir.ui.view,arch_db:construction_change_order.view_construction_change_order_form
+msgid "Approve"
+msgstr "Approuver"
+
+#. module: construction_change_order
+#: model:ir.model.fields.selection,name:construction_change_order.selection__construction_change_order__state__approved
+#: model_terms:ir.ui.view,arch_db:construction_change_order.view_construction_change_order_search
+msgid "Approved"
+msgstr "Approuvé"
+
+#. module: construction_change_order
+#: model:ir.model.fields,field_description:construction_change_order.field_construction_site__approved_change_total
+msgid "Approved Change Total"
+msgstr "Total des avenants approuvés"
+
+#. module: construction_change_order
+#: model:ir.model.fields,field_description:construction_change_order.field_construction_change_order__message_attachment_count
+msgid "Attachment Count"
+msgstr "Nombre de pièces jointes"
+
+#. module: construction_change_order
+#: model_terms:ir.ui.view,arch_db:construction_change_order.view_construction_change_order_search
+msgid "Awaiting decision"
+msgstr "En attente de décision"
+
+#. module: construction_change_order
+#: model:ir.model,name:construction_change_order.model_construction_boq_line
+msgid "Bill of Quantities Line"
+msgstr "Ligne du bordereau des quantités"
+
+#. module: construction_change_order
+#: model:ir.model.fields,field_description:construction_change_order.field_construction_change_order__boq_line_ids
+msgid "BoQ lines created"
+msgstr "Lignes de bordereau créées"
+
+#. module: construction_change_order
+#: model:ir.model,name:construction_change_order.model_construction_change_order
+#: model:ir.model.fields,field_description:construction_change_order.field_construction_change_order_line__change_order_id
+msgid "Change Order"
+msgstr "Avenant"
+
+#. module: construction_change_order
+#: model:ir.model.fields,field_description:construction_change_order.field_construction_site__change_order_count
+msgid "Change Order Count"
+msgstr "Nombre d'avenants"
+
+#. module: construction_change_order
+#: model:ir.model,name:construction_change_order.model_construction_change_order_line
+msgid "Change Order Line"
+msgstr "Ligne d'avenant"
+
+#. module: construction_change_order
+#. odoo-python
+#: code:addons/construction_change_order/models/construction_site.py:0
+#: model:ir.actions.act_window,name:construction_change_order.action_construction_change_order
+#: model:ir.model.fields,field_description:construction_change_order.field_construction_site__change_order_ids
+#: model:ir.ui.menu,name:construction_change_order.menu_construction_change_order
+#: model_terms:ir.ui.view,arch_db:construction_change_order.view_construction_site_form_change_order
+msgid "Change Orders"
+msgstr "Avenants"
+
+#. module: construction_change_order
+#: model:ir.model.fields,field_description:construction_change_order.field_construction_boq_line__change_order_id
+msgid "Change order"
+msgstr "Avenant"
+
+#. module: construction_change_order
+#. odoo-python
+#: code:addons/construction_change_order/models/change_order.py:0
+msgid ""
+"Change order %(name)s approved: %(amount)s added to the bill of quantities."
+msgstr "Avenant %(name)s approuvé : %(amount)s ajouté au bordereau des quantités."
+
+#. module: construction_change_order
+#: model:ir.model.fields,field_description:construction_change_order.field_construction_change_order__company_id
+msgid "Company"
+msgstr "Société"
+
+#. module: construction_change_order
+#: model:ir.model,name:construction_change_order.model_construction_site
+msgid "Construction Site"
+msgstr "Chantier"
+
+#. module: construction_change_order
+#: model:ir.model.fields,help:construction_change_order.field_construction_site__approved_change_total
+msgid "Cost of all approved change orders on this site."
+msgstr "Coût de tous les avenants approuvés sur ce chantier."
+
+#. module: construction_change_order
+#: model:ir.model.fields,field_description:construction_change_order.field_construction_change_order__create_uid
+#: model:ir.model.fields,field_description:construction_change_order.field_construction_change_order_line__create_uid
+msgid "Created by"
+msgstr "Créé par"
+
+#. module: construction_change_order
+#: model:ir.model.fields,field_description:construction_change_order.field_construction_change_order__create_date
+#: model:ir.model.fields,field_description:construction_change_order.field_construction_change_order_line__create_date
+msgid "Created on"
+msgstr "Créé le"
+
+#. module: construction_change_order
+#: model:ir.model.fields,field_description:construction_change_order.field_construction_change_order__currency_id
+#: model:ir.model.fields,field_description:construction_change_order.field_construction_change_order_line__currency_id
+msgid "Currency"
+msgstr "Devise"
+
+#. module: construction_change_order
+#: model:ir.model.fields,field_description:construction_change_order.field_construction_change_order__date
+msgid "Date"
+msgstr "Date"
+
+#. module: construction_change_order
+#: model:ir.model.fields,field_description:construction_change_order.field_construction_change_order_line__name
+msgid "Description"
+msgstr "Description"
+
+#. module: construction_change_order
+#: model:ir.model.fields,field_description:construction_change_order.field_construction_boq_line__display_name
+#: model:ir.model.fields,field_description:construction_change_order.field_construction_change_order__display_name
+#: model:ir.model.fields,field_description:construction_change_order.field_construction_change_order_line__display_name
+#: model:ir.model.fields,field_description:construction_change_order.field_construction_site__display_name
+msgid "Display Name"
+msgstr "Nom affiché"
+
+#. module: construction_change_order
+#: model:ir.model.fields.selection,name:construction_change_order.selection__construction_change_order__state__draft
+msgid "Draft"
+msgstr "Brouillon"
+
+#. module: construction_change_order
+#: model_terms:ir.actions.act_window,help:construction_change_order.action_construction_change_order
+msgid ""
+"Extra work requested by the client. Once approved it is added to the site's "
+"bill of quantities and budget."
+msgstr "Travaux supplémentaires demandés par le client. Une fois approuvés, ils sont ajoutés au bordereau des quantités et au budget du chantier."
+
+#. module: construction_change_order
+#: model:ir.model.fields,field_description:construction_change_order.field_construction_change_order__message_follower_ids
+msgid "Followers"
+msgstr "Abonnés"
+
+#. module: construction_change_order
+#: model:ir.model.fields,field_description:construction_change_order.field_construction_change_order__message_partner_ids
+msgid "Followers (Partners)"
+msgstr "Abonnés (partenaires)"
+
+#. module: construction_change_order
+#: model:ir.model.fields,field_description:construction_change_order.field_construction_change_order__has_message
+msgid "Has Message"
+msgstr "A un message"
+
+#. module: construction_change_order
+#: model:ir.model.fields,field_description:construction_change_order.field_construction_boq_line__id
+#: model:ir.model.fields,field_description:construction_change_order.field_construction_change_order__id
+#: model:ir.model.fields,field_description:construction_change_order.field_construction_change_order_line__id
+#: model:ir.model.fields,field_description:construction_change_order.field_construction_site__id
+msgid "ID"
+msgstr "ID"
+
+#. module: construction_change_order
+#: model:ir.model.fields,help:construction_change_order.field_construction_change_order__message_needaction
+msgid "If checked, new messages require your attention."
+msgstr "Si coché, de nouveaux messages requièrent votre attention."
+
+#. module: construction_change_order
+#: model:ir.model.fields,help:construction_change_order.field_construction_change_order__message_has_error
+#: model:ir.model.fields,help:construction_change_order.field_construction_change_order__message_has_sms_error
+msgid "If checked, some messages have a delivery error."
+msgstr "Si coché, certains messages ont une erreur d'envoi."
+
+#. module: construction_change_order
+#: model:ir.model.fields,field_description:construction_change_order.field_construction_change_order__increase_budget
+msgid "Increase site budget"
+msgstr "Augmenter le budget du chantier"
+
+#. module: construction_change_order
+#: model:ir.model.fields,field_description:construction_change_order.field_construction_change_order__message_is_follower
+msgid "Is Follower"
+msgstr "Est abonné"
+
+#. module: construction_change_order
+#: model:ir.model.fields,field_description:construction_change_order.field_construction_change_order__write_uid
+#: model:ir.model.fields,field_description:construction_change_order.field_construction_change_order_line__write_uid
+msgid "Last Updated by"
+msgstr "Dernière mise à jour par"
+
+#. module: construction_change_order
+#: model:ir.model.fields,field_description:construction_change_order.field_construction_change_order__write_date
+#: model:ir.model.fields,field_description:construction_change_order.field_construction_change_order_line__write_date
+msgid "Last Updated on"
+msgstr "Dernière mise à jour le"
+
+#. module: construction_change_order
+#: model:ir.model.fields,field_description:construction_change_order.field_construction_change_order__line_ids
+msgid "Lines"
+msgstr "Lignes"
+
+#. module: construction_change_order
+#: model:ir.model.fields,field_description:construction_change_order.field_construction_change_order__message_has_error
+msgid "Message Delivery error"
+msgstr "Erreur d'envoi du message"
+
+#. module: construction_change_order
+#: model:ir.model.fields,field_description:construction_change_order.field_construction_change_order__message_ids
+msgid "Messages"
+msgstr "Messages"
+
+#. module: construction_change_order
+#: model:ir.model.fields,field_description:construction_change_order.field_construction_change_order__name
+msgid "Name"
+msgstr "Nom"
+
+#. module: construction_change_order
+#: model:ir.model.fields,field_description:construction_change_order.field_construction_change_order__message_needaction_counter
+msgid "Number of Actions"
+msgstr "Nombre d'actions"
+
+#. module: construction_change_order
+#: model:ir.model.fields,field_description:construction_change_order.field_construction_change_order__message_has_error_counter
+msgid "Number of errors"
+msgstr "Nombre d'erreurs"
+
+#. module: construction_change_order
+#: model:ir.model.fields,help:construction_change_order.field_construction_change_order__message_needaction_counter
+msgid "Number of messages requiring action"
+msgstr "Nombre de messages nécessitant une action"
+
+#. module: construction_change_order
+#: model:ir.model.fields,help:construction_change_order.field_construction_change_order__message_has_error_counter
+msgid "Number of messages with delivery error"
+msgstr "Nombre de messages avec erreur d'envoi"
+
+#. module: construction_change_order
+#. odoo-python
+#: code:addons/construction_change_order/models/change_order.py:0
+msgid "Only draft change orders can be sent."
+msgstr "Seuls les avenants en brouillon peuvent être envoyés."
+
+#. module: construction_change_order
+#. odoo-python
+#: code:addons/construction_change_order/models/change_order.py:0
+msgid "Only draft or sent change orders can be approved."
+msgstr "Seuls les avenants en brouillon ou envoyés peuvent être approuvés."
+
+#. module: construction_change_order
+#. odoo-python
+#: code:addons/construction_change_order/models/change_order.py:0
+msgid "Only draft or sent change orders can be rejected."
+msgstr "Seuls les avenants en brouillon ou envoyés peuvent être rejetés."
+
+#. module: construction_change_order
+#. odoo-python
+#: code:addons/construction_change_order/models/change_order.py:0
+msgid "Only rejected change orders can be reopened."
+msgstr "Seuls les avenants rejetés peuvent être rouverts."
+
+#. module: construction_change_order
+#: model:ir.model.fields,field_description:construction_change_order.field_construction_change_order_line__product_id
+msgid "Product"
+msgstr "Produit"
+
+#. module: construction_change_order
+#: model:ir.model.fields,field_description:construction_change_order.field_construction_change_order_line__quantity
+msgid "Quantity"
+msgstr "Quantité"
+
+#. module: construction_change_order
+#. odoo-python
+#: code:addons/construction_change_order/models/change_order.py:0
+msgid "Quantity and unit cost cannot be negative."
+msgstr "La quantité et le coût unitaire ne peuvent pas être négatifs."
+
+#. module: construction_change_order
+#: model:ir.model.fields,field_description:construction_change_order.field_construction_change_order__rating_ids
+msgid "Ratings"
+msgstr "Évaluations"
+
+#. module: construction_change_order
+#: model:ir.model.fields,field_description:construction_change_order.field_construction_change_order__reason
+msgid "Reason"
+msgstr "Motif"
+
+#. module: construction_change_order
+#: model_terms:ir.ui.view,arch_db:construction_change_order.view_construction_change_order_form
+msgid "Reason / requested by"
+msgstr "Motif / demandé par"
+
+#. module: construction_change_order
+#: model_terms:ir.actions.act_window,help:construction_change_order.action_construction_change_order
+msgid "Record your first change order"
+msgstr "Enregistrez votre premier avenant"
+
+#. module: construction_change_order
+#: model_terms:ir.ui.view,arch_db:construction_change_order.view_construction_change_order_form
+msgid "Reject"
+msgstr "Rejeter"
+
+#. module: construction_change_order
+#: model:ir.model.fields.selection,name:construction_change_order.selection__construction_change_order__state__rejected
+msgid "Rejected"
+msgstr "Rejeté"
+
+#. module: construction_change_order
+#: model_terms:ir.ui.view,arch_db:construction_change_order.view_construction_change_order_form
+msgid "Reopen"
+msgstr "Rouvrir"
+
+#. module: construction_change_order
+#: model:ir.model.fields,field_description:construction_change_order.field_construction_change_order__message_has_sms_error
+msgid "SMS Delivery error"
+msgstr "Erreur d'envoi SMS"
+
+#. module: construction_change_order
+#: model_terms:ir.ui.view,arch_db:construction_change_order.view_construction_change_order_form
+msgid "Send to client"
+msgstr "Envoyer au client"
+
+#. module: construction_change_order
+#: model:ir.model.fields.selection,name:construction_change_order.selection__construction_change_order__state__submitted
+msgid "Sent to client"
+msgstr "Envoyé au client"
+
+#. module: construction_change_order
+#: model:ir.model.fields,field_description:construction_change_order.field_construction_change_order_line__sequence
+msgid "Sequence"
+msgstr "Séquence"
+
+#. module: construction_change_order
+#: model:ir.model.fields,field_description:construction_change_order.field_construction_change_order__site_id
+#: model_terms:ir.ui.view,arch_db:construction_change_order.view_construction_change_order_search
+msgid "Site"
+msgstr "Chantier"
+
+#. module: construction_change_order
+#: model:ir.model.fields,field_description:construction_change_order.field_construction_change_order__state
+msgid "State"
+msgstr "État"
+
+#. module: construction_change_order
+#: model_terms:ir.ui.view,arch_db:construction_change_order.view_construction_change_order_search
+msgid "Status"
+msgstr "Statut"
+
+#. module: construction_change_order
+#: model:ir.model.fields,field_description:construction_change_order.field_construction_change_order_line__subtotal
+msgid "Subtotal"
+msgstr "Sous-total"
+
+#. module: construction_change_order
+#: model:ir.model.fields,field_description:construction_change_order.field_construction_change_order__title
+msgid "Title"
+msgstr "Titre"
+
+#. module: construction_change_order
+#: model:ir.model.fields,field_description:construction_change_order.field_construction_change_order__total
+#: model_terms:ir.ui.view,arch_db:construction_change_order.view_construction_change_order_form
+#: model_terms:ir.ui.view,arch_db:construction_change_order.view_construction_change_order_list
+msgid "Total"
+msgstr "Total"
+
+#. module: construction_change_order
+#: model:ir.model.fields,field_description:construction_change_order.field_construction_change_order_line__uom_id
+msgid "Unit"
+msgstr "Unité"
+
+#. module: construction_change_order
+#: model:ir.model.fields,field_description:construction_change_order.field_construction_change_order_line__unit_cost
+msgid "Unit Cost"
+msgstr "Coût unitaire"
+
+#. module: construction_change_order
+#: model:ir.model.fields,field_description:construction_change_order.field_construction_change_order__website_message_ids
+msgid "Website Messages"
+msgstr "Messages du site web"
+
+#. module: construction_change_order
+#: model:ir.model.fields,help:construction_change_order.field_construction_change_order__website_message_ids
+msgid "Website communication history"
+msgstr "Historique des communications du site web"
+
+#. module: construction_change_order
+#: model_terms:ir.ui.view,arch_db:construction_change_order.view_construction_change_order_form
+msgid "What changes?"
+msgstr "Qu'est-ce qui change ?"
+
+#. module: construction_change_order
+#: model:ir.model.fields,help:construction_change_order.field_construction_change_order__increase_budget
+msgid "When approved, add the cost of this change order to the site budget."
+msgstr "À l'approbation, ajoute le coût de cet avenant au budget du chantier."
+
+#. module: construction_change_order
+#: model:ir.model.fields,help:construction_change_order.field_construction_change_order__reason
+msgid "Why the extra work is needed and who requested it."
+msgstr "Pourquoi ces travaux supplémentaires sont nécessaires et qui les a demandés."
+
+#. module: construction_change_order
+#. odoo-python
+#: code:addons/construction_change_order/models/construction_site.py:0
+msgid "site_id"
+msgstr "Chantier"
