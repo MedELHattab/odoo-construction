@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="view_construction_site_form_billing" model="ir.ui.view">
+        <field name="name">construction.site.form.billing</field>
+        <field name="model">construction.site</field>
+        <field name="inherit_id" ref="construction_site.view_construction_site_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//header" position="inside">
+                <button name="action_new_progress_statement" string="New Progress Statement" type="object"
+                        invisible="not boq_line_ids" groups="construction_site.group_construction_manager"/>
+                <button name="action_release_retention" string="Release Retention" type="object"
+                        invisible="retention_held &lt;= 0" groups="account.group_account_invoice"/>
+            </xpath>
+            <xpath expr="//div[@name='button_box']" position="inside">
+                <button name="action_view_statements" type="object" class="oe_stat_button" icon="fa-money">
+                    <field name="statement_count" widget="statinfo" string="Statements"/>
+                </button>
+            </xpath>
+            <field name="markup" position="after">
+                <field name="retention_percent"/>
+                <field name="contract_value"/>
+                <field name="billed_amount"/>
+                <field name="billed_percent" widget="progressbar"/>
+                <field name="retention_held"/>
+            </field>
+        </field>
+    </record>
+</odoo>

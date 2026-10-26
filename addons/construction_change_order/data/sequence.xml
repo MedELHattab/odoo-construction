@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="seq_construction_change_order" model="ir.sequence">
+        <field name="name">Change Order</field>
+        <field name="code">construction.change.order</field>
+        <field name="prefix">CO/</field>
+        <field name="padding">4</field>
+        <field name="company_id" eval="False"/>
+    </record>
+</odoo>

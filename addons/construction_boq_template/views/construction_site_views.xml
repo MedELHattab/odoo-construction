@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="action_open_apply_template" model="ir.actions.act_window">
+        <field name="name">Apply a BoQ Template</field>
+        <field name="res_model">construction.boq.template.apply</field>
+        <field name="view_mode">form</field>
+        <field name="target">new</field>
+    </record>
+    <record id="action_open_save_template" model="ir.actions.act_window">
+        <field name="name">Save as BoQ Template</field>
+        <field name="res_model">construction.boq.template.save</field>
+        <field name="view_mode">form</field>
+        <field name="target">new</field>
+    </record>
+
+    <record id="view_construction_site_form_boq_template" model="ir.ui.view">
+        <field name="name">construction.site.form.boq.template</field>
+        <field name="model">construction.site</field>
+        <field name="inherit_id" ref="construction_site.view_construction_site_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//header" position="inside">
+                <button name="%(action_open_apply_template)d" string="Apply Template" type="action"
+                        context="{'default_site_id': id}"
+                        groups="construction_site.group_construction_manager"/>
+                <button name="%(action_open_save_template)d" string="Save as Template" type="action"
+                        context="{'default_site_id': id}" invisible="not boq_line_ids"
+                        groups="construction_site.group_construction_manager"/>
+            </xpath>
+            <xpath expr="//field[@name='boq_line_ids']/list/field[@name='product_id']" position="before">
+                <field name="category_id"/>
+            </xpath>
+        </field>
+    </record>
+
+    <record id="view_construction_boq_line_pivot" model="ir.ui.view">
+        <field name="name">construction.boq.line.pivot</field>
+        <field name="model">construction.boq.line</field>
+        <field name="arch" type="xml">
+            <pivot string="BoQ analysis">
+                <field name="category_id" type="row"/>
+                <field name="site_id" type="col"/>
+                <field name="subtotal" type="measure"/>
+            </pivot>
+        </field>
+    </record>
+
+    <record id="view_construction_boq_line_list" model="ir.ui.view">
+        <field name="name">construction.boq.line.list</field>
+        <field name="model">construction.boq.line</field>
+        <field name="arch" type="xml">
+            <list create="0" delete="0" edit="0">
+                <field name="site_id"/>
+                <field name="category_id"/>
+                <field name="name"/>
+                <field name="quantity"/>
+                <field name="uom_id"/>
+                <field name="unit_cost"/>
+                <field name="subtotal" sum="Total"/>
+                <field name="currency_id" column_invisible="True"/>
+            </list>
+        </field>
+    </record>
+
+    <record id="view_construction_boq_line_search" model="ir.ui.view">
+        <field name="name">construction.boq.line.search</field>
+        <field name="model">construction.boq.line</field>
+        <field name="arch" type="xml">
+            <search>
+                <field name="name"/>
+                <field name="site_id"/>
+                <field name="category_id"/>
+                <group>
+                    <filter name="group_category" string="Category" context="{'group_by': 'category_id'}"/>
+                    <filter name="group_site" string="Site" context="{'group_by': 'site_id'}"/>
+                </group>
+            </search>
+        </field>
+    </record>
+
+    <record id="action_construction_boq_analysis" model="ir.actions.act_window">
+        <field name="name">BoQ Analysis</field>
+        <field name="res_model">construction.boq.line</field>
+        <field name="view_mode">pivot,list</field>
+        <field name="context">{'search_default_group_category': 1}</field>
+    </record>
+
+    <menuitem id="menu_construction_boq_analysis" name="BoQ Analysis"
+              parent="construction_site.menu_construction_root"
+              action="action_construction_boq_analysis" sequence="35"/>
+</odoo>

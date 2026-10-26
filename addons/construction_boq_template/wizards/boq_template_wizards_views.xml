@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="view_boq_template_apply_form" model="ir.ui.view">
+        <field name="name">construction.boq.template.apply.form</field>
+        <field name="model">construction.boq.template.apply</field>
+        <field name="arch" type="xml">
+            <form>
+                <group>
+                    <field name="site_id" invisible="True"/>
+                    <field name="template_id"/>
+                    <field name="factor"/>
+                    <field name="replace"/>
+                </group>
+                <footer>
+                    <button name="action_apply" string="Apply" type="object" class="btn-primary"/>
+                    <button string="Cancel" class="btn-secondary" special="cancel"/>
+                </footer>
+            </form>
+        </field>
+    </record>
+
+    <record id="view_boq_template_save_form" model="ir.ui.view">
+        <field name="name">construction.boq.template.save.form</field>
+        <field name="model">construction.boq.template.save</field>
+        <field name="arch" type="xml">
+            <form>
+                <group>
+                    <field name="site_id" invisible="True"/>
+                    <field name="name"/>
+                </group>
+                <footer>
+                    <button name="action_save" string="Save template" type="object" class="btn-primary"/>
+                    <button string="Cancel" class="btn-secondary" special="cancel"/>
+                </footer>
+            </form>
+        </field>
+    </record>
+</odoo>

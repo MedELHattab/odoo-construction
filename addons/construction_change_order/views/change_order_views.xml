@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="view_construction_change_order_list" model="ir.ui.view">
+        <field name="name">construction.change.order.list</field>
+        <field name="model">construction.change.order</field>
+        <field name="arch" type="xml">
+            <list decoration-muted="state == 'rejected'">
+                <field name="name"/>
+                <field name="title"/>
+                <field name="site_id"/>
+                <field name="date"/>
+                <field name="total" sum="Total"/>
+                <field name="state" widget="badge" decoration-success="state == 'approved'"
+                       decoration-info="state == 'submitted'" decoration-danger="state == 'rejected'"/>
+                <field name="currency_id" column_invisible="True"/>
+            </list>
+        </field>
+    </record>
+
+    <record id="view_construction_change_order_form" model="ir.ui.view">
+        <field name="name">construction.change.order.form</field>
+        <field name="model">construction.change.order</field>
+        <field name="arch" type="xml">
+            <form>
+                <header>
+                    <button name="action_submit" string="Send to client" type="object" class="btn-primary"
+                            invisible="state != 'draft'"/>
+                    <button name="action_approve" string="Approve" type="object"
+                            invisible="state not in ('draft', 'submitted')"
+                            groups="construction_site.group_construction_manager"/>
+                    <button name="action_reject" string="Reject" type="object"
+                            invisible="state not in ('draft', 'submitted')"/>
+                    <button name="action_reset" string="Reopen" type="object" invisible="state != 'rejected'"/>
+                    <field name="state" widget="statusbar" statusbar_visible="draft,submitted,approved"/>
+                </header>
+                <sheet>
+                    <div class="oe_title">
+                        <h2><field name="name"/></h2>
+                        <h1><field name="title" placeholder="What changes?" readonly="state == 'approved'"/></h1>
+                    </div>
+                    <group>
+                        <group>
+                            <field name="site_id" readonly="state == 'approved'"/>
+                            <field name="date" readonly="state == 'approved'"/>
+                        </group>
+                        <group>
+                            <field name="increase_budget" readonly="state == 'approved'"/>
+                            <field name="company_id" invisible="True"/>
+                            <field name="currency_id" invisible="True"/>
+                        </group>
+                    </group>
+                    <field name="reason" placeholder="Reason / requested by" readonly="state == 'approved'"/>
+                    <field name="line_ids" readonly="state == 'approved'">
+                        <list editable="bottom">
+                            <field name="sequence" widget="handle"/>
+                            <field name="product_id"/>
+                            <field name="name"/>
+                            <field name="quantity"/>
+                            <field name="uom_id"/>
+                            <field name="unit_cost"/>
+                            <field name="subtotal" sum="Total"/>
+                            <field name="currency_id" column_invisible="True"/>
+                        </list>
+                    </field>
+                    <group class="oe_subtotal_footer">
+                        <field name="total" class="oe_subtotal_footer_separator"/>
+                    </group>
+                </sheet>
+                <chatter/>
+            </form>
+        </field>
+    </record>
+
+    <record id="view_construction_change_order_search" model="ir.ui.view">
+        <field name="name">construction.change.order.search</field>
+        <field name="model">construction.change.order</field>
+        <field name="arch" type="xml">
+            <search>
+                <field name="name"/>
+                <field name="title"/>
+                <field name="site_id"/>
+                <filter name="pending" string="Awaiting decision" domain="[('state', 'in', ('draft', 'submitted'))]"/>
+                <filter name="approved" string="Approved" domain="[('state', '=', 'approved')]"/>
+                <group>
+                    <filter name="group_site" string="Site" context="{'group_by': 'site_id'}"/>
+                    <filter name="group_state" string="Status" context="{'group_by': 'state'}"/>
+                </group>
+            </search>
+        </field>
+    </record>
+
+    <record id="action_construction_change_order" model="ir.actions.act_window">
+        <field name="name">Change Orders</field>
+        <field name="res_model">construction.change.order</field>
+        <field name="view_mode">list,form</field>
+        <field name="help" type="html">
+            <p class="o_view_nocontent_smiling_face">Record your first change order</p>
+            <p>Extra work requested by the client. Once approved it is added to the site's bill of quantities and budget.</p>
+        </field>
+    </record>
+
+    <menuitem id="menu_construction_change_order" name="Change Orders"
+              parent="construction_site.menu_construction_root"
+              action="action_construction_change_order" sequence="26"/>
+</odoo>
