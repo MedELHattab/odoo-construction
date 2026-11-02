@@ -485,5 +485,14 @@
 "Income": "الإيرادات",
 "Posted client invoices that are not paid yet.": "فواتير العملاء المرحّلة وغير المدفوعة بعد.",
 "Profit and Loss": "الأرباح والخسائر",
-"Receivable Amount": "المبلغ المستحق القبض"
+"Receivable Amount": "المبلغ المستحق القبض",
+"Cash Flow Forecast": "توقعات التدفق النقدي",
+"Client invoice": "فاتورة العميل",
+"Due Date": "تاريخ الاستحقاق",
+"Invoice or Bill": "فاتورة عميل أو مورّد",
+"Money In": "الأموال الداخلة",
+"Money Out": "الأموال الخارجة",
+"Net": "الصافي",
+"Partner": "الشريك",
+"Type": "النوع"
 }

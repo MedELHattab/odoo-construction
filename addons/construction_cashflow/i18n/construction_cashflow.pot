@@ -1,0 +1,117 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* construction_cashflow
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 19.0-20261015\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-11-02 15:12+0000\n"
+"PO-Revision-Date: 2026-11-02 15:12+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: construction_cashflow
+#: model:ir.actions.act_window,name:construction_cashflow.action_construction_cashflow
+#: model:ir.model,name:construction_cashflow.model_construction_cashflow
+#: model:ir.ui.menu,name:construction_cashflow.menu_construction_cashflow
+msgid "Cash Flow Forecast"
+msgstr ""
+
+#. module: construction_cashflow
+#: model:ir.model.fields.selection,name:construction_cashflow.selection__construction_cashflow__kind__receipt
+msgid "Client invoice"
+msgstr ""
+
+#. module: construction_cashflow
+#: model:ir.model.fields,field_description:construction_cashflow.field_construction_cashflow__company_id
+msgid "Company"
+msgstr ""
+
+#. module: construction_cashflow
+#: model:ir.model.fields,field_description:construction_cashflow.field_construction_cashflow__currency_id
+msgid "Currency"
+msgstr ""
+
+#. module: construction_cashflow
+#: model:ir.model.fields,field_description:construction_cashflow.field_construction_cashflow__display_name
+msgid "Display Name"
+msgstr ""
+
+#. module: construction_cashflow
+#: model:ir.model.fields,field_description:construction_cashflow.field_construction_cashflow__date
+msgid "Due Date"
+msgstr ""
+
+#. module: construction_cashflow
+#: model:ir.model.fields,field_description:construction_cashflow.field_construction_cashflow__id
+msgid "ID"
+msgstr ""
+
+#. module: construction_cashflow
+#: model:ir.model.fields,field_description:construction_cashflow.field_construction_cashflow__move_id
+msgid "Invoice or Bill"
+msgstr ""
+
+#. module: construction_cashflow
+#: model:ir.model.fields,field_description:construction_cashflow.field_construction_cashflow__inflow
+#: model_terms:ir.ui.view,arch_db:construction_cashflow.view_construction_cashflow_search
+msgid "Money In"
+msgstr ""
+
+#. module: construction_cashflow
+#: model:ir.model.fields,field_description:construction_cashflow.field_construction_cashflow__outflow
+#: model_terms:ir.ui.view,arch_db:construction_cashflow.view_construction_cashflow_search
+msgid "Money Out"
+msgstr ""
+
+#. module: construction_cashflow
+#: model_terms:ir.ui.view,arch_db:construction_cashflow.view_construction_cashflow_search
+msgid "Month"
+msgstr ""
+
+#. module: construction_cashflow
+#: model:ir.model.fields,field_description:construction_cashflow.field_construction_cashflow__net
+msgid "Net"
+msgstr ""
+
+#. module: construction_cashflow
+#: model:ir.model.fields,field_description:construction_cashflow.field_construction_cashflow__partner_id
+msgid "Partner"
+msgstr ""
+
+#. module: construction_cashflow
+#: model_terms:ir.ui.view,arch_db:construction_cashflow.view_construction_cashflow_search
+msgid "Retention"
+msgstr ""
+
+#. module: construction_cashflow
+#: model:ir.model.fields.selection,name:construction_cashflow.selection__construction_cashflow__kind__retention
+msgid "Retention release"
+msgstr ""
+
+#. module: construction_cashflow
+#: model:ir.model.fields,field_description:construction_cashflow.field_construction_cashflow__site_id
+#: model_terms:ir.ui.view,arch_db:construction_cashflow.view_construction_cashflow_search
+msgid "Site"
+msgstr ""
+
+#. module: construction_cashflow
+#: model_terms:ir.ui.view,arch_db:construction_cashflow.view_construction_cashflow_list
+msgid "Total"
+msgstr ""
+
+#. module: construction_cashflow
+#: model:ir.model.fields,field_description:construction_cashflow.field_construction_cashflow__kind
+#: model_terms:ir.ui.view,arch_db:construction_cashflow.view_construction_cashflow_search
+msgid "Type"
+msgstr ""
+
+#. module: construction_cashflow
+#: model:ir.model.fields.selection,name:construction_cashflow.selection__construction_cashflow__kind__payment
+msgid "Vendor bill"
+msgstr ""

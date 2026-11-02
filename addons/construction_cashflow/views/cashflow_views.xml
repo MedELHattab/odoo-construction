@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="view_construction_cashflow_list" model="ir.ui.view">
+        <field name="name">construction.cashflow.list</field>
+        <field name="model">construction.cashflow</field>
+        <field name="arch" type="xml">
+            <list create="0" edit="0" delete="0">
+                <field name="date"/>
+                <field name="site_id"/>
+                <field name="kind"/>
+                <field name="partner_id"/>
+                <field name="move_id"/>
+                <field name="inflow" sum="Total"/>
+                <field name="outflow" sum="Total"/>
+                <field name="net" sum="Total" decoration-danger="net &lt; 0" decoration-success="net &gt; 0"/>
+                <field name="currency_id" column_invisible="True"/>
+            </list>
+        </field>
+    </record>
+
+    <record id="view_construction_cashflow_pivot" model="ir.ui.view">
+        <field name="name">construction.cashflow.pivot</field>
+        <field name="model">construction.cashflow</field>
+        <field name="arch" type="xml">
+            <pivot>
+                <field name="site_id" type="row"/>
+                <field name="date" interval="month" type="col"/>
+                <field name="inflow" type="measure"/>
+                <field name="outflow" type="measure"/>
+                <field name="net" type="measure"/>
+            </pivot>
+        </field>
+    </record>
+
+    <record id="view_construction_cashflow_graph" model="ir.ui.view">
+        <field name="name">construction.cashflow.graph</field>
+        <field name="model">construction.cashflow</field>
+        <field name="arch" type="xml">
+            <graph type="bar" stacked="0">
+                <field name="date" interval="month"/>
+                <field name="inflow" type="measure"/>
+                <field name="outflow" type="measure"/>
+            </graph>
+        </field>
+    </record>
+
+    <record id="view_construction_cashflow_search" model="ir.ui.view">
+        <field name="name">construction.cashflow.search</field>
+        <field name="model">construction.cashflow</field>
+        <field name="arch" type="xml">
+            <search>
+                <field name="site_id"/>
+                <field name="partner_id"/>
+                <filter name="receipts" string="Money In" domain="[('kind', '!=', 'payment')]"/>
+                <filter name="payments" string="Money Out" domain="[('kind', '=', 'payment')]"/>
+                <filter name="retention" string="Retention" domain="[('kind', '=', 'retention')]"/>
+                <group>
+                    <filter name="group_site" string="Site" context="{'group_by': 'site_id'}"/>
+                    <filter name="group_month" string="Month" context="{'group_by': 'date:month'}"/>
+                    <filter name="group_kind" string="Type" context="{'group_by': 'kind'}"/>
+                </group>
+            </search>
+        </field>
+    </record>
+
+    <record id="action_construction_cashflow" model="ir.actions.act_window">
+        <field name="name">Cash Flow Forecast</field>
+        <field name="res_model">construction.cashflow</field>
+        <field name="view_mode">pivot,graph,list</field>
+        <field name="context">{'search_default_group_month': 1}</field>
+    </record>
+
+    <menuitem id="menu_construction_cashflow" name="Cash Flow Forecast"
+              parent="construction_site.menu_construction_root"
+              action="action_construction_cashflow" sequence="35"/>
+</odoo>

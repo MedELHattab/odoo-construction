@@ -485,5 +485,14 @@
 "Income": "Produits",
 "Posted client invoices that are not paid yet.": "Factures clients comptabilisées et non encore payées.",
 "Profit and Loss": "Résultat",
-"Receivable Amount": "Montant à encaisser"
+"Receivable Amount": "Montant à encaisser",
+"Cash Flow Forecast": "Prévision de trésorerie",
+"Client invoice": "Facture client",
+"Due Date": "Date d'échéance",
+"Invoice or Bill": "Facture client ou fournisseur",
+"Money In": "Entrées d'argent",
+"Money Out": "Sorties d'argent",
+"Net": "Net",
+"Partner": "Partenaire",
+"Type": "Type"
 }
