@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="view_construction_punch_item_list" model="ir.ui.view">
+        <field name="name">construction.punch.item.list</field>
+        <field name="model">construction.punch.item</field>
+        <field name="arch" type="xml">
+            <list decoration-danger="is_late" decoration-muted="state == 'verified'">
+                <field name="name"/>
+                <field name="site_id"/>
+                <field name="location"/>
+                <field name="partner_id"/>
+                <field name="deadline"/>
+                <field name="priority" widget="priority"/>
+                <field name="state" widget="badge" decoration-success="state == 'verified'"
+                       decoration-info="state == 'done'"/>
+                <field name="is_late" column_invisible="True"/>
+            </list>
+        </field>
+    </record>
+
+    <record id="view_construction_punch_item_form" model="ir.ui.view">
+        <field name="name">construction.punch.item.form</field>
+        <field name="model">construction.punch.item</field>
+        <field name="arch" type="xml">
+            <form>
+                <header>
+                    <button name="action_done" type="object" string="Mark Fixed" class="btn-primary"
+                            invisible="state != 'open'"/>
+                    <button name="action_verify" type="object" string="Verify" class="btn-primary"
+                            invisible="state != 'done'"/>
+                    <button name="action_reopen" type="object" string="Reopen"
+                            invisible="state == 'open'"/>
+                    <field name="state" widget="statusbar"/>
+                </header>
+                <sheet>
+                    <group>
+                        <group>
+                            <field name="name"/>
+                            <field name="site_id"/>
+                            <field name="location"/>
+                            <field name="inspection_id" invisible="not inspection_id"/>
+                        </group>
+                        <group>
+                            <field name="partner_id"/>
+                            <field name="user_id"/>
+                            <field name="deadline"/>
+                            <field name="priority" widget="priority"/>
+                            <field name="company_id" invisible="True"/>
+                        </group>
+                    </group>
+                    <group>
+                        <field name="description"/>
+                        <field name="attachment_ids" widget="many2many_binary"/>
+                    </group>
+                </sheet>
+                <chatter/>
+            </form>
+        </field>
+    </record>
+
+    <record id="view_construction_punch_item_search" model="ir.ui.view">
+        <field name="name">construction.punch.item.search</field>
+        <field name="model">construction.punch.item</field>
+        <field name="arch" type="xml">
+            <search>
+                <field name="name"/>
+                <field name="site_id"/>
+                <field name="partner_id"/>
+                <filter name="open" string="Open" domain="[('state', '=', 'open')]"/>
+                <filter name="to_verify" string="To verify" domain="[('state', '=', 'done')]"/>
+                <group>
+                    <filter name="group_site" string="Site" context="{'group_by': 'site_id'}"/>
+                    <filter name="group_partner" string="Responsible" context="{'group_by': 'partner_id'}"/>
+                    <filter name="group_state" string="Status" context="{'group_by': 'state'}"/>
+                </group>
+            </search>
+        </field>
+    </record>
+
+    <record id="action_construction_punch_item" model="ir.actions.act_window">
+        <field name="name">Punch List</field>
+        <field name="res_model">construction.punch.item</field>
+        <field name="view_mode">list,form</field>
+        <field name="context">{'search_default_open': 1}</field>
+    </record>
+
+    <menuitem id="menu_construction_punch_item" name="Punch List"
+              parent="construction_site.menu_construction_root"
+              action="action_construction_punch_item" sequence="26"/>
+</odoo>

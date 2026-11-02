@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="view_construction_inspection_list" model="ir.ui.view">
+        <field name="name">construction.inspection.list</field>
+        <field name="model">construction.inspection</field>
+        <field name="arch" type="xml">
+            <list decoration-danger="state == 'done' and result == 'fail'">
+                <field name="date"/>
+                <field name="name"/>
+                <field name="site_id"/>
+                <field name="category"/>
+                <field name="inspector_id" widget="many2one_avatar_user"/>
+                <field name="fail_count"/>
+                <field name="result"/>
+                <field name="state" widget="badge"/>
+            </list>
+        </field>
+    </record>
+
+    <record id="view_construction_inspection_form" model="ir.ui.view">
+        <field name="name">construction.inspection.form</field>
+        <field name="model">construction.inspection</field>
+        <field name="arch" type="xml">
+            <form>
+                <header>
+                    <button name="action_complete" type="object" string="Complete" class="btn-primary"
+                            invisible="state != 'draft'"/>
+                    <button name="action_create_punch_items" type="object" string="Create Punch Items"
+                            invisible="not fail_count"/>
+                    <button name="action_reopen" type="object" string="Reopen" invisible="state != 'done'"/>
+                    <field name="state" widget="statusbar"/>
+                </header>
+                <sheet>
+                    <group>
+                        <group>
+                            <field name="name"/>
+                            <field name="site_id"/>
+                            <field name="category"/>
+                        </group>
+                        <group>
+                            <field name="date"/>
+                            <field name="inspector_id"/>
+                            <field name="result" invisible="not line_ids"/>
+                            <field name="fail_count" invisible="True"/>
+                            <field name="company_id" invisible="True"/>
+                        </group>
+                    </group>
+                    <field name="line_ids" readonly="state == 'done'">
+                        <list editable="bottom">
+                            <field name="sequence" widget="handle"/>
+                            <field name="name"/>
+                            <field name="result"/>
+                            <field name="note"/>
+                            <field name="punch_id" readonly="True" optional="show"/>
+                        </list>
+                    </field>
+                </sheet>
+                <chatter/>
+            </form>
+        </field>
+    </record>
+
+    <record id="view_construction_inspection_search" model="ir.ui.view">
+        <field name="name">construction.inspection.search</field>
+        <field name="model">construction.inspection</field>
+        <field name="arch" type="xml">
+            <search>
+                <field name="name"/>
+                <field name="site_id"/>
+                <filter name="failed" string="Failed" domain="[('result', '=', 'fail')]"/>
+                <filter name="in_progress" string="In progress" domain="[('state', '=', 'draft')]"/>
+                <group>
+                    <filter name="group_site" string="Site" context="{'group_by': 'site_id'}"/>
+                    <filter name="group_category" string="Category" context="{'group_by': 'category'}"/>
+                </group>
+            </search>
+        </field>
+    </record>
+
+    <record id="action_construction_inspection" model="ir.actions.act_window">
+        <field name="name">Inspections</field>
+        <field name="res_model">construction.inspection</field>
+        <field name="view_mode">list,form</field>
+    </record>
+
+    <menuitem id="menu_construction_inspection" name="Inspections"
+              parent="construction_site.menu_construction_root"
+              action="action_construction_inspection" sequence="25"/>
+</odoo>
