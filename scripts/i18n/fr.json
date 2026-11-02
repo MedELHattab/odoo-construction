@@ -470,5 +470,20 @@
 "Vendor bill": "Facture fournisseur",
 "Work certified": "Travaux certifiés",
 "Work certified and billed so far (gross, before retention).": "Travaux certifiés et facturés à ce jour (brut, avant retenue).",
-"You need invoicing rights to create a vendor bill.": "Vous devez disposer des droits de facturation pour créer une facture fournisseur."
+"You need invoicing rights to create a vendor bill.": "Vous devez disposer des droits de facturation pour créer une facture fournisseur.",
+"Cash Position": "Position de trésorerie",
+"Cash received from the client minus the total cost so far.": "Encaissements du client moins le coût total à ce jour.",
+"Cash received from the client on progress and retention invoices.": "Encaissements du client sur les factures d'avancement et de retenue de garantie.",
+"Collected Amount": "Montant encaissé",
+"Contract value minus the forecast cost at completion.": "Valeur du contrat moins le coût prévisionnel à l'achèvement.",
+"Cost and Margin": "Coût et marge",
+"Estimated total cost at completion. Cost so far is extrapolated by the cost of the work done (planned cost divided by earned value, times the cost so far).": "Coût total estimé à l'achèvement. Le coût à ce jour est extrapolé selon le coût des travaux réalisés (coût prévu divisé par la valeur acquise, multiplié par le coût à ce jour).",
+"Forecast Cost": "Coût prévisionnel",
+"Forecast Margin": "Marge prévisionnelle",
+"Forecast margin (%)": "Marge prévisionnelle (%)",
+"Forecast margin as a share of the contract value.": "Marge prévisionnelle en pourcentage de la valeur du contrat.",
+"Income": "Produits",
+"Posted client invoices that are not paid yet.": "Factures clients comptabilisées et non encore payées.",
+"Profit and Loss": "Résultat",
+"Receivable Amount": "Montant à encaisser"
 }

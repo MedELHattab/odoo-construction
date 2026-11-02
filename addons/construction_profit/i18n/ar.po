@@ -1,0 +1,109 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* construction_profit
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 19.0-20261015\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-11-02 15:01+0000\n"
+"PO-Revision-Date: 2026-11-02 15:01+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: construction_profit
+#: model:ir.model.fields,field_description:construction_profit.field_construction_site__cash_position
+msgid "Cash Position"
+msgstr "الوضع النقدي"
+
+#. module: construction_profit
+#: model:ir.model.fields,help:construction_profit.field_construction_site__cash_position
+msgid "Cash received from the client minus the total cost so far."
+msgstr "المبالغ المقبوضة من العميل ناقص إجمالي التكلفة حتى الآن."
+
+#. module: construction_profit
+#: model:ir.model.fields,help:construction_profit.field_construction_site__collected_amount
+msgid "Cash received from the client on progress and retention invoices."
+msgstr "المبالغ المقبوضة من العميل على فواتير الإنجاز وفواتير الاحتجاز."
+
+#. module: construction_profit
+#: model:ir.model.fields,field_description:construction_profit.field_construction_site__collected_amount
+msgid "Collected Amount"
+msgstr "المبلغ المحصّل"
+
+#. module: construction_profit
+#: model:ir.model,name:construction_profit.model_construction_site
+msgid "Construction Site"
+msgstr "موقع البناء"
+
+#. module: construction_profit
+#: model:ir.model.fields,help:construction_profit.field_construction_site__forecast_margin
+msgid "Contract value minus the forecast cost at completion."
+msgstr "قيمة العقد ناقص التكلفة المتوقعة عند الإنجاز."
+
+#. module: construction_profit
+#: model_terms:ir.ui.view,arch_db:construction_profit.view_construction_site_form_profit
+msgid "Cost and Margin"
+msgstr "التكلفة والهامش"
+
+#. module: construction_profit
+#: model:ir.model.fields,field_description:construction_profit.field_construction_site__display_name
+msgid "Display Name"
+msgstr "اسم العرض"
+
+#. module: construction_profit
+#: model:ir.model.fields,help:construction_profit.field_construction_site__forecast_cost
+msgid ""
+"Estimated total cost at completion. Cost so far is extrapolated by the cost "
+"of the work done (planned cost divided by earned value, times the cost so "
+"far)."
+msgstr "إجمالي التكلفة المقدّرة عند الإنجاز. تُستنتج التكلفة حتى الآن من تكلفة الأعمال المنجزة (التكلفة المخططة مقسومة على القيمة المكتسبة، مضروبة في التكلفة حتى الآن)."
+
+#. module: construction_profit
+#: model:ir.model.fields,field_description:construction_profit.field_construction_site__forecast_cost
+msgid "Forecast Cost"
+msgstr "التكلفة المتوقعة"
+
+#. module: construction_profit
+#: model:ir.model.fields,field_description:construction_profit.field_construction_site__forecast_margin
+msgid "Forecast Margin"
+msgstr "الهامش المتوقع"
+
+#. module: construction_profit
+#: model:ir.model.fields,field_description:construction_profit.field_construction_site__forecast_margin_percent
+msgid "Forecast margin (%)"
+msgstr "الهامش المتوقع (%)"
+
+#. module: construction_profit
+#: model:ir.model.fields,help:construction_profit.field_construction_site__forecast_margin_percent
+msgid "Forecast margin as a share of the contract value."
+msgstr "الهامش المتوقع كنسبة من قيمة العقد."
+
+#. module: construction_profit
+#: model:ir.model.fields,field_description:construction_profit.field_construction_site__id
+msgid "ID"
+msgstr "المعرف"
+
+#. module: construction_profit
+#: model_terms:ir.ui.view,arch_db:construction_profit.view_construction_site_form_profit
+msgid "Income"
+msgstr "الإيرادات"
+
+#. module: construction_profit
+#: model:ir.model.fields,help:construction_profit.field_construction_site__receivable_amount
+msgid "Posted client invoices that are not paid yet."
+msgstr "فواتير العملاء المرحّلة وغير المدفوعة بعد."
+
+#. module: construction_profit
+#: model_terms:ir.ui.view,arch_db:construction_profit.view_construction_site_form_profit
+msgid "Profit and Loss"
+msgstr "الأرباح والخسائر"
+
+#. module: construction_profit
+#: model:ir.model.fields,field_description:construction_profit.field_construction_site__receivable_amount
+msgid "Receivable Amount"
+msgstr "المبلغ المستحق القبض"

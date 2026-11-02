@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="view_construction_site_form_profit" model="ir.ui.view">
+        <field name="name">construction.site.form.profit</field>
+        <field name="model">construction.site</field>
+        <field name="inherit_id" ref="construction_site.view_construction_site_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//page[@name='address']" position="before">
+                <page string="Profit and Loss" name="profit">
+                    <group>
+                        <group string="Income" name="profit_income">
+                            <field name="contract_value"/>
+                            <field name="billed_amount"/>
+                            <field name="retention_held"/>
+                            <field name="collected_amount"/>
+                            <field name="receivable_amount"/>
+                        </group>
+                        <group string="Cost and Margin" name="profit_cost">
+                            <field name="total_cost"/>
+                            <field name="margin_to_date"
+                                   decoration-danger="margin_to_date &lt; 0"
+                                   decoration-success="margin_to_date &gt;= 0"/>
+                            <field name="cash_position"
+                                   decoration-danger="cash_position &lt; 0"
+                                   decoration-success="cash_position &gt;= 0"/>
+                            <field name="forecast_cost"/>
+                            <field name="forecast_margin"
+                                   decoration-danger="forecast_margin &lt; 0"
+                                   decoration-success="forecast_margin &gt;= 0"/>
+                            <field name="forecast_margin_percent"/>
+                        </group>
+                    </group>
+                </page>
+            </xpath>
+        </field>
+    </record>
+</odoo>

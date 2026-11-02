@@ -151,6 +151,7 @@ All custom addons live in `addons/` (mounted at `/mnt/extra-addons`).
 | `construction_log` | Daily site diary: weather, workers, issues, safety incidents, photos |
 | `construction_alert` | Daily cron: budget, end-date and missing-log alerts as to-dos |
 | `construction_dashboard` | Kanban cards for sites, budget used %, margin to date |
+| `construction_profit` | Profit and Loss tab per site: cash collected, receivable, forecast cost and margin at completion |
 | `construction_report` | Printable Site Cost Report (PDF) |
 | `construction_report_log` | Latest daily logs and incidents in the PDF (auto-installs) |
 | `construction_sign` | Site on signature requests, Send for Signature button |

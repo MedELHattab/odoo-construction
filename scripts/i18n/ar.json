@@ -470,5 +470,20 @@
 "Vendor bill": "فاتورة المورد",
 "Work certified": "الأعمال المعتمدة",
 "Work certified and billed so far (gross, before retention).": "الأعمال المعتمدة والمفوترة حتى الآن (الإجمالي، قبل الضمان).",
-"You need invoicing rights to create a vendor bill.": "تحتاج إلى صلاحيات الفوترة لإنشاء فاتورة مورد."
+"You need invoicing rights to create a vendor bill.": "تحتاج إلى صلاحيات الفوترة لإنشاء فاتورة مورد.",
+"Cash Position": "الوضع النقدي",
+"Cash received from the client minus the total cost so far.": "المبالغ المقبوضة من العميل ناقص إجمالي التكلفة حتى الآن.",
+"Cash received from the client on progress and retention invoices.": "المبالغ المقبوضة من العميل على فواتير الإنجاز وفواتير الاحتجاز.",
+"Collected Amount": "المبلغ المحصّل",
+"Contract value minus the forecast cost at completion.": "قيمة العقد ناقص التكلفة المتوقعة عند الإنجاز.",
+"Cost and Margin": "التكلفة والهامش",
+"Estimated total cost at completion. Cost so far is extrapolated by the cost of the work done (planned cost divided by earned value, times the cost so far).": "إجمالي التكلفة المقدّرة عند الإنجاز. تُستنتج التكلفة حتى الآن من تكلفة الأعمال المنجزة (التكلفة المخططة مقسومة على القيمة المكتسبة، مضروبة في التكلفة حتى الآن).",
+"Forecast Cost": "التكلفة المتوقعة",
+"Forecast Margin": "الهامش المتوقع",
+"Forecast margin (%)": "الهامش المتوقع (%)",
+"Forecast margin as a share of the contract value.": "الهامش المتوقع كنسبة من قيمة العقد.",
+"Income": "الإيرادات",
+"Posted client invoices that are not paid yet.": "فواتير العملاء المرحّلة وغير المدفوعة بعد.",
+"Profit and Loss": "الأرباح والخسائر",
+"Receivable Amount": "المبلغ المستحق القبض"
 }
