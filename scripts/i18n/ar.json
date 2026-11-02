@@ -542,5 +542,9 @@
 "Urgent": "عاجل",
 "Verified": "تم التحقق",
 "Verify": "تحقق",
-"Where on site, e.g. Building A, 2nd floor, kitchen.": "المكان في الموقع، مثل المبنى أ، الطابق الثاني، المطبخ."
+"Where on site, e.g. Building A, 2nd floor, kitchen.": "المكان في الموقع، مثل المبنى أ، الطابق الثاني، المطبخ.",
+"%(count)s item(s) failed on %(date)s in %(site)s. Create punch items to track the fixes.": "فشل %(count)s بند في %(date)s في %(site)s. أنشئ بنود ملاحظات لمتابعة الإصلاحات.",
+"%(count)s punch item(s) are past their deadline, e.g. %(first)s.": "تجاوز %(count)s بند ملاحظات موعده النهائي، مثل %(first)s.",
+"Failed inspection without follow-up: %s": "تفتيش راسب بدون متابعة: %s",
+"Overdue punch items: %s": "بنود ملاحظات متأخرة: %s"
 }

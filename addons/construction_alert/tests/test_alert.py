@@ -110,3 +110,25 @@ class TestConstructionAlerts(TransactionCase):
         result = self.site.action_run_alerts()
         self.assertEqual(result["tag"], "display_notification")
         self.env["construction.site"].get_views([(False, "form")])
+
+    def test_overdue_punch_item_alerts_once(self):
+        self._log("2026-10-30")
+        self.env["construction.punch.item"].create({
+            "name": "Leaking pipe", "site_id": self.site.id, "deadline": "2026-10-31",
+        })
+        self.assertEqual(self.site._run_alerts(today=MONDAY), 1)
+        self.assertEqual(len(self._activities("Overdue punch items")), 1)
+        self.assertEqual(self.site._run_alerts(today=MONDAY), 0, "same open alert is not repeated")
+
+    def test_failed_inspection_without_punch_items_alerts(self):
+        self._log("2026-10-30")
+        insp = self.env["construction.inspection"].create({
+            "name": "Scaffold check", "site_id": self.site.id,
+            "line_ids": [Command.create({"name": "Guard rails", "result": "fail"})],
+        })
+        insp.action_complete()
+        self.assertEqual(self.site._run_alerts(today=MONDAY), 1)
+        self.assertEqual(len(self._activities("Failed inspection")), 1)
+        self._activities().unlink()
+        insp.action_create_punch_items()
+        self.assertEqual(self.site._run_alerts(today=MONDAY), 0)

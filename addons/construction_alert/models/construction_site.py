@@ -99,6 +99,26 @@ class ConstructionSite(models.Model):
                     self.env._("Missing daily log for %(day)s: %(site)s", day=day, site=site.display_name),
                     self.env._("No daily log was recorded for %s.", day),
                 )
+            raised += site._safety_alerts(today)
+        return raised
+
+    def _safety_alerts(self, today):
+        """Overdue punch items, and failed inspections nobody turned into punch items. Returns alerts raised."""
+        self.ensure_one()
+        raised = 0
+        late = self.punch_ids.filtered(lambda p: p.state == "open" and p.deadline and p.deadline < today)
+        if late:
+            raised += self._notify(
+                self.env._("Overdue punch items: %s", self.display_name),
+                self.env._("%(count)s punch item(s) are past their deadline, e.g. %(first)s.",
+                           count=len(late), first=late.sorted("deadline")[0].name),
+            )
+        for insp in self.inspection_ids.filtered(lambda i: i.state == "done" and i.result == "fail" and not i.punch_ids):
+            raised += self._notify(
+                self.env._("Failed inspection without follow-up: %s", insp.name),
+                self.env._("%(count)s item(s) failed on %(date)s in %(site)s. Create punch items to track the fixes.",
+                           count=insp.fail_count, date=insp.date, site=self.display_name),
+            )
         return raised
 
     def action_run_alerts(self):

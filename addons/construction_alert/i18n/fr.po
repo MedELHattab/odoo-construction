@@ -6,14 +6,28 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 19.0-20261015\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-10-26 12:36+0000\n"
-"PO-Revision-Date: 2026-10-26 12:36+0000\n"
+"POT-Creation-Date: 2026-11-02 17:49+0000\n"
+"PO-Revision-Date: 2026-11-02 17:49+0000\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
 "Plural-Forms: \n"
+
+#. module: construction_alert
+#. odoo-python
+#: code:addons/construction_alert/models/construction_site.py:0
+msgid ""
+"%(count)s item(s) failed on %(date)s in %(site)s. Create punch items to "
+"track the fixes."
+msgstr "%(count)s point(s) non conforme(s) le %(date)s sur %(site)s. Créez des réserves pour suivre les corrections."
+
+#. module: construction_alert
+#. odoo-python
+#: code:addons/construction_alert/models/construction_site.py:0
+msgid "%(count)s punch item(s) are past their deadline, e.g. %(first)s."
+msgstr "%(count)s réserve(s) ont dépassé leur échéance, p. ex. %(first)s."
 
 #. module: construction_alert
 #. odoo-python
@@ -59,6 +73,12 @@ msgid "Display Name"
 msgstr "Nom affiché"
 
 #. module: construction_alert
+#. odoo-python
+#: code:addons/construction_alert/models/construction_site.py:0
+msgid "Failed inspection without follow-up: %s"
+msgstr "Inspection échouée sans suivi : %s"
+
+#. module: construction_alert
 #: model:ir.model.fields,help:construction_alert.field_construction_site__budget_alert_level
 msgid ""
 "Highest budget alert already sent. It resets when spending falls back under "
@@ -102,6 +122,12 @@ msgstr "Budget dépassé : %s"
 #: model:ir.model.fields,field_description:construction_alert.field_construction_site__overdue_alerted
 msgid "Overdue Alerted"
 msgstr "Retard signalé"
+
+#. module: construction_alert
+#. odoo-python
+#: code:addons/construction_alert/models/construction_site.py:0
+msgid "Overdue punch items: %s"
+msgstr "Réserves en retard : %s"
 
 #. module: construction_alert
 #. odoo-python
