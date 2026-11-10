@@ -1,0 +1,194 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* construction_portfolio
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 19.0-20261015\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-11-10 14:15+0000\n"
+"PO-Revision-Date: 2026-11-10 14:15+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: construction_portfolio
+#: model:ir.model.fields,field_description:construction_portfolio.field_construction_portfolio__billed_amount
+msgid "Billed Amount"
+msgstr ""
+
+#. module: construction_portfolio
+#: model:ir.model.fields,field_description:construction_portfolio.field_construction_portfolio__budget
+msgid "Budget"
+msgstr ""
+
+#. module: construction_portfolio
+#: model:ir.model.fields.selection,name:construction_portfolio.selection__construction_portfolio__state__cancelled
+msgid "Cancelled"
+msgstr ""
+
+#. module: construction_portfolio
+#: model:ir.model.fields,field_description:construction_portfolio.field_construction_portfolio__partner_id
+#: model_terms:ir.ui.view,arch_db:construction_portfolio.view_construction_portfolio_search
+msgid "Client"
+msgstr ""
+
+#. module: construction_portfolio
+#: model:ir.model.fields,field_description:construction_portfolio.field_construction_portfolio__committed_cost
+msgid "Committed Cost"
+msgstr ""
+
+#. module: construction_portfolio
+#: model:ir.model.fields,field_description:construction_portfolio.field_construction_portfolio__company_id
+msgid "Company"
+msgstr ""
+
+#. module: construction_portfolio
+#: model:ir.model,name:construction_portfolio.model_construction_portfolio
+msgid "Construction Portfolio"
+msgstr ""
+
+#. module: construction_portfolio
+#: model:ir.model.fields,field_description:construction_portfolio.field_construction_portfolio__currency_id
+msgid "Currency"
+msgstr ""
+
+#. module: construction_portfolio
+#: model:ir.model.fields,field_description:construction_portfolio.field_construction_portfolio__display_name
+msgid "Display Name"
+msgstr ""
+
+#. module: construction_portfolio
+#: model:ir.model.fields.selection,name:construction_portfolio.selection__construction_portfolio__state__done
+msgid "Done"
+msgstr ""
+
+#. module: construction_portfolio
+#: model:ir.model.fields,field_description:construction_portfolio.field_construction_portfolio__earned_value
+msgid "Earned Value"
+msgstr ""
+
+#. module: construction_portfolio
+#: model:ir.model.fields,field_description:construction_portfolio.field_construction_portfolio__failed_inspections
+msgid "Failed inspections"
+msgstr ""
+
+#. module: construction_portfolio
+#: model:ir.model.fields,field_description:construction_portfolio.field_construction_portfolio__id
+msgid "ID"
+msgstr ""
+
+#. module: construction_portfolio
+#: model:ir.model.fields.selection,name:construction_portfolio.selection__construction_portfolio__state__in_progress
+msgid "In Progress"
+msgstr ""
+
+#. module: construction_portfolio
+#: model_terms:ir.ui.view,arch_db:construction_portfolio.view_construction_portfolio_search
+msgid "In progress"
+msgstr ""
+
+#. module: construction_portfolio
+#: model:ir.model.fields,field_description:construction_portfolio.field_construction_portfolio__margin_to_date
+msgid "Margin To Date"
+msgstr ""
+
+#. module: construction_portfolio
+#: model:ir.model.fields.selection,name:construction_portfolio.selection__construction_portfolio__state__on_hold
+msgid "On Hold"
+msgstr ""
+
+#. module: construction_portfolio
+#: model:ir.model.fields,field_description:construction_portfolio.field_construction_portfolio__open_punch
+msgid "Open punch items"
+msgstr ""
+
+#. module: construction_portfolio
+#: model_terms:ir.ui.view,arch_db:construction_portfolio.view_construction_portfolio_search
+msgid "Open risks"
+msgstr ""
+
+#. module: construction_portfolio
+#: model_terms:ir.ui.view,arch_db:construction_portfolio.view_construction_portfolio_search
+msgid "Over budget"
+msgstr ""
+
+#. module: construction_portfolio
+#: model:ir.model.fields,field_description:construction_portfolio.field_construction_portfolio__overdue_punch
+msgid "Overdue punch items"
+msgstr ""
+
+#. module: construction_portfolio
+#: model_terms:ir.ui.view,arch_db:construction_portfolio.view_construction_portfolio_search
+msgid "Past end date"
+msgstr ""
+
+#. module: construction_portfolio
+#: model:ir.model.fields.selection,name:construction_portfolio.selection__construction_portfolio__state__draft
+msgid "Planning"
+msgstr ""
+
+#. module: construction_portfolio
+#: model:ir.actions.act_window,name:construction_portfolio.action_construction_portfolio
+#: model:ir.ui.menu,name:construction_portfolio.menu_construction_portfolio
+msgid "Portfolio"
+msgstr ""
+
+#. module: construction_portfolio
+#: model:ir.model.fields,field_description:construction_portfolio.field_construction_portfolio__progress_percent
+msgid "Progress (%)"
+msgstr ""
+
+#. module: construction_portfolio
+#: model:ir.model.fields,field_description:construction_portfolio.field_construction_portfolio__retention_held
+msgid "Retention Held"
+msgstr ""
+
+#. module: construction_portfolio
+#: model:ir.model.fields,field_description:construction_portfolio.field_construction_portfolio__site_id
+msgid "Site"
+msgstr ""
+
+#. module: construction_portfolio
+#: model:ir.model.fields,field_description:construction_portfolio.field_construction_portfolio__manager_id
+#: model_terms:ir.ui.view,arch_db:construction_portfolio.view_construction_portfolio_search
+msgid "Site manager"
+msgstr ""
+
+#. module: construction_portfolio
+#: model:ir.model.fields,field_description:construction_portfolio.field_construction_portfolio__site_count
+msgid "Sites"
+msgstr ""
+
+#. module: construction_portfolio
+#: model:ir.model.fields,field_description:construction_portfolio.field_construction_portfolio__over_budget
+msgid "Sites over budget"
+msgstr ""
+
+#. module: construction_portfolio
+#: model:ir.model.fields,field_description:construction_portfolio.field_construction_portfolio__late_sites
+msgid "Sites past end date"
+msgstr ""
+
+#. module: construction_portfolio
+#: model:ir.model.fields,field_description:construction_portfolio.field_construction_portfolio__state
+msgid "State"
+msgstr ""
+
+#. module: construction_portfolio
+#: model_terms:ir.ui.view,arch_db:construction_portfolio.view_construction_portfolio_search
+msgid "Status"
+msgstr ""
+
+#. module: construction_portfolio
+#: model_terms:ir.ui.view,arch_db:construction_portfolio.view_construction_portfolio_list
+msgid "Total"
+msgstr ""
+
+#. module: construction_portfolio
+#: model:ir.model.fields,field_description:construction_portfolio.field_construction_portfolio__total_cost
+msgid "Total Cost"
+msgstr ""

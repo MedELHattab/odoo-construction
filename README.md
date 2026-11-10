@@ -154,6 +154,7 @@ All custom addons live in `addons/` (mounted at `/mnt/extra-addons`).
 | `construction_profit` | Profit and Loss tab per site: cash collected, receivable, forecast cost and margin at completion |
 | `construction_cashflow` | Cash Flow Forecast: expected money in and out per site and month |
 | `construction_safety` | Inspection checklists and a punch list of defects to fix before handover |
+| `construction_portfolio` | Portfolio: all sites side by side with budget, cost, margin, progress and open risks |
 | `construction_report` | Printable Site Cost Report (PDF) |
 | `construction_report_log` | Latest daily logs and incidents in the PDF (auto-installs) |
 | `construction_sign` | Site on signature requests, Send for Signature button |

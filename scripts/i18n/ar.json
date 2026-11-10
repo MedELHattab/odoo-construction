@@ -546,5 +546,15 @@
 "%(count)s item(s) failed on %(date)s in %(site)s. Create punch items to track the fixes.": "فشل %(count)s بند في %(date)s في %(site)s. أنشئ بنود ملاحظات لمتابعة الإصلاحات.",
 "%(count)s punch item(s) are past their deadline, e.g. %(first)s.": "تجاوز %(count)s بند ملاحظات موعده النهائي، مثل %(first)s.",
 "Failed inspection without follow-up: %s": "تفتيش راسب بدون متابعة: %s",
-"Overdue punch items: %s": "بنود ملاحظات متأخرة: %s"
+"Overdue punch items: %s": "بنود ملاحظات متأخرة: %s",
+"Construction Portfolio": "محفظة المواقع",
+"Failed inspections": "التفتيشات الراسبة",
+"Open punch items": "بنود الملاحظات المفتوحة",
+"Open risks": "المخاطر المفتوحة",
+"Overdue punch items": "بنود ملاحظات متأخرة",
+"Past end date": "تجاوز تاريخ الانتهاء",
+"Planning": "التخطيط",
+"Portfolio": "المحفظة",
+"Sites over budget": "مواقع تجاوزت الميزانية",
+"Sites past end date": "مواقع تجاوزت تاريخ الانتهاء"
 }

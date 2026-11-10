@@ -546,5 +546,15 @@
 "%(count)s item(s) failed on %(date)s in %(site)s. Create punch items to track the fixes.": "%(count)s point(s) non conforme(s) le %(date)s sur %(site)s. Créez des réserves pour suivre les corrections.",
 "%(count)s punch item(s) are past their deadline, e.g. %(first)s.": "%(count)s réserve(s) ont dépassé leur échéance, p. ex. %(first)s.",
 "Failed inspection without follow-up: %s": "Inspection échouée sans suivi : %s",
-"Overdue punch items: %s": "Réserves en retard : %s"
+"Overdue punch items: %s": "Réserves en retard : %s",
+"Construction Portfolio": "Portefeuille de chantiers",
+"Failed inspections": "Inspections échouées",
+"Open punch items": "Réserves ouvertes",
+"Open risks": "Risques ouverts",
+"Overdue punch items": "Réserves en retard",
+"Past end date": "Date de fin dépassée",
+"Planning": "Planification",
+"Portfolio": "Portefeuille",
+"Sites over budget": "Chantiers hors budget",
+"Sites past end date": "Chantiers en retard"
 }
