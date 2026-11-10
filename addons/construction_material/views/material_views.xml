@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="view_construction_material_list" model="ir.ui.view">
+        <field name="name">construction.material.list</field>
+        <field name="model">construction.material</field>
+        <field name="arch" type="xml">
+            <list create="0" edit="0" delete="0" decoration-danger="is_late">
+                <field name="site_id"/>
+                <field name="product_id"/>
+                <field name="order_id"/>
+                <field name="partner_id" optional="show"/>
+                <field name="expected_date"/>
+                <field name="ordered_qty"/>
+                <field name="received_qty"/>
+                <field name="outstanding_qty"/>
+                <field name="uom_id" optional="show"/>
+                <field name="billed_qty" optional="hide"/>
+                <field name="ordered_amount" sum="Total" optional="hide"/>
+                <field name="received_amount" sum="Total" optional="hide"/>
+                <field name="outstanding_amount" sum="Total"/>
+                <field name="is_late" column_invisible="True"/>
+                <field name="currency_id" column_invisible="True"/>
+            </list>
+        </field>
+    </record>
+
+    <record id="view_construction_material_pivot" model="ir.ui.view">
+        <field name="name">construction.material.pivot</field>
+        <field name="model">construction.material</field>
+        <field name="arch" type="xml">
+            <pivot>
+                <field name="site_id" type="row"/>
+                <field name="ordered_amount" type="measure"/>
+                <field name="received_amount" type="measure"/>
+                <field name="outstanding_amount" type="measure"/>
+            </pivot>
+        </field>
+    </record>
+
+    <record id="view_construction_material_graph" model="ir.ui.view">
+        <field name="name">construction.material.graph</field>
+        <field name="model">construction.material</field>
+        <field name="arch" type="xml">
+            <graph type="bar" stacked="1">
+                <field name="site_id"/>
+                <field name="received_amount" type="measure"/>
+                <field name="outstanding_amount" type="measure"/>
+            </graph>
+        </field>
+    </record>
+
+    <record id="view_construction_material_search" model="ir.ui.view">
+        <field name="name">construction.material.search</field>
+        <field name="model">construction.material</field>
+        <field name="arch" type="xml">
+            <search>
+                <field name="site_id"/>
+                <field name="product_id"/>
+                <field name="partner_id"/>
+                <field name="order_id"/>
+                <filter name="to_deliver" string="Still to deliver" domain="[('outstanding_qty', '&gt;', 0)]"/>
+                <filter name="late" string="Late" domain="[('is_late', '=', True)]"/>
+                <filter name="delivered" string="Fully delivered" domain="[('outstanding_qty', '=', 0)]"/>
+                <group>
+                    <filter name="group_site" string="Site" context="{'group_by': 'site_id'}"/>
+                    <filter name="group_product" string="Material" context="{'group_by': 'product_id'}"/>
+                    <filter name="group_partner" string="Supplier" context="{'group_by': 'partner_id'}"/>
+                </group>
+            </search>
+        </field>
+    </record>
+
+    <record id="action_construction_material" model="ir.actions.act_window">
+        <field name="name">Material Tracking</field>
+        <field name="res_model">construction.material</field>
+        <field name="view_mode">list,pivot,graph</field>
+        <field name="context">{'search_default_to_deliver': 1}</field>
+    </record>
+
+    <menuitem id="menu_construction_material" name="Material Tracking"
+              parent="construction_site.menu_construction_root"
+              action="action_construction_material" sequence="38"/>
+</odoo>

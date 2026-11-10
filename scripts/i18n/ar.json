@@ -556,5 +556,19 @@
 "Planning": "التخطيط",
 "Portfolio": "المحفظة",
 "Sites over budget": "مواقع تجاوزت الميزانية",
-"Sites past end date": "مواقع تجاوزت تاريخ الانتهاء"
+"Sites past end date": "مواقع تجاوزت تاريخ الانتهاء",
+"Construction Material Tracking": "تتبع مواد الموقع",
+"Expected Date": "التاريخ المتوقع",
+"Fully delivered": "تم التسليم بالكامل",
+"Late": "متأخر",
+"Late delivery": "تسليم متأخر",
+"Material": "المادة",
+"Material Tracking": "تتبع المواد",
+"Ordered": "المطلوب",
+"Ordered value": "قيمة المطلوب",
+"Received": "المستلم",
+"Received value": "قيمة المستلم",
+"Still to deliver": "المتبقي للتسليم",
+"Supplier": "المورد",
+"Value still to deliver": "قيمة المتبقي للتسليم"
 }

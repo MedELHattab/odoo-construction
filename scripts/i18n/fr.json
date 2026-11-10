@@ -556,5 +556,19 @@
 "Planning": "Planification",
 "Portfolio": "Portefeuille",
 "Sites over budget": "Chantiers hors budget",
-"Sites past end date": "Chantiers en retard"
+"Sites past end date": "Chantiers en retard",
+"Construction Material Tracking": "Suivi des matériaux de chantier",
+"Expected Date": "Date prévue",
+"Fully delivered": "Entièrement livré",
+"Late": "En retard",
+"Late delivery": "Livraison en retard",
+"Material": "Matériau",
+"Material Tracking": "Suivi des matériaux",
+"Ordered": "Commandé",
+"Ordered value": "Valeur commandée",
+"Received": "Reçu",
+"Received value": "Valeur reçue",
+"Still to deliver": "Reste à livrer",
+"Supplier": "Fournisseur",
+"Value still to deliver": "Valeur restant à livrer"
 }
